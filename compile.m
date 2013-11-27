@@ -1,5 +1,6 @@
 function compile()
 
+
 rootdir = pwd;
 archType = getenv('ARCH');
 
