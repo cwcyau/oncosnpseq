@@ -246,11 +246,10 @@ dd = d;
 
 % do germline genotyping
 disp('Performing germline genotyping ...');
-alpha = options.alpha;
-beta = options.beta;
-
 log_pr_gg = zeros(2, N);
 if options.paired
+	alpha = options.alpha;
+	beta = options.beta;
 	for gi = 1 : 2
 		log_pr_gg(gi, :) = gammaln(dn+1) - gammaln(kn+1) - gammaln(dn-kn+1) + gammaln(kn+alpha(gi)) + gammaln(dn-kn+beta(gi)) - gammaln(dn+alpha(gi)+beta(gi)) + gammaln(alpha(gi)+beta(gi)) - gammaln(alpha(gi))-gammaln(beta(gi));
 	end
