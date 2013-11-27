@@ -1,4 +1,0 @@
-oncosnpseq
-==========
-
-OncoSNP-SEQ
