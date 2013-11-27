@@ -1,0 +1,32 @@
+29/11/2012 Bug fixes (v1.0.1)
+
+Updated "gentumourstatetable.m" to incorporate a "normal" homozygosity state (state 3) to account for runs of homozygotes that are not due to somatic LOH. The "normal, heterozygous" state is now labelled as state 4.
+
+Updated "segment.m" to join State 3 and 4 as a single state by manually relabelling State 3 as State 4.
+
+Updated the Perl script "process_pileup.pl" to remove a piece of testing code that only prints every 100th line and added a new parameter to allow the specification of a target snps file in BED format.
+
+
+
+14/02/2013 Bug fixes and upgrades (v1.0.2)
+
+Fixed bug in reporting of LOH states.
+
+Fixed bug in calculation of BAF likelihood.
+
+Added ability to specify tumour states.
+
+Created MATLAB Compiler version.
+
+
+
+14/09/2013 Upgrades (v1.0.3)
+
+Added support for gzipped and zip data file inputs.
+
+
+22/11/2013 Upgrades (v1.0.4)
+
+Added support for normal-tumour pair analysis for Illumina and Complete Genomics.
+
+Minor algorithmic tweaks to achieve 10-20% speed ups when using tumour heterogeneity mode.
