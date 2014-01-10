@@ -115,7 +115,7 @@ imagesc(u0_range, read_depth_range, u0Cost);
 for i = 1 : n_ploidy 
 	text( ploidynormal(i), ploidyvals(i), num2str(i) );	
 end
-axis( [ 0.9*min( u0_range ) 1.1*max( u0_range ) min( read_depth_range ) max( read_depth_range )  ] );
+axis( [ 0.9*min( u0_range ) 1.1*max( u0_range ) min(read_depth_range)-0.5 max( read_depth_range )+0.5  ] );
 colorbar;
 ylabel('Haploid Read Depth');
 xlabel('Normal Contamination');

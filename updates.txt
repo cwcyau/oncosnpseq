@@ -30,3 +30,8 @@ Added support for gzipped and zip data file inputs.
 Added support for normal-tumour pair analysis for Illumina and Complete Genomics.
 
 Minor algorithmic tweaks to achieve 10-20% speed ups when using tumour heterogeneity mode.
+
+
+7/1/2014 (v1.0.5)
+
+Added code to output diagnostic information in MAT files.

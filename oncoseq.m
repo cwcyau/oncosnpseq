@@ -2,10 +2,10 @@ function oncoseq(varargin)
 %
 % main oncoseq function
 %
-disp('OncoSNP-SEQ v1.04');
+disp('OncoSNP-SEQ v1.05');
 disp('---');
 disp(' ');
-disp('Copyright (c) 2013 University of Oxford.');
+disp('Copyright (c) 2014 University of Oxford.');
 disp(' ');
 disp('Developed by: Dr Christopher Yau, Wellcome Trust Centre for Human Genetics, University of Oxford.');
 disp(' ');
@@ -32,7 +32,7 @@ options.u0_alpha = 0.5;
 options.u0_beta = 5;
 options.alpha = [ 1 20 ];
 options.beta = [ 100 20 ];
-
+options.diagnostics = 0;
 options.paired = 0;
 
 options.tumourStateTable = [];
@@ -174,6 +174,10 @@ for i = 1 : nargin
 		end
 	end
 
+	if strmatch(varargin{i}, '--diagnostics') 
+		options.diagnostics = 1;
+	end
+
 end
 
 
@@ -218,6 +222,7 @@ options.outfile_all = [ options.outdir '/' options.samplename '.cnvall' ];
 options.outfile_cost = [ options.outdir '/' options.samplename '.cost.ps' ];	
 options.matfile = [ options.outdir '/' options.samplename '.mat' ];	
 options.outfile_qc = [ options.outdir '/' options.samplename '.qc' ];	
+options.outfile_diagnostics = [ options.outdir '/' options.samplename '-diagnostics.mat' ];	
 
 oncoseq_run(options);
 
