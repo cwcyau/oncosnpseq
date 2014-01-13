@@ -1,0 +1,55 @@
+Warning: No display specified.  You will not be able to display graphics on the screen.
+Warning: No window system found.  Java option 'MWT' ignored.
+
+                            < M A T L A B (R) >
+                  Copyright 1984-2013 The MathWorks, Inc.
+                    R2013b (8.2.0.701) 64-bit (glnxa64)
+                              August 13, 2013
+
+No window system found.  Java option 'MWT' ignored.
+ 
+To get started, type one of these: helpwin, helpdesk, or demo.
+For product information, visit www.mathworks.com.
+ 
+>> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> >> OncoSNP-SEQ v2.0
+---
+ 
+Copyright (c) 2014 University of Oxford.
+ 
+Developed by: Dr Christopher Yau, Wellcome Trust Centre for Human Genetics, University of Oxford.
+ 
+ 
+Using user-specified tumour state table in: ../config/tumourStates.txt
+Reading data file: /data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T2
+Removing low-quality loci ...
+Reading hg tables file: ../config/hgTables_b37.txt
+Doing Local GC content: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 
+Performing germline genotyping ...
+Estimating base read depth: 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 
+Writing ploidy scan results to: /data/cyau/temp//ps4-t2.scan
+Haploid read depths: 19
+Copy number: 3.5
+Normal fraction: 0.4
+Log-likelihood: -267799.534789
+Writing QC metrics to: /data/cyau/temp//ps4-t2.qc
+Segmenting (Configuration 1): 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 
+Writing CNAs to file: /data/cyau/temp//ps4-t2.cnvs
+Writing all events file:/data/cyau/temp//ps4-t2.cnvall
+Drawing summary figure: /data/cyau/temp//ps4-t2.1.ps
+Drawing chromosome figure: 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 
+Saving diagnostics information...
+>> Elapsed time is 9815.250413 seconds.
+>> >> [Warning: Objects of scribe.colorbar class exist - not clearing this class or
+any of its superclasses] 
+[Warning: Objects of graphics.panbehavior class exist - not clearing this class
+or any of its superclasses] 
+[Warning: Objects of graphics.zoombehavior class exist - not clearing this class
+or any of its superclasses] 
+[Warning: Objects of graphics.rotate3dbehavior class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graphics.datacursorbehavior class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graphics.ploteditbehavior class exist - not clearing this
+class or any of its superclasses] 
+[Warning: Objects of graph2d.lineseries class exist - not clearing this class or
+any of its superclasses] 

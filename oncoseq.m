@@ -2,7 +2,7 @@ function oncoseq(varargin)
 %
 % main oncoseq function
 %
-disp('OncoSNP-SEQ v1.05');
+disp('OncoSNP-SEQ v2.0');
 disp('---');
 disp(' ');
 disp('Copyright (c) 2014 University of Oxford.');
@@ -48,59 +48,59 @@ foundSeqType = 0;
 
 for i = 1 : nargin
 
-	if strmatch(varargin{i}, '--maxcopy') 
-		options.maxcopy = str2num(varargin{i+1});
+	if strmatch(lower(varargin{i}), '--maxcopy') 
+		options.maxCopy = str2num(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--read_depth_range') 
+	if strmatch(lower(varargin{i}), '--read_depth_range') 
 		options.read_depth_range = eval(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--chr_range') 
+	if strmatch(lower(varargin{i}), '--chr_range') 
 		options.chrRange = eval(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--n_train') 
+	if strmatch(lower(varargin{i}), '--n_train') 
 		options.N_train = str2num(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--u_levels') 
+	if strmatch(lower(varargin{i}), '--u_levels') 
 		options.u_levels = str2num(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--seqerror') 
+	if strmatch(lower(varargin{i}), '--seqerror') 
 		options.seqerror = str2num(varargin{i+1});
 	end
 	
-	if strmatch(varargin{i}, '--readerror') 
+	if strmatch(lower(varargin{i}), '--readerror') 
 		options.readerror = str2num(varargin{i+1});
 	end	
 
-	if strmatch(varargin{i}, '--maxploidy') 
+	if strmatch(lower(varargin{i}), '--maxploidy') 
 		options.maxploidy = str2num(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--minploidy') 
+	if strmatch(lower(varargin{i}), '--minploidy') 
 		options.minploidy = str2num(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--normalcontamination') 
+	if strmatch(lower(varargin{i}), '--normalcontamination') 
 		options.normalcontamination = 1;
 	end
 
-	if strmatch(varargin{i}, '--tumourheterogeneity') 
+	if strmatch(lower(varargin{i}), '--tumourheterogeneity') 
 		options.tumourheterogeneity = 1;
 	end
 
-	if strmatch(varargin{i}, '--maxnormalcontamination') 
+	if strmatch(lower(varargin{i}), '--maxnormalcontamination') 
 		options.maxnormalcontamination = str2num(varargin{i+1});
 	end
 
-	if strmatch(varargin{i}, '--training') 
+	if strmatch(lower(varargin{i}), '--training') 
 		options.training = 1;
 	end
 
-	if strmatch(varargin{i}, '--gcdir') 
+	if strmatch(lower(varargin{i}), '--gcdir') 
 		options.gcdir = varargin{i+1};
 		if ~exist(options.gcdir) 
 			disp(['Error! Cannot find Local GC content directory: ' options.gcdir ]);
@@ -108,7 +108,7 @@ for i = 1 : nargin
 		end
 	end
 
-	if strmatch(varargin{i}, '--mapdir') 
+	if strmatch(lower(varargin{i}), '--mapdir') 
 		options.mapdir = varargin{i+1};
 		if ~exist(options.mapdir) 
 			disp(['Error! Cannot find mappability directory: ' options.mapdir ]);
@@ -116,14 +116,14 @@ for i = 1 : nargin
 		end
 	end
 	
-	if strmatch(varargin{i}, '--hgtable') 
+	if strmatch(lower(varargin{i}), '--hgtable') 
 		options.hgtables = varargin{i+1};
 		if exist(options.hgtables, 'file')
 			foundHgtable = 1;
 		end
 	end
 
-	if strmatch(varargin{i}, '--tumourstatestable') 
+	if strmatch(lower(varargin{i}), '--tumourstatestable') 
 		options.tumourStateTable = varargin{i+1};
 		if ~exist(options.tumourStateTable, 'file')
 			disp(['Error!: The specified tumour states file does not exist: ' options.tumourStateTable ]);
@@ -131,7 +131,7 @@ for i = 1 : nargin
 		end
 	end
 	
-	if strmatch(varargin{i}, '--seqtype') 
+	if strmatch(lower(varargin{i}), '--seqtype') 
 		options.seqtype = varargin{i+1};
 		if ~isempty( strmatch(options.seqtype, 'cg', 'exact') )
 			foundSeqType = 1;
@@ -142,12 +142,12 @@ for i = 1 : nargin
 		end
 	end
 
-	if strmatch(varargin{i}, '--samplename') 
+	if strmatch(lower(varargin{i}), '--samplename') 
 		options.samplename = varargin{i+1};
 		foundSampleName = 1;
 	end
 
-	if strmatch(varargin{i}, '--infile') 
+	if strmatch(lower(varargin{i}), '--infile') 
 		options.infile = varargin{i+1};
 		if ~exist(options.infile, 'file')
 			disp(['Error! Input file not found: ' options.infile]); 
@@ -157,7 +157,7 @@ for i = 1 : nargin
 		end
 	end
 
-	if strmatch(varargin{i}, '--normalfile') 
+	if strmatch(lower(varargin{i}), '--normalfile') 
 		options.normalfile = varargin{i+1};
 		if exist(options.normalfile, 'file')
 			options.paired = 1;
@@ -167,14 +167,14 @@ for i = 1 : nargin
 		end
 	end
 
-	if strmatch(varargin{i}, '--outdir') 
+	if strmatch(lower(varargin{i}), '--outdir') 
 		options.outdir = varargin{i+1};
 		if exist(options.outdir, 'dir')
 			foundOutdir = 1;
 		end
 	end
 
-	if strmatch(varargin{i}, '--diagnostics') 
+	if strmatch(lower(varargin{i}), '--diagnostics') 
 		options.diagnostics = 1;
 	end
 
@@ -222,6 +222,7 @@ options.outfile_all = [ options.outdir '/' options.samplename '.cnvall' ];
 options.outfile_cost = [ options.outdir '/' options.samplename '.cost.ps' ];	
 options.matfile = [ options.outdir '/' options.samplename '.mat' ];	
 options.outfile_qc = [ options.outdir '/' options.samplename '.qc' ];	
+options.outfile_scan = [ options.outdir '/' options.samplename '.scan' ];	
 options.outfile_diagnostics = [ options.outdir '/' options.samplename '-diagnostics.mat' ];	
 
 oncoseq_run(options);

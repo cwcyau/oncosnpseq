@@ -14,12 +14,15 @@ end
 N_train = options.N_train;
 tumourState = options.tumourState;
 
+disp(['Number of tumour states: ' num2str(size(tumourState, 1))]);
+
 CNmax = max(tumourState(:, 4));
 d_s = nanmoving_average(d, 30);
 
 params.lambda_s = mad( d - d_s );
 
 S = params.S;
+U = params.U;
 N = length(d);
 loc = randperm(N);
 N_train = min(N_train, N);
@@ -67,8 +70,8 @@ for i = 1 : params.n_ploidy
 	options.outfile_plot = [ options.outdir '/' options.samplename '.' num2str(i) '.ps' ];
 
 	% scan each chromosome and arm
-	fprintf('(%d): ', i);
-	log_pr_s = zeros(S, N);
+	fprintf('Segmenting (Configuration %d): ', i);
+	log_pr_s = zeros(S*U, N);
 	for chrNo = options.chrRange
 
 		fprintf('%d ', chrNo);

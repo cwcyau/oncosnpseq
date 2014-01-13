@@ -3,20 +3,6 @@ function params = ploidyscan(chr, arm, k, d, dd, log_pr_gg, params, options)
 N = length(k);
 S = params.S;
 
-rho = 0.005;
-prior_vec = ones(S, 1)/S;
-transMat = zeros(S, S);
-for si = 1 : S
-	for sj = 1 : S
-		if si == sj
-			transMat(si, sj) = 1-rho;
-		else
-			transMat(si, sj) = rho/(S-1);
-		end
-	end
-end 
-
-
 lambda_s = params.lambda_s;
 nu = params.nu;
 u = params.u;
@@ -31,6 +17,8 @@ tumourState = options.tumourState;
 read_depth_range = options.read_depth_range;
 chrRange = options.chrRange;
 lambda_1_range = options.lambda_1_range;
+
+[ arrayind, log_prior_vec, logtransMat ] = gentransmat(params.phi, params.delta, tumourState, u);
 
 n_ri = length(read_depth_range);
 n_lev = length(lambda_1_range);
@@ -49,23 +37,28 @@ for ri = 1 : n_ri
 	fprintf('%d ', params.read_depth);	
 		
 	for u0i = 1 : U0
-
+	
 		params.u0 = u0_range(u0i);
-	
+
+		tic
 		log_pr_s = calclikelihoodLite(k, d, dd, log_pr_gg, params, options);
-	
+		toc
+
+		x_cost = zeros(max(chrRange), 2);
 		for chrNo = chrRange
 			for armNo = 1 : 2
 				chrloc = find( chr == chrNo & arm == armNo );
 				n_chr = length(chrloc);
 				if n_chr > 0
-					[alpha, alphaScale, beta, betaScale, gamma] = fwdhmmC( prior_vec, transMat, exp(log_pr_s(:, chrloc)), S, n_chr);
-					[tmp, x_ri(chrloc)] = max(gamma, [], 1); 
-					x_cost(chrNo, armNo) = sum(log(alphaScale));
+					[vpath, loglik_v] = viterbimex(log_prior_vec, log_pr_s(:, chrloc), logtransMat);
+	
+					x_ri(chrloc) = arrayind(vpath, 1);			
+					x_cost(chrNo, armNo) = loglik_v; 
+
 				end
 			end
 		end
-		
+
 		cn_ave(ri, u0i) = mean(tumourState(x_ri, 4));
 		u0Cost(ri, u0i) = log(p_u0(u0i)) + sum(x_cost(:));
 
@@ -73,6 +66,18 @@ for ri = 1 : n_ri
 	
 end
 fprintf('\n');
+
+disp(['Writing ploidy scan results to: ' options.outfile_scan]);
+fid = fopen(options.outfile_scan, 'wt');
+fprintf(fid, 'Haploid Read Depth\tNormal Fraction\tAverage Copy Number\tLog-likelihood\n');
+for ri = 1 : n_ri
+	for u0i = 1 : U0
+		fprintf(fid, '%d\t%1.1f\t%1.1f\t%f\n', read_depth_range(ri), u0_range(u0i), cn_ave(ri, u0i), u0Cost(ri, u0i));
+	end
+end
+fclose(fid);
+
+
 
 ploidyvals = [];
 ploidycost = [];

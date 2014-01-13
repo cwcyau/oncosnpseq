@@ -61,17 +61,13 @@ for chrNo = options.chrRange
 				seg{nseg}.u = u_chr(i-1);
 				seg{nseg}.majorcn = majorcn;
 				seg{nseg}.minorcn = minorcn;	
-				if ~isempty(patients)
-					seg{nseg}.patientid = patients(startInd);		
-				else
-					seg{nseg}.patientid = 0;												
-				end
 
-				range = startInd:endInd;
-				ind = sub2ind([S n_chr], x_chr(range), range);
-				ind2 = sub2ind([S n_chr], xprev_chr(range), range);
+%				range = startInd:endInd;
+%				ind = sub2ind([S n_chr], x_chr(range), range);
+%				ind2 = sub2ind([S n_chr], xprev_chr(range), range);
 				
-				seg{nseg}.loglik = sum(loglik_chr(ind)) - sum(loglik_chr(ind2));
+%				seg{nseg}.loglik = sum(loglik_chr(ind)) - sum(loglik_chr(ind2));
+				seg{nseg}.loglik = 0;
 
 				startInd = 0;
 				nseg = nseg + 1;

@@ -1,5 +1,7 @@
 function outputQC(params, options)
 
+disp(['Writing QC metrics to: ' options.outfile_qc]);
+
 outfile_qc = options.outfile_qc;
 nploidyvals = length(params.ploidyvals);
 

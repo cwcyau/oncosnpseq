@@ -72,7 +72,6 @@ end
 p_u0 = betapdf(u0_range, options.u0_alpha, options.u0_beta);
 p_u0 = p_u0./sum(p_u0);
 
-
 params.read_error = options.read_error;
 params.seq_error = options.seq_error;
 params.read_depth = 20;
@@ -87,6 +86,8 @@ params.U = U;
 params.U0 = U0;
 params.u0_range = u0_range;
 params.p_u0 = p_u0;
+params.phi = -10;
+params.delta = -20;
 
 options.tumourState = tumourState;
 options.normalState = normalState;
