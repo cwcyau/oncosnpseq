@@ -98,10 +98,12 @@ for i = 1 : params.n_ploidy
 					end
 				end
 
-				if ~isempty(segall) 
-					segall = { segall{:} segall_chr{:} };
-				else
-					segall = { segall_chr{:} };
+				if ~isempty(segall_chr)
+					if ~isempty(segall) 
+						segall = { segall{:} segall_chr{:} };
+					else
+						segall = { segall_chr{:} };
+					end
 				end
 
 			end
