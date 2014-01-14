@@ -40,9 +40,7 @@ for ri = 1 : n_ri
 	
 		params.u0 = u0_range(u0i);
 
-		tic
 		log_pr_s = calclikelihoodLite(k, d, dd, log_pr_gg, params, options);
-		toc
 
 		x_cost = zeros(max(chrRange), 2);
 		for chrNo = chrRange
@@ -51,10 +49,8 @@ for ri = 1 : n_ri
 				n_chr = length(chrloc);
 				if n_chr > 0
 					[vpath, loglik_v] = viterbimex(log_prior_vec, log_pr_s(:, chrloc), logtransMat);
-	
 					x_ri(chrloc) = arrayind(vpath, 1);			
 					x_cost(chrNo, armNo) = loglik_v; 
-
 				end
 			end
 		end

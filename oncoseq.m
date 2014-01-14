@@ -180,7 +180,6 @@ for i = 1 : nargin
 
 end
 
-
 if foundHgtable == 0
 	disp(['Error! HG data table not found: ' options.hgtables]); 
 	return;

@@ -1,0 +1,377 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Code Generation Report</title>
+<link rel="stylesheet" type="text/css" href="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/eml_report.css" />
+<link rel="stylesheet" type="text/css" href="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/jQuery/ui.resizable.css" />
+<link rel="stylesheet" type="text/css" href="file:////Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/html/index.css" />
+
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/jQuery/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/jQuery/jquery-ui-1.7.custom.min.js"></script>
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/jQuery/jquery.tablesorter.mod.js"></script>
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/jQuery/jquery.hotkeys-0.7.8.js"></script>
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/eml_report_interactions.js"></script>
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/coder/coder/resources/eml_report_layout.js"></script>
+<script type="text/javascript" src="file:////opt/well/matlab/matlab-2013b/toolbox/rtw/rtw/+coder/+report/resources/rtwshrink.js"></script>
+<script type="text/javascript">
+var localizedMessages = {
+    callSelectPrompt: "Select a function call:",
+    callSelectSource: "Calls from this function",
+    callSelectTarget: "Calls to this function",
+    infoForExpression: "Information for the selected expression:",
+    infoForVarType: "Information for the selected variable:",
+    infoForVarConst: "Information for the selected constant argument:",
+    infoForVarNone: "This variable does not have information associated with it.",
+    infoForFilter: "Matched {0}/{1} functions, {2}/{3} methods",
+    autoExtrinsicCall: "Only supported within the MATLAB environment."
+};
+var keyBindings = {
+        selectMCodeTab: "Ctrl+m",
+    selectCallStackTab: "Ctrl+k",
+        selectCCodeTab: "Ctrl+c",
+       selectReportTab: "Ctrl+r",
+     selectCenterPanel: "Ctrl+w",
+      selectSummaryTab: "Ctrl+s",
+     selectMessagesTab: "Ctrl+a",
+    selectWatchListTab: "Ctrl+v",
+     selectBuildLogTab: "Ctrl+t"
+};
+var functionInfoTable = {
+ MATLABcode1: "logsumexp1_mcode.html",
+ fpath1: "/Net/fs1/home/cyau/projects/oncosnpseq/logsumexp2.m",
+ lines1: [1, 1, 16],
+ watch1: "logsumexp1_watch.html",
+ title1: "Function: <span class='functionname'><a title='/Net/fs1/home/cyau/projects/oncosnpseq/logsumexp2.m' class='functionlink' href=\"matlab: open('/Net/fs1/home/cyau/projects/oncosnpseq/logsumexp2.m')\">logsumexp</a></span>",
+ tcall1: [  ],
+ scall1: [  ],
+ rootFcnID: "1",
+ firstPage: "1",
+ htmlRoot: "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/html/"
+};
+var scriptInfoTable = {
+ fpath1: "/Net/fs1/home/cyau/projects/oncosnpseq/logsumexp2.m",
+ fpath2: "/opt/well/matlab/matlab-2013b/toolbox/shared/coder/coder/+coder/+internal/isBuiltInNumeric.m",
+ fpath3: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elfun/eml_scalar_floor.m",
+ fpath4: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_index_class.m",
+ fpath5: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/intmax.m",
+ fpath6: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_assert_valid_dim.m",
+ fpath7: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_scalar_eg.m",
+ fpath8: "/opt/well/matlab/matlab-2013b/toolbox/shared/coder/coder/+coder/+internal/prodsize.m",
+ fpath9: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_matrix_vstride.m",
+ fpath10: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_index_minus.m",
+ fpath11: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_index_times.m",
+ fpath12: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/ops/mtimes.m",
+ fpath13: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_matrix_npages.m",
+ fpath14: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_int_forloop_overflow_check.m",
+ fpath15: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_index_plus.m",
+ fpath16: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_min_or_max.m",
+ fpath17: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/datafun/max.m",
+ fpath18: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_scalexp_alloc.m",
+ fpath19: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/datafun/min.m",
+ fpath20: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/bsxfun.m",
+ fpath21: "/opt/well/matlab/matlab-2013b/toolbox/shared/coder/coder/+coder/+internal/indexIntRelop.m",
+ fpath22: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_float_model.m",
+ fpath23: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/intmin.m",
+ fpath24: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elfun/eml_scalar_exp.m",
+ fpath25: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elfun/exp.m",
+ fpath26: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/datafun/sum.m",
+ fpath27: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_error.m",
+ fpath28: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_realmax.m",
+ fpath29: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/realmax.m",
+ fpath30: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_scalexp_compatible.m",
+ fpath31: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_div.m",
+ fpath32: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/ops/rdivide.m",
+ fpath33: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/ops/mrdivide.p",
+ fpath34: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elfun/eml_scalar_log.m",
+ fpath35: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elfun/log.m",
+ fpath36: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/isinf.m",
+ fpath37: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/isnan.m",
+ fpath38: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/elmat/isfinite.m",
+ fpath39: "/opt/well/matlab/matlab-2013b/toolbox/eml/lib/matlab/eml/eml_li_find.m"
+};
+</script>
+</head>
+<body>
+
+<div class="west">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="MATLABcode"><span>MATLAB code</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="callstack"><span>Call stack</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="ccode"><span>C code</span></span></li>
+</ul>
+<div id="MATLABcodebody" class="ui-tabs-panel">
+<!-- Begin Filter -->
+<div class="grayline methodset" onclick="filterClick(event);">
+<a class="collapsed">Filter</a>
+</div>
+<div id="filterbody" class="hidden">
+<table class="myfunc-filter-tbl">
+<tr>
+<td title="Use this filter to display only functions and methods that contain variables or expressions with the specified attributes." colspan="2" class="checkbox">
+<div class="myfunc-filterby-chk"><input type="checkbox" class="filterenable" />
+<div class="filter-enable-lbl">Filter functions and methods</div></div></td></tr><tr>
+<td class="label"><div class="myfunc-filterby-lbl">Filter by:</div></td>
+<td class="select">
+<div class="filters">
+<select class="myfunc-filterby">
+<option id="size">Size</option>
+<option id="complex">Complexity</option>
+<option id="class">Class</option>
+</select>
+</div>
+</td>
+</tr>
+
+<tr>
+<td class="label"><div class="myfunc-filterstr-lbl">Filter:</div></td>
+<td class="input"><div>
+
+<div class="size">
+<select class="myfunc-filter size">
+<option value="1">1 x 1</option>
+<option value="1">1 x 2</option>
+<option value="1">1 x <b>:</b>10000000</option>
+</select>
+</div>
+
+<div class="complex">
+<select class="myfunc-filter complex">
+<option value="">Complex values</option>
+<option value="1">Real values</option>
+</select>
+</div>
+<!-- Begin Class Filter -->
+<div class="class">
+<select class="myfunc-filter class">
+<option value="1">double</option>
+</select>
+</div>
+<!-- End Class Filter -->
+</div>
+</td>
+</tr>
+</table>
+<div class="myfunc-count"></div>
+</div>
+<!-- End Filter -->
+<div class="grayline methodset" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionSetClick(event);">
+<a class="expanded">Functions</a>
+</div>
+<!-- Begin Function Tree -->
+<div id="functiontreebody">
+<div class="functionwrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="functionTreeClick(event);">
+<ol class="tree">
+<!-- Begin Function Tree Roots -->
+<li class="leaf  passed"><a href="#" class="fcn" id="F1N3:F1">logsumexp</a></li>
+<!-- End Function Tree Roots -->
+</ol>
+<!-- Function Tree Nodes -->
+<div class="functiontreenodes hidden">
+</div>
+<!-- End Function Tree Nodes -->
+</div>
+</div>
+<!-- End Function Tree -->
+</div>
+<!-- Begin Call Tree -->
+<div id="callstackbody" class="ui-tabs-panel hidden">
+<div class="treewrapper" onmouseover="callTreeMouseOver(event);" onmouseout="callTreeMouseOut(event);" onclick="callTreeClick(event);">
+<ol class="tree">
+<!-- Call Tree Root -->
+<li class="leaf passed"><a href="#" class="fcn" id="F1N3:L1">logsumexp</a>
+</li>
+</ol>
+<!-- Call Tree Nodes -->
+<div class="callstacknodes hidden">
+<ol class="callstacknode" id="callstacknode1">
+
+<li class="leaf passed"><a href="#" class="fcn" id="F1N3:l1">logsumexp</a>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<!-- End Call Tree -->
+<!-- Begin C Code -->
+<div id="ccodebody" class="ui-tabs-panel hidden">
+<div class="grayline methodset" onclick="ccodeClick(event,1);">
+<a class="expanded">Target Source Files</a>
+</div>
+<!-- Begin C Code List -->
+<div id="ccodelistbody1" class="visible">
+<table class="myfunc-list" cellspacing="0" cellpadding="0" onclick="cFileClickWithMexWarning(event);">
+<tbody>
+<tr class="ccode" id="bsxfun_c.html"><td class="ccode"><a href="#">bsxfun.c</a></td></tr>
+<tr class="ccode" id="bsxfun_h.html"><td class="ccode"><a href="#">bsxfun.h</a></td></tr>
+<tr class="ccode" id="eml_error_c.html"><td class="ccode"><a href="#">eml_error.c</a></td></tr>
+<tr class="ccode" id="eml_error_h.html"><td class="ccode"><a href="#">eml_error.h</a></td></tr>
+<tr class="ccode" id="exp_c.html"><td class="ccode"><a href="#">exp.c</a></td></tr>
+<tr class="ccode" id="exp_h.html"><td class="ccode"><a href="#">exp.h</a></td></tr>
+<tr class="ccode" id="_coder_logsumexp2_info_c.html"><td class="ccode"><a href="#">_coder_logsumexp2_info.c</a></td></tr>
+<tr class="ccode" id="_coder_logsumexp2_info_h.html"><td class="ccode"><a href="#">_coder_logsumexp2_info.h</a></td></tr>
+<tr class="ccode" id="isfinite_c.html"><td class="ccode"><a href="#">isfinite.c</a></td></tr>
+<tr class="ccode" id="isfinite_h.html"><td class="ccode"><a href="#">isfinite.h</a></td></tr>
+<tr class="ccode" id="log_c.html"><td class="ccode"><a href="#">log.c</a></td></tr>
+<tr class="ccode" id="log_h.html"><td class="ccode"><a href="#">log.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_c.html"><td class="ccode"><a href="#">logsumexp2.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_h.html"><td class="ccode"><a href="#">logsumexp2.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_api_c.html"><td class="ccode"><a href="#">logsumexp2_api.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_api_h.html"><td class="ccode"><a href="#">logsumexp2_api.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_data_c.html"><td class="ccode"><a href="#">logsumexp2_data.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_data_h.html"><td class="ccode"><a href="#">logsumexp2_data.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_emxutil_c.html"><td class="ccode"><a href="#">logsumexp2_emxutil.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_emxutil_h.html"><td class="ccode"><a href="#">logsumexp2_emxutil.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_initialize_c.html"><td class="ccode"><a href="#">logsumexp2_initialize.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_initialize_h.html"><td class="ccode"><a href="#">logsumexp2_initialize.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_mex_c.html"><td class="ccode"><a href="#">logsumexp2_mex.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_mexutil_c.html"><td class="ccode"><a href="#">logsumexp2_mexutil.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_mexutil_h.html"><td class="ccode"><a href="#">logsumexp2_mexutil.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_terminate_c.html"><td class="ccode"><a href="#">logsumexp2_terminate.c</a></td></tr>
+<tr class="ccode" id="logsumexp2_terminate_h.html"><td class="ccode"><a href="#">logsumexp2_terminate.h</a></td></tr>
+<tr class="ccode" id="logsumexp2_types_h.html"><td class="ccode"><a href="#">logsumexp2_types.h</a></td></tr>
+<tr class="ccode" id="rt_nonfinite_h.html"><td class="ccode"><a href="#">rt_nonfinite.h</a></td></tr>
+<tr class="ccode" id="rtwtypes_h.html"><td class="ccode"><a href="#">rtwtypes.h</a></td></tr>
+</tbody>
+</table>
+</div>
+<!-- End C Code List -->
+</div>
+<!-- End C Code -->
+</div>
+<!-- Tooltips -->
+<div class="aux hidden">
+<div class="tooltips">
+<div class="tooltip" id="TT1"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>10000000</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT2"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT3"><table class="tooltip"><tr><th>Size</th><td>1 x 4</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT4"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT5"><table class="tooltip"><tr><th>Size</th><td>1 x 3</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT6"><table class="tooltip"><tr><th>Size</th><td>0 x 0</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT7"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT8"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT9"><table class="tooltip"><tr><th>Size</th><td>1 x 23</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT10"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT11"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT12"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>double</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT13"><table class="tooltip"><tr><th>Size</th><td>1 x 5</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT14"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT15"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT16"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>cell</td></tr></table></div>
+<div class="tooltip" id="TT17"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT18"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>function_handle</td></tr></table></div>
+<div class="tooltip" id="TT19"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT20"><table class="tooltip"><tr><th>Size</th><td>1 x 2</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT21"><table class="tooltip"><tr><th>Size</th><td>1 x 6</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT22"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>int32</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT23"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>uint8</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT24"><table class="tooltip"><tr><th>Size</th><td>1 x 30</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT25"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>?</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT26"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>10000000</td></tr><tr><th>Class</th><td>coder.internal.indexInt</td></tr><tr><th>Complex</th><td>No</td></tr></table></div>
+<div class="tooltip" id="TT27"><table class="tooltip"><tr><th>Size</th><td>1 x <b>:</b>10000000</td></tr><tr><th>Class</th><td>logical</td></tr></table></div>
+<div class="tooltip" id="TT28"><table class="tooltip"><tr><th>Size</th><td>1 x 1</td></tr><tr><th>Class</th><td>mxArray</td></tr></table></div>
+<div class="tooltip" id="TT29"><table class="tooltip"><tr><th>Size</th><td>1 x 34</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT30"><table class="tooltip"><tr><th>Size</th><td>1 x 44</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+<div class="tooltip" id="TT31"><table class="tooltip"><tr><th>Size</th><td>1 x 37</td></tr><tr><th>Class</th><td>char</td></tr></table></div>
+</div>
+</div>
+<!-- End Tooltips -->
+
+<div class="south">
+<ul class="ui-tabs-nav">
+<li class="ui-tabs-nav-item ui-tabs-selected"><span class="tab-link" id="summary"><span>Summary</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="messages"><span>All Messages (0)</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="watchlist"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item hidden"><span class="tab-link" id="watchload"><span>Variables</span></span></li>
+<li class="ui-tabs-nav-item"><span class="tab-link" id="buildlog1"><span>Target Build Log</span></span></li>
+</ul>
+
+<!-- Compilation Summary -->
+<div id="summarybody" class="ui-tabs-panel">
+<table cellpadding="1" cellspacing="4">
+<tr><td>C source code generated on:</td><td>14-Jan-2014 10:28:34</td></tr>
+<tr><td>Coding target:</td><td>C MEX Function</td></tr>
+<tr><td>Number of errors:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+<tr><td>Number of warnings:</td><td><a href="javascript:selectMessagesTab();">0</a></td></tr>
+</table>
+<p/><p/><table>
+<tr><td><b>Tell Us What You Think</b></td></tr>
+<tr><td>We value your feedback. Please take a few minutes to answer this short questionnaire regarding the Code Generation Report.</td></tr>
+<tr><td><a href="matlab: web('http://www.customersat3.com/TakeSurvey.asp?si=ELu7GTnTYtk%3D','-browser');">&gt;&gt;Provide Feedback</a></td></tr>
+</table>
+</div>
+
+<!-- Message Table -->
+<div id="messagesbody" class="ui-tabs-panel hidden">
+<div>
+<div class="msgsuccess">Code generation successful. Click here to <a href="javaScript:selectSummaryTab();">view summary</a>.</div>
+</div>
+</div>
+<!-- Watchlist Table -->
+<div id="watchlistbody" class="ui-tabs-panel hidden">
+</div>
+<div id="watchloadbody" class="ui-tabs-panel hidden">
+Loading Variables table ...
+</div>
+
+<!-- Target Build Log -->
+<div id="buildlog1body" class="ui-tabs-panel hidden">
+<div class="grayline"></div>
+<table cellpadding="4" cellspacing="1"><tr>
+<td align="left" class="td-linebottomrt-gray" colspan="2">Build Parameters</td>
+</tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Build directory</td>
+<td align="left" valign="top" class="td-linebottomrt-link"><a href="matlab: cd('/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2')">/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2</a></td></tr>
+<tr><td align="left" valign="top" class="td-linebottomrt">Make wrapper</td>
+<td align="left" valign="top" class="td-linebottomrt-link">sh logsumexp2_mex.sh</td></tr>
+</table>
+<br/>
+<table border="1" cellpadding="4" cellspacing="1" width="100%">
+<tr><td align="left" class="td-linebottomrt-gray">Build Log</td></tr>
+<tr><td valign="top" class="td-script">
+<pre>
+<span class="td-line-number">    1   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_mexutil.c"</span>
+<span class="td-line-number">    2   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_data.c"</span>
+<span class="td-line-number">    3   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_initialize.c"</span>
+<span class="td-line-number">    4   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_terminate.c"</span>
+<span class="td-line-number">    5   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2.c"</span>
+<span class="td-line-number">    6   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "bsxfun.c"</span>
+<span class="td-line-number">    7   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "exp.c"</span>
+<span class="td-line-number">    8   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "log.c"</span>
+<span class="td-line-number">    9   </span><span class="td-line-error">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "eml_error.c"</span>
+<span class="td-line-number">   10   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "isfinite.c"</span>
+<span class="td-line-number">   11   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_api.c"</span>
+<span class="td-line-number">   12   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_emxutil.c"</span>
+<span class="td-line-number">   13   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "logsumexp2_mex.c"</span>
+<span class="td-line-number">   14   </span><span class="td-line-normal">gcc -c -ansi -D_GNU_SOURCE  -fexceptions -fPIC -fno-omit-frame-pointer -pthread -DMX_COMPAT_32  -O -DNDEBUG  -I "/opt/well/matlab/matlab-2013b/simulink/include" -I "/opt/well/matlab/matlab-2013b/toolbox/shared/simtargets" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2" -I "/Net/fs1/home/cyau/projects/oncosnpseq/test/codegen/mex/logsumexp2/interface" -I "/opt/well/matlab/matlab-2013b/extern/include" -I "." "interface/_coder_logsumexp2_info.c"</span>
+<span class="td-line-number">   15   </span><span class="td-line-error">gcc -Wl,--version-script,logsumexp2_mex_mex.map -pthread -shared -Wl,--no-undefined   -O -o logsumexp2_mex.mexa64  logsumexp2_mexutil.o logsumexp2_data.o logsumexp2_initialize.o logsumexp2_terminate.o logsumexp2.o bsxfun.o exp.o log.o eml_error.o isfinite.o logsumexp2_api.o logsumexp2_emxutil.o logsumexp2_mex.o _coder_logsumexp2_info.o  -Wl,-rpath-link,/opt/well/matlab/matlab-2013b/bin/glnxa64 -L/opt/well/matlab/matlab-2013b/bin/glnxa64 -lmx -lmex -lmat -lm -lstdc++ -lemlrt -lcovrt -lut -lmwmathutil -lmwblas </span>
+</pre>
+</td></tr></table>
+
+</div>
+</div>
+<!-- Begin MATLAB Code Panel -->
+<div class="center">
+<div class="center-title">
+<div class="ui-tabs-nav-item ui-tabs-selected">
+<span class="functiontitle">
+</span>
+<!-- Begin Call Sites -->
+<span id="callsiteselecttable" class="call-sites-tbl">
+<span id="callsiteselectlabel" class="filtered">Calls:</span>
+<select id="callsiteselect" onchange="callSiteChange(event)">
+<option value="callsiteprompt">Select a function call:</option>
+</select>
+</span>
+<!-- End Call Sites -->
+</div>
+</div>
+<div class="ui-tabs-panel">
+<div class="code" onmouseover="mcodeMouseOver(event);" onmouseout="mcodeMouseOut(event);"onclick="mcodeClick(event);">
+</div>
+</div>
+</div>
+<!-- End MATLAB Code Panel -->
+</body>
+</html>

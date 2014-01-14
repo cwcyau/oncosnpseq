@@ -38,18 +38,22 @@ u = params.u;
 p_u = params.p_u;
 
 binomcoeff = gammaln(d+1) - gammaln(k+1) - gammaln(d-k+1);
-
 d_max = max(d);
+dloc = find( d > 0 );
+
+binomcoeff_dloc = binomcoeff(dloc); 
+k_dloc = k(dloc);
+d_minus_k_dloc = d(dloc)-k(dloc);
 
 loglik_r = -Inf*ones(2, N);
 loglik_r(2, :) = log(seq_error) - log(d_max);
 
-dloc = find( d > 0 );
 loglik_b = -Inf*ones(2, N);
 loglik_b(2, :) = log(seq_error) - log(d_max);
 
 log_pr_s = -Inf*ones(S*U, N);
 log_pr_g = zeros(G, N);
+
 
 for si = 1 : S
 	
@@ -84,7 +88,8 @@ for si = 1 : S
 
 			pp = pp*(1-read_error) + (1-pp)*read_error;
 			
-			loglik_b(1, dloc) = log(1-seq_error) + binomcoeff(dloc) + k(dloc).*log(pp) + (d(dloc)-k(dloc)).*log(1-pp);
+%			loglik_b(1, dloc) = log(1-seq_error) + binomcoeff(dloc) + k(dloc).*log(pp) + (d(dloc)-k(dloc)).*log(1-pp);
+			loglik_b(1, dloc) = log(1-seq_error) + binomcoeff_dloc + k_dloc.*log(pp) + d_minus_k_dloc.*log(1-pp);
 			loglik_b_sum = logsumexp(loglik_b, 1);
 
 			if options.paired

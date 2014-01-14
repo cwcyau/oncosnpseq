@@ -121,10 +121,12 @@ for i = 1 : params.n_ploidy
 	plotoutput(chr, arm, pos, k, d, dd, x, u, params, options);
 
 	% dump diagnostic info
-	if options.diagnostics
-		if i == 1
-			disp('Saving diagnostics information...');
-			save(options.outfile_diagnostics, '-v7.3', 'chr', 'arm', 'pos', 'k', 'd', 'dd', 'x', 'u', 'seg', 'segall', 'log_pr_s', 'params', 'options');
+	if ~isdeployed
+		if options.diagnostics
+			if i == 1
+				disp('Saving diagnostics information...');
+				save(options.outfile_diagnostics, '-v7.3', 'chr', 'arm', 'pos', 'k', 'd', 'dd', 'x', 'u', 'seg', 'segall', 'log_pr_s', 'params', 'options');
+			end
 		end
 	end
 	

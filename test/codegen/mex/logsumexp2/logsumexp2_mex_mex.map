@@ -1,0 +1,11 @@
+MEX {
+	global:
+		mexFunction;
+		emlrtMexFcnProperties;
+		logsumexp2;
+		logsumexp2_initialize;
+		logsumexp2_terminate;
+		logsumexp2_atexit;
+	local:
+		*;
+};

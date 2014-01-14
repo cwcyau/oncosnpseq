@@ -16,6 +16,12 @@ else
 		tumourState(:, 3) = allele3;
 		tumourState(:, 4) = allele4;
 		tumourState(:, 5) = loh;
+
+		% if using paired analysis, can remove germline loh states
+		if options.paired
+			loc = find( loh ~= 2 );
+			tumourState = tumourState(loc, :);
+		end
 	else
 		disp(['Error. The file: ' options.tumourStateTable ' does not exist.']);
 		return;

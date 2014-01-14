@@ -35,3 +35,8 @@ Minor algorithmic tweaks to achieve 10-20% speed ups when using tumour heterogen
 7/1/2014 (v1.0.5)
 
 Added code to output diagnostic information in MAT files.
+
+
+14/1/2014 (v2.0)
+
+Updated model to allow joint inference of tumour heterogeneity and tumour state variables.
