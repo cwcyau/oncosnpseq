@@ -49,7 +49,7 @@ loglik_r = -Inf*ones(2, N);
 loglik_r(2, :) = log(seq_error) - log(d_max);
 
 loglik_b = -Inf*ones(2, N);
-loglik_b(2, :) = log(seq_error) - log(d_max);
+loglik_b(2, :) = log(seq_error) - log(1);
 
 log_pr_s = -Inf*ones(S*U, N);
 log_pr_g = zeros(G, N);

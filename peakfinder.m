@@ -33,4 +33,3 @@ if isempty(maxPts)
 	maxPts(1, 2) = jj(1);
 end
 
-
