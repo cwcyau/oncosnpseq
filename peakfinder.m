@@ -5,6 +5,11 @@ function maxPts = peakfinder(X)
 maxPts = [];
 neigb = [ -1 1; 0 1; 1 1; -1 0; 1 0; -1 -1; 0 -1; 1 -1 ];
 
+if m == 1 & n == 1
+	maxPts = [ 1 1 ];
+	return;
+end
+
 for i = 1 : m
 
 	for j = 1 : n

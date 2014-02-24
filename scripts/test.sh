@@ -10,7 +10,7 @@ outfile=/data/cyau/temp/FH_BLC_4070T.txt
 snpfile=/data/cyau/oncoseq/illumina_hg19.txt
 snpfile=/data/cyau/refseq/snps.bed
 
-perl -T process_pileup_for_jb.pl --infile=$infile --outfile=$outfile --snpfile=$snpfile --minreads=20 --minaltread=2
+perl -T process_pileup.pl --infile=$infile --outfile=$outfile --snpfile=$snpfile --minreads=20 --minaltread=2
 
 
 #perl -T process_pileup.pl --infile=/data/suzaku/yau/Ludwig/data/pileup/COLO320.txt --outfile=/data/suzaku/yau/temp/COLO320_oncoseq.txt --snpfile=/data/suzaku/yau/oncoseq/test-folder/illumina_hg19.txt 

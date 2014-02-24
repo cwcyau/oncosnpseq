@@ -3,46 +3,40 @@ function params = ploidyscan(chr, arm, k, d, dd, log_pr_gg, params, options)
 N = length(k);
 S = params.S;
 
-lambda_s = params.lambda_s;
-nu = params.nu;
-u = params.u;
-p_u = params.p_u;
-U = params.U;
 U0 = params.U0;
 u0_range = params.u0_range;
 p_u0 = params.p_u0;
-read_error = params.read_error;
 
 tumourState = options.tumourState;
 read_depth_range = options.read_depth_range;
 chrRange = options.chrRange;
 lambda_1_range = options.lambda_1_range;
 
-[ arrayind, log_prior_vec, logtransMat ] = gentransmat(params.phi, params.delta, tumourState, u);
+[ arrayind, log_prior_vec, logtransMat ] = gentransmat(params.phi, params.delta, tumourState, params.u_range);
 
 n_ri = length(read_depth_range);
 n_lev = length(lambda_1_range);
 
-fprintf('Estimating base read depth: ');
+fprintf('Grid searching possible base read depth/normal contamination values: \n');
 x_ri = zeros(1, N);
 u_ri = zeros(1, N);
 cn_ave = zeros(n_ri, U0);
 u0Cost = -Inf + zeros(n_ri, U0);
-u_count = zeros(U, n_ri);
 x_cost = zeros(length(chrRange), 2);
 
 for ri = 1 : n_ri
 
 	params.read_depth = read_depth_range(ri);
-	fprintf('%d ', params.read_depth);	
-		
+				
+	fprintf('%d ->', params.read_depth);
+
 	for u0i = 1 : U0
 	
 		params.u0 = u0_range(u0i);
 
+		fprintf(' %1.1f', params.u0);
 		log_pr_s = calclikelihoodLite(k, d, dd, log_pr_gg, params, options);
 
-		x_cost = zeros(max(chrRange), 2);
 		for chrNo = chrRange
 			for armNo = 1 : 2
 				chrloc = find( chr == chrNo & arm == armNo );
@@ -54,11 +48,13 @@ for ri = 1 : n_ri
 				end
 			end
 		end
-
+		
 		cn_ave(ri, u0i) = mean(tumourState(x_ri, 4));
 		u0Cost(ri, u0i) = log(p_u0(u0i)) + sum(x_cost(:));
 
 	end
+
+	fprintf('\n');
 	
 end
 fprintf('\n');

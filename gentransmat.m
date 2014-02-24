@@ -48,5 +48,5 @@ for si = 1 : S
 
 end
 
-logT = logT - repmat(logsumexp(logT, 2), [1 S*U]);
+%logT = logT - repmat(logsumexp(logT, 2), [1 S*U]);
 

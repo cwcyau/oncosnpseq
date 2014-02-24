@@ -7,8 +7,8 @@ use IO::File ;
 
 my $infile = "";
 my $outfile = "";
-my $minReads = 20;
-my $minaltread = 2;
+my $minReads = 0;
+my $minaltread = 0;
 my $snpfile = "";
 
 my $result = GetOptions ( 	"infile=s" => \$infile,    # string

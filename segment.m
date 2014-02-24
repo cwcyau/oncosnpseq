@@ -13,7 +13,7 @@ for lev = 1 : n_lev
 	u{lev} = zeros(1, N);
 end
 
-[arrayind, log_nu, log_transMat] = gentransmat(-lambda_1_range(1), -lambda_1_range(1), options.tumourState, params.u);
+[arrayind, log_nu, log_transMat] = gentransmat(-lambda_1_range(1), -lambda_1_range(1), options.tumourState, params.u_range);
 
 for chrNo = chrRange
 	for armNo = 1 : 2
@@ -22,7 +22,7 @@ for chrNo = chrRange
 		if n_chr > 0
 			vpath = viterbimex(log_nu, loglik(:, chrloc), log_transMat); 
 			x{1}(chrloc) = arrayind(vpath, 1);
-			u{1}(chrloc) = params.u0 + (1-params.u0)*params.u(arrayind(vpath, 2));
+			u{1}(chrloc) = params.u0 + (1-params.u0)*params.u_range(arrayind(vpath, 2));
 		end
 	end
 end
@@ -31,7 +31,7 @@ for lev = 2 : n_lev
 
 	lambda_1 = lambda_1_range(lev);
 
-	[arrayind, log_nu, log_transMat] = gentransmat(-lambda_1, -lambda_1, options.tumourState, params.u);
+	[arrayind, log_nu, log_transMat] = gentransmat(-lambda_1, -lambda_1, options.tumourState, params.u_range);
 
 	for chrNo = chrRange
 		for armNo = 1 : 2
@@ -40,7 +40,7 @@ for lev = 2 : n_lev
 			if n_chr > 0
 				vpath = viterbimex(log_nu, loglik(:, chrloc), log_transMat); 
 				x{lev}(chrloc) = arrayind(vpath, 1);				
-				u{lev}(chrloc) = params.u0 + (1-params.u0)*params.u(arrayind(vpath, 2));
+				u{lev}(chrloc) = params.u0 + (1-params.u0)*params.u_range(arrayind(vpath, 2));
 			end
 		end
 	end

@@ -17,7 +17,7 @@ U = params.U;
 
 lambda_s = params.lambda_s;
 nu = params.nu;
-u = params.u;
+u = params.u_range;
 p_u = params.p_u;
 u0 = params.u0;
 read_error = params.read_error;
@@ -32,10 +32,6 @@ tumourState = options.tumourState;
 normalState = options.normalState;
 genotypeState = options.genotypeState;
 pg = options.pg;
-
-u0 = params.u0;
-u = params.u;
-p_u = params.p_u;
 
 binomcoeff = gammaln(d+1) - gammaln(k+1) - gammaln(d-k+1);
 d_max = max(d);
@@ -88,7 +84,6 @@ for si = 1 : S
 
 			pp = pp*(1-read_error) + (1-pp)*read_error;
 			
-%			loglik_b(1, dloc) = log(1-seq_error) + binomcoeff(dloc) + k(dloc).*log(pp) + (d(dloc)-k(dloc)).*log(1-pp);
 			loglik_b(1, dloc) = log(1-seq_error) + binomcoeff_dloc + k_dloc.*log(pp) + d_minus_k_dloc.*log(1-pp);
 			loglik_b_sum = logsumexp(loglik_b, 1);
 
@@ -102,11 +97,15 @@ for si = 1 : S
 
 		ind = (si-1)*U + ui;
 
-		if ui == 1
-			log_pr_s(ind, :) = logsumexp(log_pr_g, 1);
-		else
-			log_pr_s(ind, :) = -1 + logsumexp(log_pr_g, 1);
-		end
+%		if ui == 1 
+%			log_pr_s(ind, :) = logsumexp(log_pr_g, 1);
+%		else
+			log_pr_s(ind, :) = log(p_u(ui)) + logsumexp(log_pr_g, 1);
+%		end
+		
+%		if si == 3 & ui == 1
+%			log_pr_s(ind, :) = log_pr_s(ind, :) + 100; 
+%		end
 			
 	end
 	

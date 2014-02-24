@@ -44,6 +44,8 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
 
 	mxArray* delta_mat = mxCreateNumericMatrix(nStates, nSnps, mxINT32_CLASS, mxREAL);
     int* delta = (int *) mxGetPr(delta_mat);
+    
+/*    int delta[nStates*nSnps];*/
 
 	double tmp[nStates];
 	double p;

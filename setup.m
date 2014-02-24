@@ -54,14 +54,19 @@ U0 = 1;
 U = 1;
 
 if options.normalcontamination == 1
-	U0 = options.u_levels;
+	u0_range = options.u0_levels;
+else
+	u0_range = 1e-3;
 end
 if options.tumourheterogeneity == 1
-	U = options.u_levels;
+	u_range = options.u_levels;	
+else
+	u_range = 1e-3;
 end
+U0 = length(u0_range);
+U = length(u_range);
 
 % priors on tumour heterogeneity
-u = linspace(1e-3, max(1e-3, 1-1/U-1e-3), U)'; % generate uniform spread of intra-tumour het levels
 p_u(1) = options.u_alpha;
 p_u(2:U) = 1;
 p_u = p_u./sum(p_u);
@@ -69,12 +74,6 @@ p_u = reshape(p_u, [U 1]);
 p_u = repmat(p_u, [1 S]);
 
 % priors on normal contamination
-if options.normalcontamination == 1
-	u0_range = linspace(1e-3, max(1e-3, options.maxnormalcontamination-1e-3), U0);
-else
-	u0_range = 1e-3;
-end
-
 p_u0 = betapdf(u0_range, options.u0_alpha, options.u0_beta);
 p_u0 = p_u0./sum(p_u0);
 
@@ -83,7 +82,7 @@ params.seq_error = options.seq_error;
 params.read_depth = 20;
 params.u0 = 1e-3;
 params.nu = 4;
-params.u = u;
+params.u_range = u_range;
 params.p_u = p_u;
 params.S = S;
 params.K = K;
