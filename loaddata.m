@@ -137,7 +137,7 @@ end
 % GC and MAPPABILITY CORRECTION
 %
 
-if ~isempty(options.gcdir) & ~isempty(options.mapdir)
+if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 
 	fprintf('Doing Local GC content and Mappability Correction: ');
 	for chrNo = options.chrRange
@@ -214,19 +214,22 @@ if ~isempty(options.gcdir) & ~isempty(options.mapdir)
 
 		end
 
+		nonzeroloc = find( d_chr > 0 );
+
 		if ~isempty(options.gcdir) & ~isempty(options.mapdir)
 			betas = robustfit([gc_chr map_chr dn_chr], d_chr);
-			k_chr = k_chr - (k_chr./d_chr).*betas(2).*gc_chr - (k_chr./d_chr).*betas(3).*map_chr - (k_chr./d_chr).*betas(4).*dn_chr;
+
+			k_chr(nonzeroloc) = k_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(2).*gc_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(3).*map_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(4).*dn_chr(nonzeroloc);
 			d_chr = d_chr - betas(2).*gc_chr - betas(3).*map_chr - betas(4).*dn_chr;
 		end
 		if ~isempty(options.gcdir) & isempty(options.mapdir)
 			betas = robustfit([ gc_chr dn_chr], d_chr);
-			k_chr = k_chr - (k_chr./d_chr).*betas(2).*gc_chr - (k_chr./d_chr).*betas(3).*dn_chr;
+			k_chr(nonzeroloc) = k_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(2).*gc_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(3).*dn_chr(nonzeroloc);
 			d_chr = d_chr - betas(2).*gc_chr - betas(3).*dn_chr;
 		end
 		if isempty(options.gcdir) & ~isempty(options.mapdir)
 			betas = robustfit([map_chr dn_chr], d_chr);
-			k_chr = k_chr - (k_chr./d_chr).*betas(2).*map_chr - (k_chr./d_chr).*betas(3).*dn_chr;
+			k_chr(nonzeroloc) = k_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(2).*map_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(3).*dn_chr(nonzeroloc);
 			d_chr = d_chr - betas(2).*map_chr - betas(3).*dn_chr;
 		end
 
@@ -237,6 +240,14 @@ if ~isempty(options.gcdir) & ~isempty(options.mapdir)
 	fprintf('\n');
 
 end
+
+k(k < 0) = 0;
+d(d < 0) = 0;
+kn(kn < 0) = 0;
+dn(dn < 0) = 0;
+
+%k = round(k);
+%d = round(d);
 
 k = reshape(k, [1 N]);
 d = reshape(d, [1 N]);

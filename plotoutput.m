@@ -69,7 +69,7 @@ end
 set(gca, 'YTick', [0:25:200]);
 set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTick', XTickLoc, 'XTickLabel', [], 'TickLength', [0.005 0.0125]);
 ylabel('Read Depth', 'FontSize', fontSz);
-ylim([0 200]);
+ylim([0 quantile(dd(I), 0.99)]);
 xlim([pos_min pos_max]);
 ax = axis;
 
@@ -205,7 +205,7 @@ for chrNo = options.chrRange
 	set(gca, 'YTick', [0:25:200]);
 	set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTickLabel', [], 'TickLength', [0.005 0.0125]);
 	ylabel('Read Depth', 'FontSize', fontSz);
-	ylim([0 200]);
+	ylim([0 quantile(dd, 0.99)]);
 	xlim([pos_min pos_max]);
 	ax = axis;
 
@@ -302,7 +302,7 @@ for lev = 1 : n_lev
 	set(gca, 'YTick', [0:25:200]);
 	set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTick', XTickLoc, 'XTickLabel', [], 'TickLength', [0.005 0.0125]);
 	ylabel('Read Depth', 'FontSize', fontSz);
-	ylim([0 200]);
+	ylim([0 quantile(dd(I), 0.99)]);
 	xlim([pos_min pos_max]);
 	ax = axis;
 	for chrNo = chrRange

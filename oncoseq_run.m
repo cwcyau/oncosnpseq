@@ -49,6 +49,7 @@ if options.training == 1
 end
 
 % scan different ploidy/contamination values on training dataset
+options.read_depth_range = floor(median(dd)/options.maxploidy):1:ceil(median(dd)/options.minploidy);
 params = ploidyscan(chr_train, arm_train, k_train, d_train, dd_train, log_pr_gg_train, params, options);
 
 % output QC metrics
@@ -70,7 +71,7 @@ for i = 1 : params.n_ploidy
 	options.outfile_plot = [ options.outdir '/' options.samplename '.' num2str(i) '.ps' ];
 
 	% scan each chromosome and arm
-	fprintf('Segmenting (Configuration %d): ', i);
+	fprintf('Segmenting chromosome (Configuration %d): ', i);
 	log_pr_s = zeros(S*U, N);
 	for chrNo = options.chrRange
 

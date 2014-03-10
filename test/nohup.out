@@ -1,0 +1,154 @@
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006D.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
+FH_BLC_3010
+FH_BLC_3010T.txt.gz
+FH_BLC_3010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006GL.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006P1.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
+FH_BLC_3034
+FH_BLC_3034T.txt.gz
+FH_BLC_3034N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006R1.txt.gz.out': No such file or directory
+../executables/run_oncoseq.sh: line 31: 14158 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3034" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+../executables/run_oncoseq.sh: line 31: 14215 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_006R1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_006GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006R2.txt.gz.out': No such file or directory
+FH_BLC_4121
+FH_BLC_4121T.txt.gz
+FH_BLC_4121N.txt.gz
+../executables/run_oncoseq.sh: line 31: 14314 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_006R2.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_006GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+../executables/run_oncoseq.sh: line 31: 14315 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_4121" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+../executables/run_oncoseq.sh: line 31: 14479 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003D.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+../executables/run_oncoseq.sh: line 31: 14442 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
+AS_CLL_006R3.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006R3.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
+AS_CLL_077R1.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077R1.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
+AS_CLL_077R2.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077R2.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
+AS_CLL_077postO.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077postO.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
+AS_CLL_077D.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077D.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
+AS_CLL_077GL.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077GL.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
+AS_CLL_077O.txt.gz
+rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077O.txt.gz.out': No such file or directory
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
+FH_BLC_3010
+FH_BLC_3010T.txt.gz
+FH_BLC_3010N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
+FH_BLC_3034
+FH_BLC_3034T.txt.gz
+FH_BLC_3034N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+FH_BLC_4121
+FH_BLC_4121T.txt.gz
+FH_BLC_4121N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
+FH_BLC_451
+FH_BLC_451T.txt.gz
+FH_BLC_451N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
+FH_BLC_615
+FH_BLC_615T.txt.gz
+FH_BLC_615N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
+FH_BLC_635
+FH_BLC_635T.txt.gz
+FH_BLC_635N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
+FH_BLC_709
+FH_BLC_709T.txt.gz
+FH_BLC_709N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
+FH_BLC_745
+FH_BLC_745T.txt.gz
+FH_BLC_745N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
+FH_BLC_799
+FH_BLC_799T.txt.gz
+FH_BLC_799N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
+FH_BLC_4062
+FH_BLC_4062T.txt.gz
+FH_BLC_4062N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
+FH_BLC_4070
+FH_BLC_4070T.txt.gz
+FH_BLC_4070N.txt.gz

@@ -21,14 +21,14 @@ options.minploidy = 1.5; % minimum ploidy (min average copy number)
 options.normalcontamination = 0;
 options.tumourheterogeneity = 0;
 options.u0_levels = linspace(1e-3, 0.9+1e-3, 10);
-options.u_levels = [0 0.1 0.2 0.4 0.6 0.8];
+options.u_levels = [ 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 ];
 options.maxnormalcontamination = 0.5;
-options.lambda_1_range = [5000 1000 500 100 50 30 10];
+options.lambda_1_range = [500 250 100 50 30];
 options.lambda_2 = 1;
 options.training = 0;
 options.read_error = 0.01;
 options.seq_error = 0.01;
-options.u_alpha = 1.5;
+options.u_alpha = 1.1;
 options.u0_alpha = 0.5;
 options.u0_beta = 5;
 options.alpha = [ 1 20 ];
@@ -99,8 +99,8 @@ for i = 1 : nargin
 
 	if strmatch(lower(varargin{i}), '--maxnormalcontamination') 
 		options.maxnormalcontamination = str2num(varargin{i+1});
-		loc = find(options.u0_range <= options.maxnormalcontamination );
-		options.u0_range = options.u0_range(loc);
+		loc = find(options.u0_levels <= options.maxnormalcontamination );
+		options.u0_levels = options.u0_levels(loc);
 	end
 
 	if strmatch(lower(varargin{i}), '--training') 

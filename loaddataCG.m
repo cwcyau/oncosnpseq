@@ -122,7 +122,9 @@ if ~isempty(options.gcdir)
 		
 			betas = robustfit([ gc_chr dn_chr], d_chr);
 
-			k_chr = k_chr - (k_chr./d_chr).*( betas(2).*gc_chr + betas(3).*dn_chr );			
+			notzeroloc = find( d_chr > 0 );
+
+			k_chr(notzeroloc) = k_chr(notzeroloc) - (k_chr(notzeroloc)./d_chr(notzeroloc)).*( betas(2).*gc_chr(notzeroloc) + betas(3).*dn_chr(notzeroloc) );			
 			k(chrloc) = k_chr;
 
 			d_chr = d_chr - betas(2).*gc_chr - betas(3).*dn_chr;			

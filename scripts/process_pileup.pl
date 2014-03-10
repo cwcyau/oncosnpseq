@@ -107,7 +107,7 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to $outfile\n";
 		$chr =~ s/XY/25/;		
 		$chr =~ s/MT/26/;					
 		
-		if ( ( $readBases > $minReads ) & ( $chr < 25 ) ) {
+		if ( ( $readBases >= $minReads ) & ( $chr < 25 ) ) {
 
 			$_ = $linedat[4];
 			my $refcount1 = tr/\./\./;
@@ -133,11 +133,6 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to $outfile\n";
 			my $Tcount1 = tr/T/T/;
 			my $Tcount2 = tr/t/t/;		
 			my $Tcount = $Tcount1 + $Tcount2;	
-			
-			my $minaltread = int($readBases+0.5);
-			if ( $minaltread < 1 ) {
-				$minaltread = 1;
-			}
 					
 			print OUTFILE "$chr,$pos,$refcount,$Acount,$Ccount,$Gcount,$Tcount\n";
 			$linesused++;

@@ -59,10 +59,10 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 				if ( $cell =~ /allele2Seq/ ) {
 					$allele2SeqInd = $indexCount;
 				}						
-				if ( $cell =~ /allele1VarFilter/ ) {
+				if ( ( $cell =~ /allele1VarFilter/ ) | ( $cell =~ /allele1VarQuality/ ) ) {
 					$allele1VarQualInd = $indexCount;
 				}
-				if ( $cell =~ /allele2VarFilter/ ) {
+				if ( ( $cell =~ /allele2VarFilter/ ) | ( $cell =~ /allele2VarQuality/ ) ) {
 					$allele2VarQualInd = $indexCount;
 				}				
 				if ( $cell =~ /^allele1ReadCount-N1$/ ) {

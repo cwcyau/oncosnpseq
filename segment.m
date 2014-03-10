@@ -9,6 +9,7 @@ n_lev = length(lambda_1_range);
 [S, N] = size(loglik);
 
 for lev = 1 : n_lev
+	v{lev} = zeros(1, N);
 	x{lev} = zeros(1, N);
 	u{lev} = zeros(1, N);
 end
@@ -20,7 +21,8 @@ for chrNo = chrRange
 		chrloc = find( chr == chrNo & arm == armNo );
 		n_chr = length(chrloc);
 		if n_chr > 0
-			vpath = viterbimex(log_nu, loglik(:, chrloc), log_transMat); 
+			vpath = viterbimex(log_nu, loglik(:, chrloc), log_transMat); 			
+			v{1}(chrloc) = vpath;
 			x{1}(chrloc) = arrayind(vpath, 1);
 			u{1}(chrloc) = params.u0 + (1-params.u0)*params.u_range(arrayind(vpath, 2));
 		end
@@ -38,7 +40,8 @@ for lev = 2 : n_lev
 			chrloc = find( chr == chrNo & arm == armNo );
 			n_chr = length(chrloc);
 			if n_chr > 0
-				vpath = viterbimex(log_nu, loglik(:, chrloc), log_transMat); 
+				vpath = multiviterbimex(log_nu, loglik(:, chrloc), log_transMat, v{lev-1}(chrloc), 10); 
+				v{lev}(chrloc) = vpath;
 				x{lev}(chrloc) = arrayind(vpath, 1);				
 				u{lev}(chrloc) = params.u0 + (1-params.u0)*params.u_range(arrayind(vpath, 2));
 			end
