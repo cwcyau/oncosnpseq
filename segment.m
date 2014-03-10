@@ -40,7 +40,7 @@ for lev = 2 : n_lev
 			chrloc = find( chr == chrNo & arm == armNo );
 			n_chr = length(chrloc);
 			if n_chr > 0
-				vpath = multiviterbimex(log_nu, loglik(:, chrloc), log_transMat, v{lev-1}(chrloc), 10); 
+				vpath = multiviterbimex(log_nu, loglik(:, chrloc), log_transMat, v{lev-1}(chrloc), options.lambda_2); 
 				v{lev}(chrloc) = vpath;
 				x{lev}(chrloc) = arrayind(vpath, 1);				
 				u{lev}(chrloc) = params.u0 + (1-params.u0)*params.u_range(arrayind(vpath, 2));
