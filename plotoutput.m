@@ -4,8 +4,10 @@ mxPlotPts = 30000;
 fontSz = 6;
 markSz = 0.5;
 
+
 chrRange = options.chrRange;
 outfile_plot = options.outfile_plot;
+outfile_dat = options.outfile_dat;
 n_lev = length(options.lambda_1_range);
 
 tumourState = options.tumourState;
@@ -16,7 +18,8 @@ read_depth = params.read_depth(1);
 CNmax = max(tumourState(:, 4));
 N = length(d);
 
-d_s = nanmoving_average(dd, 30);
+winSz = N/1000;
+d_s = nanmoving_average(dd, winSz);
 b = k./d;
 
 loc = find(rand(1, N) < 0.5);
@@ -69,7 +72,7 @@ end
 set(gca, 'YTick', [0:25:200]);
 set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTick', XTickLoc, 'XTickLabel', [], 'TickLength', [0.005 0.0125]);
 ylabel('Read Depth', 'FontSize', fontSz);
-ylim([0 quantile(dd(I), 0.99)]);
+ylim([-5 quantile(dd(I), 0.99)]);
 xlim([pos_min pos_max]);
 ax = axis;
 
@@ -205,7 +208,7 @@ for chrNo = options.chrRange
 	set(gca, 'YTick', [0:25:200]);
 	set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTickLabel', [], 'TickLength', [0.005 0.0125]);
 	ylabel('Read Depth', 'FontSize', fontSz);
-	ylim([0 quantile(dd, 0.99)]);
+	ylim([-5 quantile(dd, 0.99)]);
 	xlim([pos_min pos_max]);
 	ax = axis;
 
@@ -281,6 +284,13 @@ I = randperm(N);
 I = I(1:min(N, mxPlotPts));
 I = sort(I);
 
+seqdata = []; % data object to store residuals for later plotting
+seqdata.chr = chr;
+seqdata.arm = arm;
+seqdata.pos = pos;
+seqdata.coverage = dd;
+seqdata.lesserAlleleFrac = b;
+
 for lev = 1 : n_lev
 
 	cn_vec = tumourState(x{lev}(:), 4);
@@ -302,7 +312,7 @@ for lev = 1 : n_lev
 	set(gca, 'YTick', [0:25:200]);
 	set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTick', XTickLoc, 'XTickLabel', [], 'TickLength', [0.005 0.0125]);
 	ylabel('Read Depth', 'FontSize', fontSz);
-	ylim([0 quantile(dd(I), 0.99)]);
+	ylim([-5 quantile(dd(I), 0.99)]);
 	xlim([pos_min pos_max]);
 	ax = axis;
 	for chrNo = chrRange
@@ -347,6 +357,15 @@ for lev = 1 : n_lev
 		set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTick', XTickLoc, 'YTick', [0:0.2:1], 'XTickLabel', XTickLab, 'TickLength', [0.005 0.0125]);
 	end
 
+	%
+	% store residuals for plotting
+	%
+	seqdata.coverage_residuals{lev} = d_s;
+	seqdata.lesserAlleleFrac_residuals{lev} = g_s;
+	seqdata.cn_vec{lev} = cn_vec;
+	seqdata.loh_vec{lev} = loh_vec;
+	seqdata.u_vec{lev} = u_vec;
+
 end
 
 hnd = suptitle('Model fit and residuals');
@@ -358,4 +377,6 @@ print('-dpsc2', '-r300', '-append', outfile_plot);
 
 gzip(outfile_plot);
 delete(outfile_plot);
+
+save(outfile_dat, 'seqdata', '-v7.3');
 

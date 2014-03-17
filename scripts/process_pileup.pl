@@ -33,10 +33,10 @@ open(SNPFILE, $snpfile) or die "Cannot read $snpfile\n";
 	
 		my @linedat = split(/\t/, $line);
 		
-		my $chr = $linedat[1];
-		my $chrStart = $linedat[2]; 
-		my $chrEnd = $linedat[3];
-		my $rsId = $linedat[4];
+		my $chr = $linedat[0];
+		my $chrStart = $linedat[1]; 
+		my $chrEnd = $linedat[2];
+		my $rsId = $linedat[3];
 
 		$chr =~ s/chr//;
 		$chr =~ s/X/23/;

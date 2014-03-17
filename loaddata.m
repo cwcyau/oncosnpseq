@@ -246,9 +246,6 @@ d(d < 0) = 0;
 kn(kn < 0) = 0;
 dn(dn < 0) = 0;
 
-%k = round(k);
-%d = round(d);
-
 k = reshape(k, [1 N]);
 d = reshape(d, [1 N]);
 kn = reshape(kn, [1 N]);

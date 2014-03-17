@@ -59,6 +59,10 @@ for ri = 1 : n_ri
 end
 fprintf('\n');
 
+
+%
+% write scan results to file
+%
 disp(['Writing ploidy scan results to: ' options.outfile_scan]);
 fid = fopen(options.outfile_scan, 'wt');
 fprintf(fid, 'Haploid Read Depth\tNormal Fraction\tAverage Copy Number\tLog-likelihood\n');
@@ -70,7 +74,7 @@ end
 fclose(fid);
 
 
-
+% find peaks in log-likelihood surface
 ploidyvals = [];
 ploidycost = [];
 ploidynormal = [];
@@ -106,17 +110,40 @@ params.ploidycn = ploidycn;
 params.n_ploidy = n_ploidy;
 
 
+%
+% plot heatmaps
+%
+
+% heatmap of log-likelihood
 figure(101); clf;
+
+subplot(2, 2, [1 2]);
 hold on;
 imagesc(u0_range, read_depth_range, u0Cost);
 for i = 1 : n_ploidy 
 	text( ploidynormal(i), ploidyvals(i), num2str(i) );	
 end
 axis( [ 0.9*min( u0_range ) 1.1*max( u0_range ) min(read_depth_range)-0.5 max( read_depth_range )+0.5  ] );
-colorbar;
-ylabel('Haploid Read Depth');
-xlabel('Normal Contamination');
-title('Log-likelihood Heatmap');
-print('-dpsc2', '-r150', options.outfile_cost);
+ylabel(gca, 'Haploid Coverage', 'Color', 'k');
+xlabel(gca, 'Normal Contamination', 'Color', 'k');
+title('(a) Log-likelihood');
+hnd = colorbar;
+ylabel(hnd, 'Log-Likelihood');
 
-save(options.matfile, 'u0_range', 'read_depth_range', 'u0Cost', 'options', 'params');
+% heatmap of average copy number
+subplot(2, 2, [3 4]);
+hold on;
+imagesc(u0_range, read_depth_range, cn_ave);
+for i = 1 : n_ploidy 
+	text( ploidynormal(i), ploidyvals(i), num2str(i) );	
+end
+axis( [ 0.9*min( u0_range ) 1.1*max( u0_range ) min(read_depth_range)-0.5 max( read_depth_range )+0.5  ] );
+ylabel(gca, 'Haploid Coverage', 'Color', 'k');
+xlabel(gca, 'Normal Contamination', 'Color', 'k');
+title('(b) Ploidy');
+hnd = colorbar;
+ylabel(hnd, 'Average Copy Number');
+
+print('-dpsc2', '-r300', options.outfile_cost);
+
+save(options.matfile, 'u0_range', 'read_depth_range', 'u0Cost', 'cn_ave', 'options', 'params');

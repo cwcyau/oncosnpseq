@@ -23,8 +23,8 @@ options.tumourheterogeneity = 0;
 options.u0_levels = linspace(1e-3, 0.9+1e-3, 10);
 options.u_levels = [ 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 ];
 options.maxnormalcontamination = 0.5;
-options.lambda_1_range = [500 250 100 50 30];
-options.lambda_2 = 30;
+options.lambda_1_range = [500 250 100 50 30 10];
+options.lambda_2 = 1;
 options.training = 0;
 options.read_error = 0.01;
 options.seq_error = 0.01;
@@ -230,6 +230,7 @@ options.matfile = [ options.outdir '/' options.samplename '.mat' ];
 options.outfile_qc = [ options.outdir '/' options.samplename '.qc' ];	
 options.outfile_scan = [ options.outdir '/' options.samplename '.scan' ];	
 options.outfile_diagnostics = [ options.outdir '/' options.samplename '-diagnostics.mat' ];	
+options.outfile_dat = [ options.outdir '/' options.samplename '-plotdat.mat' ];	
 
 oncoseq_run(options);
 
