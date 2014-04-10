@@ -1,4 +1,4 @@
-function seg = findsegments(chr, arm, pos, x, u, loglik, patients, options, params)
+function seg = findsegments(chr, arm, pos, v, x, u, loglik, patients, options, params)
 
 tumourState = options.tumourState;
 
@@ -18,6 +18,7 @@ for chrNo = options.chrRange
 		n_chr = length(chrloc);
 
 		pos_chr = pos(chrloc);
+		v_chr = v(chrloc);
 		x_chr = x(chrloc);
 		u_chr = u(chrloc);
 		loglik_chr = loglik(:, chrloc);
@@ -53,11 +54,11 @@ for chrNo = options.chrRange
 				seg{nseg}.majorcn = majorcn_prev;
 				seg{nseg}.minorcn = minorcn_prev;	
 				
-%				range = startInd:endInd;
-%				ind = sub2ind([S n_chr], x_chr(range), range);
+				range = startInd:endInd;
+				ind = sub2ind([S*U n_chr], v_chr(range), range);
 				
-%				seg{nseg}.loglik = sum(loglik_chr(ind)) - sum(loglik_chr(3, startInd:endInd), 2);
-				seg{nseg}.loglik = 0;
+				seg{nseg}.loglik = sum(loglik_chr(ind)) - sum(loglik_chr(3, range), 2);
+				%seg{nseg}.loglik = 0;
 
 				startInd = i;
 

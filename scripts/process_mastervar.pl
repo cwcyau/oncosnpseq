@@ -7,10 +7,10 @@ my $infile = "";
 my $outfile = "";
 my $result = GetOptions ( 	"infile=s" => \$infile,    # string
                        		"outfile=s"   => \$outfile );
-$infile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in infile argument";	
-$outfile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in outfile argument";	
+#$infile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in infile argument";	
+#$outfile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in outfile argument";	
 
-my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $allele1ReadCountN1Ind, $allele2ReadCountN1Ind, $allele1ReadCountInd, $allele2ReadCountInd );
+my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $allele1ReadCountN1Ind, $allele2ReadCountN1Ind, $allele1ReadCountInd, $allele2ReadCountInd, $referenceAlleleReadCountInd, $totalReadCountInd, $referenceAlleleReadCountN1Ind, $totalReadCountN1Ind );
 
 my($tumour1count,$tumour2total,$normal1count,$normal2total);
 
@@ -77,13 +77,27 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 				if ( $cell =~ /^allele2ReadCount$/ ) {
 					$allele2ReadCountInd = $indexCount;
 				}
+				if ( $cell =~ /^referenceAlleleReadCount$/ ) {
+					$referenceAlleleReadCountInd = $indexCount;
+				}
+				if ( $cell =~ /^totalReadCount$/ ) {
+					$totalReadCountInd = $indexCount;
+				}
+				if ( $cell =~ /^referenceAlleleReadCount-N1$/ ) {
+					$referenceAlleleReadCountN1Ind = $indexCount;
+				}
+				if ( $cell =~ /^totalReadCount-N1$/ ) {
+					$totalReadCountN1Ind = $indexCount;
+				}
 												
 				$indexCount++;
+			
 			}	
 			
 			next;
 			
 		}
+		
 		if ( $line !~ /dbsnp/ ) {
 			next;
 		}
@@ -101,18 +115,16 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 		my $allele2ReadCountN1 = $linedat[$allele2ReadCountN1Ind];					
 		my $allele1ReadCount = $linedat[$allele1ReadCountInd];				
 		my $allele2ReadCount = $linedat[$allele2ReadCountInd];
-
-		if ( $allele1Seq ne $allele2Seq ) {
-			$tumour1count = $allele1ReadCount;
-			$tumour2total = $allele1ReadCount + $allele2ReadCount;					
-			$normal1count = $allele1ReadCountN1;
-			$normal2total = $allele1ReadCountN1 + $allele2ReadCountN1;					
-		} else {
-			$tumour1count = $allele1ReadCount;
-			$tumour2total = $allele1ReadCount + $allele2ReadCount;					
-			$normal1count = $allele1ReadCountN1;
-			$normal2total = $allele1ReadCountN1 + $allele2ReadCountN1;					
-		}
+		
+		my $referenceAlleleReadCount = $linedat[$referenceAlleleReadCountInd];
+		my $totalReadCount = $linedat[$totalReadCountInd];					
+		my $referenceAlleleReadCountN1 = $linedat[$referenceAlleleReadCountN1Ind];				
+		my $totalReadCountN1 = $linedat[$totalReadCountN1Ind];
+		
+		$tumour1count = $referenceAlleleReadCount;
+		$tumour2total = $totalReadCount;					
+		$normal1count = $referenceAlleleReadCountN1;
+		$normal2total = $totalReadCountN1;	
 				
 		$chr =~ s/chr//;
 		$chr =~ s/X/23/;
@@ -139,8 +151,7 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 		}
 		if ( $allele2VarQual =~ /VQLOW/ ) {
 			$allele2Qual = 0;
-		}
-								
+		}	
 	
 		print OUTFILE "$chr\t$startPos\t$allele1Qual\t$allele2Qual\t$tumour1count\t$tumour2total\t$normal1count\t$normal2total\n";
 	

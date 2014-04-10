@@ -17,7 +17,7 @@ if strfind(ext, 'zip')
 	tmpfile = fullfile(options.outdir, name );
 end
 
-[ chr, pos, var1, var2, Ta, Td, Na, Nd ] = textread(tmpfile, '%n %n %n %n %n %n %n %n', 'headerlines', 1);
+[ chr, pos, var1, var2, Ta, Td, Tnd, Na, Nd ] = textread(tmpfile, '%n %n %n %n %n %n %n %n %n', 'headerlines', 1);
 
 if strfind(ext, 'gz')
 	disp(['Removing temporary file: ' tmpfile]);
@@ -37,10 +37,11 @@ var1 = var1(goodloc);
 var2 = var2(goodloc);
 Ta = Ta(goodloc);
 Td = Td(goodloc);
+Tnd = Tnd(goodloc);
 Na = Na(goodloc);
 Nd = Nd(goodloc);
 
-dd = max(0, Td); 
+dd = max(0, Tnd); 
 d = max(0, Td);
 k = max(0, Ta);
 kn = max(0, Na);
@@ -51,6 +52,9 @@ N = length(d);
 loc = find( rand(1, N) < 0.5 );
 k(loc) = d(loc)-k(loc);
 kn(loc) = dn(loc)-kn(loc);
+
+%k = min(k, d-k);
+%kn = min(kn, dn-kn);
 
 chrloc = [];
 for chrNo = options.chrRange
@@ -97,7 +101,7 @@ if ~isempty(options.gcdir)
 	
 		if n_snps > 0
 
-%			k_chr = k(chrloc);
+			k_chr = k(chrloc);
 			dd_chr = dd(chrloc);
 			dn_chr = dn(chrloc); 
 			dn_chr = dn_chr - mean(dn_chr);
@@ -121,15 +125,7 @@ if ~isempty(options.gcdir)
 		
 			betas = robustfit([ gc_chr dn_chr], dd_chr);
 
-%			notzeroloc = find( d_chr > 0 );
-%			k_chr(notzeroloc) = k_chr(notzeroloc) - (k_chr(notzeroloc)./d_chr(notzeroloc)).*( betas(2).*gc_chr(notzeroloc) + betas(3).*dn_chr(notzeroloc) );			
-%			k(chrloc) = k_chr;
-
-%			d_chr = d_chr - betas(2).*gc_chr - betas(3).*dn_chr;			
-%			d(chrloc) = d_chr;
-	
-			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*dn_chr;			
-			dd(chrloc) = dd_chr;
+			dd(chrloc) = dd_chr - betas(2).*gc_chr - betas(3).*dn_chr;			
 	
 		end
 	
@@ -149,7 +145,6 @@ dn = max(0, dn);
 k = reshape(k, [1 N]);
 d = reshape(d, [1 N]);
 dd = reshape(dd, [1 N]);
-
 kn = reshape(kn, [1 N]);
 dn = reshape(dn, [1 N]);
 
@@ -171,40 +166,17 @@ end
 disp(['Found ' num2str(N) ' data points.']);
 
 
-%b = kn./dn;
-
-%b([1:15]+1000)
-%log_pr_gg(:, [1:15]+1000)
-
-%figure(100); clf;
-
+%figure(1); clf;
 %set(gcf, 'Renderer', 'Painters');
 
-%col{1} = 'r';
-%col{2} = 'g';
-%col{3} = 'y';
-%col{4} = 'b';
+%I = 1 : 10 : length(d);
 
-%n = length(b);
-%ind = randperm(n);
-%ind = ind(1:30000);
-%ind = sort(ind);
+%subplot(2, 1, 2);
+%plot(k(I)./d(I), 'k.', 'markersize', 1);
 
-%mysubplot(2, 1, 1);
-%hold on;
-%plot( kn(ind)./dn(ind), 'k.', 'markersize', 1);
+%subplot(2, 1, 1);
+%plot(dd(I), 'k.', 'markersize', 1); 
 
-%mysubplot(2, 1, 2);
-%hold on;
-%plot( b(ind), 'k.', 'markersize', 1);
-%[ mxval, mxloc ] = max(log_pr_gg(:, ind), [], 1);
-%for gi = 1 : 4
-%	plot(find(mxloc==gi), b(ind(mxloc==gi)), '.', 'color', col{gi}, 'markersize', 2);
-%end
-%ylim([-0.05 1.05]);
-
-
-%print -dpsc2 -r150 gg.ps;
-%gzip gg.ps;
-%delete gg.ps;
-
+%print -dpsc2 -r150 test.ps;
+%gzip test.ps;
+%delete test.ps;

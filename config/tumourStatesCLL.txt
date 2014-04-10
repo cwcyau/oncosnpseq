@@ -13,5 +13,4 @@ Allele1	Allele2	Allele3	Allele4	LOH
 0	0	6	6	1
 0	1	5	6	0
 0	2	4	6	0
-0	3	3 	6	0
 

@@ -1,8 +1,19 @@
 function params = ploidyscan(chr, arm, k, d, dd, log_pr_gg, params, options)
 
+%
+% if fast mode
+%
+oldparams = params;
+if options.fastmode
+	params.u_range = 1e-3;
+	params.U = 1;
+	params.p_u = ones(params.S, 1);
+end
+
+
+
 N = length(k);
 S = params.S;
-
 U0 = params.U0;
 u0_range = params.u0_range;
 p_u0 = params.p_u0;
@@ -17,6 +28,10 @@ lambda_1_range = options.lambda_1_range;
 n_ri = length(read_depth_range);
 n_lev = length(lambda_1_range);
 
+
+%
+% grid search possible base read depth/normal contamination values
+%
 fprintf('Grid searching possible base read depth/normal contamination values: \n');
 x_ri = zeros(1, N);
 u_ri = zeros(1, N);
@@ -24,19 +39,23 @@ cn_ave = zeros(n_ri, U0);
 u0Cost = -Inf + zeros(n_ri, U0);
 x_cost = zeros(length(chrRange), 2);
 
+% for each base read depth value
 for ri = 1 : n_ri
 
 	params.read_depth = read_depth_range(ri);
 				
 	fprintf('%d ->', params.read_depth);
 
+	% for each normal contamination level
 	for u0i = 1 : U0
 	
 		params.u0 = u0_range(u0i);
 
+		% compute observation likelihood
 		fprintf(' %1.1f', params.u0);
 		log_pr_s = calclikelihoodLite(k, d, dd, log_pr_gg, params, options);
 
+		% segment
 		for chrNo = chrRange
 			for armNo = 1 : 2
 				chrloc = find( chr == chrNo & arm == armNo );
@@ -49,6 +68,7 @@ for ri = 1 : n_ri
 			end
 		end
 		
+		% compute average copy number and likelihood for this base read depth/normal contamination level
 		cn_ave(ri, u0i) = mean(tumourState(x_ri, 4));
 		u0Cost(ri, u0i) = log(p_u0(u0i)) + sum(x_cost(:));
 
@@ -58,7 +78,6 @@ for ri = 1 : n_ri
 	
 end
 fprintf('\n');
-
 
 %
 % write scan results to file
@@ -80,9 +99,13 @@ ploidycost = [];
 ploidynormal = [];
 ploidycn = [];
 
+u0Cost
+
 maxPts = peakfinder(u0Cost);
-for i = 1 : size(maxPts, 1)
-	if cn_ave(maxPts(i, 1), maxPts(i, 2)) >= options.minploidy & cn_ave(maxPts(i, 1), maxPts(i, 2)) <= options.maxploidy
+nPeaks = size(maxPts, 1);
+for i = 1 : nPeaks
+	% if there is only one peak, store details else only store if the peak satisfies the max./min. ploidy requirements
+	if ( cn_ave(maxPts(i, 1), maxPts(i, 2)) >= options.minploidy & cn_ave(maxPts(i, 1), maxPts(i, 2)) <= options.maxploidy ) | ( nPeaks == 1 )
 		ploidyvals = [ ploidyvals read_depth_range(maxPts(i, 1)) ];
 		ploidycost = [ ploidycost u0Cost(maxPts(i, 1), maxPts(i, 2)) ];	
 		ploidynormal = [ ploidynormal u0_range(maxPts(i, 2)) ];
@@ -90,7 +113,7 @@ for i = 1 : size(maxPts, 1)
 	end
 end
 
-
+% sort the peaks in order of likelihood
 [ ploidycost, I ] = sort(ploidycost, 2, 'descend');
 ploidyvals = ploidyvals(I);
 ploidynormal = ploidynormal(I);
@@ -147,3 +170,11 @@ ylabel(hnd, 'Average Copy Number');
 print('-dpsc2', '-r300', options.outfile_cost);
 
 save(options.matfile, 'u0_range', 'read_depth_range', 'u0Cost', 'cn_ave', 'options', 'params');
+
+if options.fastmode
+	params.U = oldparams.U;
+	params.u_range = oldparams.u_range;
+	params.p_u = oldparams.p_u;
+end
+
+

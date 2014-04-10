@@ -1,4 +1,4 @@
-function [chr, arm, pos, k, d, dd, log_pr_gg] = loaddata(options)
+function [chr, arm, pos, k, d, dd, log_pr_gg] = loaddata(options, params)
 
 disp(['Reading data file: ' options.infile]);
 [pathstr, name, ext] = fileparts(options.infile);
@@ -90,19 +90,24 @@ ref_n = ref_n(IB);
 X = [ a c g t ];
 k = max(X, [], 2);
 d = ref + k;
+dd = ref + k;
 k = min(k, d-k);
 
 Xn = [ a_n c_n g_n t_n ];
 kn = max(Xn, [], 2);
 dn = ref_n + kn;
-kn = min(kn, d-k);
+kn = min(kn, dn-kn);
 
 N = length(d);
+
 loc = find( rand(1, N) < 0.5 );
 k(loc) = d(loc)-k(loc);
-k = min(k, d-k);
 kn(loc) = dn(loc)-kn(loc);
-kn = min(kn, dn-kn);
+
+
+%k = min(k, d-k);
+%kn = min(kn, dn-kn);
+
 
 chrloc = [];
 for chrNo = options.chrRange
@@ -113,6 +118,7 @@ end
 chr = chr(chrloc);
 pos = pos(chrloc);
 d = d(chrloc);
+dd = dd(chrloc);
 k = k(chrloc);
 kn = kn(chrloc);
 dn = dn(chrloc);
@@ -149,7 +155,7 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 			continue;
 		end
 
-		d_chr = d(chrloc);		
+		dd_chr = dd(chrloc);		
 		dn_chr = dn(chrloc) - mean(dn(chrloc));
 		k_chr = k(chrloc);		
 		pos_chr = pos(chrloc);
@@ -176,7 +182,7 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 
 			% interpolate	
 			gc_chr = interp1(gc_pos, gc_content, pos_chr, 'nearest', 'extrap')';
-			gc_chr = reshape(gc_chr, size(d_chr));   
+			gc_chr = reshape(gc_chr, size(dd_chr));   
 
 		else
 
@@ -210,31 +216,26 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 
 		else
 		
-			map_chr = ones(size(d_chr));
+			map_chr = ones(size(dd_chr));
 
 		end
 
-		nonzeroloc = find( d_chr > 0 );
+		nonzeroloc = find( dd_chr > 0 );
 
 		if ~isempty(options.gcdir) & ~isempty(options.mapdir)
-			betas = robustfit([gc_chr map_chr dn_chr], d_chr);
-
-			k_chr(nonzeroloc) = k_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(2).*gc_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(3).*map_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(4).*dn_chr(nonzeroloc);
-			d_chr = d_chr - betas(2).*gc_chr - betas(3).*map_chr - betas(4).*dn_chr;
+			betas = robustfit([gc_chr map_chr dn_chr], dd_chr);
+			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*map_chr - betas(4).*dn_chr;
 		end
 		if ~isempty(options.gcdir) & isempty(options.mapdir)
-			betas = robustfit([ gc_chr dn_chr], d_chr);
-			k_chr(nonzeroloc) = k_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(2).*gc_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(3).*dn_chr(nonzeroloc);
-			d_chr = d_chr - betas(2).*gc_chr - betas(3).*dn_chr;
+			betas = robustfit([ gc_chr dn_chr], dd_chr);
+			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*dn_chr;
 		end
 		if isempty(options.gcdir) & ~isempty(options.mapdir)
-			betas = robustfit([map_chr dn_chr], d_chr);
-			k_chr(nonzeroloc) = k_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(2).*map_chr(nonzeroloc) - (k_chr(nonzeroloc)./d_chr(nonzeroloc)).*betas(3).*dn_chr(nonzeroloc);
-			d_chr = d_chr - betas(2).*map_chr - betas(3).*dn_chr;
+			betas = robustfit([map_chr dn_chr], dd_chr);
+			dd_chr = dd_chr - betas(2).*map_chr - betas(3).*dn_chr;
 		end
 
-		d(chrloc) = d_chr;
-		k(chrloc) = k_chr;
+		dd(chrloc) = dd_chr;
 
 	end
 	fprintf('\n');
@@ -243,22 +244,24 @@ end
 
 k(k < 0) = 0;
 d(d < 0) = 0;
+dd(dd < 0) = 0;
+dd = round(dd);
 kn(kn < 0) = 0;
 dn(dn < 0) = 0;
 
 k = reshape(k, [1 N]);
 d = reshape(d, [1 N]);
+dd = reshape(dd, [1 N]);
 kn = reshape(kn, [1 N]);
 dn = reshape(dn, [1 N]);
-dd = d; 
 
 % do germline genotyping
 disp('Performing germline genotyping ...');
-log_pr_gg = zeros(2, N);
+log_pr_gg = zeros(params.G, N);
 if options.paired
 	alpha = options.alpha;
 	beta = options.beta;
-	for gi = 1 : 2
+	for gi = 1 : params.G
 		log_pr_gg(gi, :) = gammaln(dn+1) - gammaln(kn+1) - gammaln(dn-kn+1) + gammaln(kn+alpha(gi)) + gammaln(dn-kn+beta(gi)) - gammaln(dn+alpha(gi)+beta(gi)) + gammaln(alpha(gi)+beta(gi)) - gammaln(alpha(gi))-gammaln(beta(gi));
 	end
 end

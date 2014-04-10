@@ -33,7 +33,7 @@ for si = 1 : S
 				end
 
 				if si == sj & ui ~= uj 
-					logT(ind, ind2) = delta;
+					logT(ind, ind2) = phi;
 				end
 
 				if si ~= sj & ui ~= uj					

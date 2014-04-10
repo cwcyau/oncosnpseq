@@ -49,17 +49,17 @@ end
 
 
 K = 1;
-G = 2;
+G = 4;
 U0 = 1;
 U = 1;
 
 if options.normalcontamination == 1
-	u0_range = options.u0_levels;
+	u0_range = max(1e-3, options.u0_levels);
 else
 	u0_range = 1e-3;
 end
 if options.tumourheterogeneity == 1
-	u_range = options.u_levels;	
+	u_range = max(1e-3, options.u_levels);	
 else
 	u_range = 1e-3;
 end
@@ -69,9 +69,9 @@ U = length(u_range);
 % priors on tumour heterogeneity
 p_u(1) = options.u_alpha;
 p_u(2:U) = 1;
+p_u = betapdf(u_range, options.u_alpha, options.u_beta);
 p_u = p_u./sum(p_u);
-p_u = reshape(p_u, [U 1]);
-p_u = repmat(p_u, [1 S]);
+p_u = repmat(p_u, [S 1]);
 
 % priors on normal contamination
 p_u0 = betapdf(u0_range, options.u0_alpha, options.u0_beta);

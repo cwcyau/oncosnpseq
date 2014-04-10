@@ -97,7 +97,7 @@ end
 pvpairs = {};
 preventMove = false;
 % This is the percent offset from the subplot grid of the plotbox.
-inset = [.05 .025 .04 .025]; % [left bottom right top]
+inset = [.05 .05 .04 .075]; % [left bottom right top]
 
 if narg == 0 % make compatible with 3.5, i.e. subplot == subplot(111)
     nrows = 111;

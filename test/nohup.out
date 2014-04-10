@@ -347,3 +347,754 @@ FH_BLC_4078N.txt.gz
 FH_BLC_4101
 FH_BLC_4101T.txt.gz
 FH_BLC_4101N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+Error using textread (line 166)
+File not found.
+
+Error in loaddata (line 19)
+
+
+
+Error in oncoseq_run (line 9)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:textread:FileNotFound
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+Error using horzcat
+Dimensions of matrices being concatenated are not consistent.
+
+Error in loaddata (line 72)
+
+
+
+Error in oncoseq_run (line 9)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:catenate:dimensionMismatch
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
+FH_BLC_3010
+FH_BLC_3010T.txt.gz
+FH_BLC_3010N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
+FH_BLC_3034
+FH_BLC_3034T.txt.gz
+FH_BLC_3034N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
+AS_CLL_006R3.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
+AS_CLL_077R1.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+FH_BLC_4121
+FH_BLC_4121T.txt.gz
+FH_BLC_4121N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
+AS_CLL_077R2.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
+AS_CLL_077postO.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
+AS_CLL_077D.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
+AS_CLL_077GL.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
+FH_BLC_451
+FH_BLC_451T.txt.gz
+FH_BLC_451N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
+AS_CLL_077O.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
+FH_BLC_615
+FH_BLC_615T.txt.gz
+FH_BLC_615N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
+FH_BLC_635
+FH_BLC_635T.txt.gz
+FH_BLC_635N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
+FH_BLC_709
+FH_BLC_709T.txt.gz
+FH_BLC_709N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
+FH_BLC_745
+FH_BLC_745T.txt.gz
+FH_BLC_745N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
+FH_BLC_799
+FH_BLC_799T.txt.gz
+FH_BLC_799N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
+FH_BLC_4062
+FH_BLC_4062T.txt.gz
+FH_BLC_4062N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
+FH_BLC_4070
+FH_BLC_4070T.txt.gz
+FH_BLC_4070N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
+FH_BLC_4078
+FH_BLC_4078T.txt.gz
+FH_BLC_4078N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
+FH_BLC_4101
+FH_BLC_4101T.txt.gz
+FH_BLC_4101N.txt.gz
+Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
+
+Error in plotoutput (line 75)
+
+
+
+Error in oncoseq_run (line 124)
+
+
+
+Error in oncoseq (line 273)
+
+
+
+MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+../executables/run_oncoseq.sh: line 31: 23524 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+../executables/run_oncoseq.sh: line 31: 25863 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3008" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+../executables/run_oncoseq.sh: line 31: 25805 Terminated              "../executables/oncoseq" "--lambda1" "[1000 500 100 30 10]" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003P1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+AS_CLL_003D.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
+AS_CLL_006R3.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
+FH_BLC_3010
+FH_BLC_3010T.txt.gz
+FH_BLC_3010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
+AS_CLL_077R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
+AS_CLL_077R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
+AS_CLL_077postO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
+AS_CLL_077D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
+AS_CLL_077GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
+AS_CLL_077O.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
+FH_BLC_3034
+FH_BLC_3034T.txt.gz
+FH_BLC_3034N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+FH_BLC_4121
+FH_BLC_4121T.txt.gz
+FH_BLC_4121N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
+FH_BLC_451
+FH_BLC_451T.txt.gz
+FH_BLC_451N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
+FH_BLC_615
+FH_BLC_615T.txt.gz
+FH_BLC_615N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
+FH_BLC_635
+FH_BLC_635T.txt.gz
+FH_BLC_635N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
+FH_BLC_709
+FH_BLC_709T.txt.gz
+FH_BLC_709N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
+FH_BLC_745
+FH_BLC_745T.txt.gz
+FH_BLC_745N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
+FH_BLC_799
+FH_BLC_799T.txt.gz
+FH_BLC_799N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
+FH_BLC_4062
+FH_BLC_4062T.txt.gz
+FH_BLC_4062N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
+FH_BLC_4070
+FH_BLC_4070T.txt.gz
+FH_BLC_4070N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
+FH_BLC_4078
+FH_BLC_4078T.txt.gz
+FH_BLC_4078N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
+FH_BLC_4101
+FH_BLC_4101T.txt.gz
+FH_BLC_4101N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+AS_CLL_003D.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz

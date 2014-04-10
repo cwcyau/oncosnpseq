@@ -50,15 +50,15 @@ for lev = 2 : n_lev
 
 end
 
-seg{1} = findsegments(chr, arm, pos, x{1}, u{1}, loglik, [], options, params);
+seg{1} = findsegments(chr, arm, pos, v{1}, x{1}, u{1}, loglik, [], options, params);
 for lev = 2 : n_lev
 	xd = x{lev} ~= x{lev-1};
 	if sum(xd) == 0
 		seg{lev} = [];
 	else
-		seg{lev} = findmultisegments(chr, arm, pos, xd, x{lev}, x{lev-1}, u{lev}, loglik, [], options, params);
+		seg{lev} = findmultisegments(chr, arm, pos, v{lev}, xd, x{lev}, x{lev-1}, u{lev}, loglik, [], options, params);
 	end
 end
 
-seg_all = findsegments(chr, arm, pos, x{n_lev}, u{n_lev}, loglik, [], options, params);
+seg_all = findsegments(chr, arm, pos, v{n_lev}, x{n_lev}, u{n_lev}, loglik, [], options, params);
 

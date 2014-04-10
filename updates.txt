@@ -40,3 +40,17 @@ Added code to output diagnostic information in MAT files.
 14/1/2014 (v2.0)
 
 Updated model to allow joint inference of tumour heterogeneity and tumour state variables.
+
+
+4/4/2014 (v2.0)
+
+Fixed bug in calculation of outlier state likelihood calculation and for balanced genotypes. 
+
+Added minor copy number display on plots.
+
+Used beta prior on intra-tumor heterogeneity levels.
+
+
+
+
+

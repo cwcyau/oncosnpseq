@@ -20,21 +20,25 @@ options.maxploidy = 4.5; % maximum ploidy (max average copy number)
 options.minploidy = 1.5; % minimum ploidy (min average copy number)
 options.normalcontamination = 0;
 options.tumourheterogeneity = 0;
-options.u0_levels = linspace(1e-3, 0.9+1e-3, 10);
-options.u_levels = [ 0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 ];
-options.maxnormalcontamination = 0.5;
-options.lambda_1_range = [500 250 100 50 30 10];
+options.u0_levels = [ 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9];
+options.u_levels = [ 0.0 0.1 0.2 0.3 0.4 0.5 0.6 0.7 0.8 0.9 ];
+options.maxnormalcontamination = 0.9;
+options.lambda_1_range = [ 1000 500 100 30 10 ];
 options.lambda_2 = 1;
 options.training = 0;
 options.read_error = 0.01;
 options.seq_error = 0.01;
-options.u_alpha = 1.1;
+options.u_alpha = 1;
+options.u_beta = 1.1;
 options.u0_alpha = 0.5;
 options.u0_beta = 5;
-options.alpha = [ 1 20 ];
-options.beta = [ 100 20 ];
+options.lambda_3 = 0.0;
+options.alpha = [ 1 20 20 100 ];
+options.beta = [ 100 20 20 1 ];
 options.diagnostics = 0;
 options.paired = 0;
+options.fixed_range = 0;
+options.fastmode = 0;
 
 options.tumourStateTable = [];
 options.gcdir = [];
@@ -49,64 +53,90 @@ foundSeqType = 0;
 
 for i = 1 : nargin
 
+	% specify max. copy number
 	if strmatch(lower(varargin{i}), '--maxcopy') 
 		options.maxCopy = str2num(varargin{i+1});
 	end
 
+	% specify range of haploid read levels to scan
 	if strmatch(lower(varargin{i}), '--read_depth_range') 
 		options.read_depth_range = eval(varargin{i+1});
+		options.fixed_range = 1;
 	end
 
+	% specify range of chromosomes to process
 	if strmatch(lower(varargin{i}), '--chr_range') 
 		options.chrRange = eval(varargin{i+1});
 	end
-
+	
+	% specify range of smoothing levels
+	if strmatch(lower(varargin{i}), '--lambda1') 
+		options.lambda_1_range = eval(varargin{i+1});
+	end
+	
+	% specify number of training points
 	if strmatch(lower(varargin{i}), '--n_train') 
 		options.N_train = str2num(varargin{i+1});
 	end
 
+	% specify tumor heterogeneity levels
 	if strmatch(lower(varargin{i}), '--u_levels') 
 		options.u_levels = eval(varargin{i+1});
 	end
 
+	% specify normal contamination levels
 	if strmatch(lower(varargin{i}), '--u0_levels') 
 		options.u0_levels = eval(varargin{i+1});
 	end
 
+	% specify sequencing error rate
 	if strmatch(lower(varargin{i}), '--seqerror') 
 		options.seqerror = str2num(varargin{i+1});
 	end
 	
+	% specify read error rate
 	if strmatch(lower(varargin{i}), '--readerror') 
 		options.readerror = str2num(varargin{i+1});
 	end	
 
+	% specify maximum ploidy (average copy number)
 	if strmatch(lower(varargin{i}), '--maxploidy') 
 		options.maxploidy = str2num(varargin{i+1});
 	end
 
+	% specify minimum ploidy (average copy number)
 	if strmatch(lower(varargin{i}), '--minploidy') 
 		options.minploidy = str2num(varargin{i+1});
 	end
 
+	% turn on normal contamination mode
 	if strmatch(lower(varargin{i}), '--normalcontamination') 
 		options.normalcontamination = 1;
 	end
 
-	if strmatch(lower(varargin{i}), '--tumourheterogeneity') 
-		options.tumourheterogeneity = 1;
-	end
-
+	% specify maximum level of normal contamination
 	if strmatch(lower(varargin{i}), '--maxnormalcontamination') 
 		options.maxnormalcontamination = str2num(varargin{i+1});
 		loc = find(options.u0_levels <= options.maxnormalcontamination );
 		options.u0_levels = options.u0_levels(loc);
 	end
+	
+	% turn on tumor heterogeneity mode (British spelling)
+	if strmatch(lower(varargin{i}), '--tumourheterogeneity') 
+		options.tumourheterogeneity = 1;
+	end
+	
+	% turn on tumor heterogeneity mode (American spelling)
+	if strmatch(lower(varargin{i}), '--tumorheterogeneity') 
+		options.tumourheterogeneity = 1;
+	end
 
+	% use training mode (for development or testing only)
 	if strmatch(lower(varargin{i}), '--training') 
 		options.training = 1;
 	end
 
+	% specify location of local gc content files
 	if strmatch(lower(varargin{i}), '--gcdir') 
 		options.gcdir = varargin{i+1};
 		if ~exist(options.gcdir) 
@@ -115,6 +145,7 @@ for i = 1 : nargin
 		end
 	end
 
+	% specify location of mappability files
 	if strmatch(lower(varargin{i}), '--mapdir') 
 		options.mapdir = varargin{i+1};
 		if ~exist(options.mapdir) 
@@ -123,13 +154,15 @@ for i = 1 : nargin
 		end
 	end
 	
+	% specify location of human cytoband information file
 	if strmatch(lower(varargin{i}), '--hgtable') 
 		options.hgtables = varargin{i+1};
 		if exist(options.hgtables, 'file')
 			foundHgtable = 1;
 		end
 	end
-
+	
+	% specify location of tumour states table
 	if strmatch(lower(varargin{i}), '--tumourstatestable') 
 		options.tumourStateTable = varargin{i+1};
 		if ~exist(options.tumourStateTable, 'file')
@@ -138,22 +171,29 @@ for i = 1 : nargin
 		end
 	end
 	
+	% specify sequencing machine type (illumina or cg)
 	if strmatch(lower(varargin{i}), '--seqtype') 
 		options.seqtype = varargin{i+1};
 		if ~isempty( strmatch(options.seqtype, 'cg', 'exact') )
 			foundSeqType = 1;
 			options.paired = 1;				
 		end
+		if ~isempty( strmatch(options.seqtype, 'lfr', 'exact') )
+			foundSeqType = 1;
+			options.paired = 0;				
+		end		
 		if ~isempty( strmatch(options.seqtype, 'illumina', 'exact') )
 			foundSeqType = 1;		
 		end
 	end
 
+	% specify sample name
 	if strmatch(lower(varargin{i}), '--samplename') 
 		options.samplename = varargin{i+1};
 		foundSampleName = 1;
 	end
 
+	% specify input tumor file name
 	if strmatch(lower(varargin{i}), '--infile') 
 		options.infile = varargin{i+1};
 		if ~exist(options.infile, 'file')
@@ -164,6 +204,7 @@ for i = 1 : nargin
 		end
 	end
 
+	% specify input normal file name
 	if strmatch(lower(varargin{i}), '--normalfile') 
 		options.normalfile = varargin{i+1};
 		if exist(options.normalfile, 'file')
@@ -174,6 +215,7 @@ for i = 1 : nargin
 		end
 	end
 
+	% specify output directory
 	if strmatch(lower(varargin{i}), '--outdir') 
 		options.outdir = varargin{i+1};
 		if exist(options.outdir, 'dir')
@@ -181,8 +223,14 @@ for i = 1 : nargin
 		end
 	end
 
+	% activate diagnostics mode (for development only)
 	if strmatch(lower(varargin{i}), '--diagnostics') 
 		options.diagnostics = 1;
+	end
+	
+	% use fast mode
+	if strmatch(lower(varargin{i}), '--fast') 
+		options.fastmode = 1;
 	end
 
 end
@@ -212,7 +260,6 @@ if foundOutdir == 0
 	return;
 end
 
-
 % set up output directories
 if ~exist(options.outdir, 'dir')
 	disp(['Creating output directory: ' options.outdir]);
@@ -231,6 +278,8 @@ options.outfile_qc = [ options.outdir '/' options.samplename '.qc' ];
 options.outfile_scan = [ options.outdir '/' options.samplename '.scan' ];	
 options.outfile_diagnostics = [ options.outdir '/' options.samplename '-diagnostics.mat' ];	
 options.outfile_dat = [ options.outdir '/' options.samplename '-plotdat.mat' ];	
+
+disp(['lambda1: ' num2str(options.lambda_1_range, '%d ')]);
 
 oncoseq_run(options);
 

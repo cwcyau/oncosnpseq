@@ -6,10 +6,16 @@ function oncoseq_run(options)
 % load data
 switch options.seqtype
 	case 'illumina'
-		[chr, arm, pos, k, d, dd, log_pr_gg] = loaddata(options);
+		disp('Using Illumina data mode.');
+		[chr, arm, pos, k, d, dd, log_pr_gg] = loaddata(options, params);
 	case 'cg'
-		[chr, arm, pos, k, d, dd, log_pr_gg] = loaddataCG(options);
+		disp('Using Complete Genomics data mode.');
+		[chr, arm, pos, k, d, dd, log_pr_gg] = loaddataCG(options, params);
+	case 'lfr'
+		disp('Using LFR data mode.');
+		[chr, arm, pos, k, d, dd, log_pr_gg] = loaddataLFR(options, params);
 end
+
 % compile a random subset of training data
 N_train = options.N_train;
 tumourState = options.tumourState;
@@ -19,7 +25,8 @@ disp(['Number of tumour states: ' num2str(size(tumourState, 1))]);
 CNmax = max(tumourState(:, 4));
 d_s = nanmoving_average(d, 30);
 
-params.lambda_s = mad( d - d_s );
+params.lambda_s = mad( d - d_s, 1 );
+params.lambda_s = std( d - d_s );
 
 S = params.S;
 U = params.U;
@@ -49,7 +56,9 @@ if options.training == 1
 end
 
 % scan different ploidy/contamination values on training dataset
-options.read_depth_range = floor(median(dd)/options.maxploidy):1:ceil(median(dd)/options.minploidy);
+if options.fixed_range == 0
+	options.read_depth_range = floor(median(dd)/options.maxploidy):1:ceil(median(dd)/options.minploidy);
+end
 params = ploidyscan(chr_train, arm_train, k_train, d_train, dd_train, log_pr_gg_train, params, options);
 
 % output QC metrics
