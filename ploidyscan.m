@@ -99,8 +99,6 @@ ploidycost = [];
 ploidynormal = [];
 ploidycn = [];
 
-u0Cost
-
 maxPts = peakfinder(u0Cost);
 nPeaks = size(maxPts, 1);
 for i = 1 : nPeaks

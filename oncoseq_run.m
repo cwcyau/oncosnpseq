@@ -81,7 +81,10 @@ for i = 1 : params.n_ploidy
 
 	% scan each chromosome and arm
 	fprintf('Segmenting chromosome (Configuration %d): ', i);
-	log_pr_s = zeros(S*U, N);
+	
+	log_pr_su = zeros(S*U, N);
+	log_pr_s = zeros(S, N);
+	
 	for chrNo = options.chrRange
 
 		fprintf('%d ', chrNo);
@@ -94,10 +97,10 @@ for i = 1 : params.n_ploidy
 			if n_chr > 0
 	
 				% calculate observation likelihood
-				log_pr_s(:, chrloc) = calclikelihoodLite(k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), params, options);	
+				[ log_pr_su(:, chrloc), log_pr_s(:, chrloc) ] = calclikelihoodLite(k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), params, options);	
 				
 				% do segmentation
-				[ x_chr, seg_chr, u_chr, segall_chr ] = segment(chr(chrloc), arm(chrloc), pos(chrloc), k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), log_pr_s(:, chrloc), params, options);
+				[ x_chr, seg_chr, u_chr, segall_chr ] = segment(chr(chrloc), arm(chrloc), pos(chrloc), k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), log_pr_su(:, chrloc), log_pr_s(:, chrloc), params, options);
 				
 				% compile segmentation results into array
 				for li = 1 : length(x_chr)
@@ -123,7 +126,6 @@ for i = 1 : params.n_ploidy
 	end
 	fprintf('\n');
 
-
 	% write segmentation results to files
 	output2file(i, seg, segall, params, options);
 	
@@ -135,7 +137,7 @@ for i = 1 : params.n_ploidy
 		if options.diagnostics
 			if i == 1
 				disp('Saving diagnostics information...');
-				save(options.outfile_diagnostics, '-v7.3', 'chr', 'arm', 'pos', 'k', 'd', 'dd', 'x', 'u', 'seg', 'segall', 'log_pr_s', 'params', 'options');
+				save(options.outfile_diagnostics, '-v7.3', 'chr', 'arm', 'pos', 'k', 'd', 'dd', 'x', 'u', 'seg', 'segall', 'log_pr_su', 'log_pr_s', 'params', 'options');
 			end
 		end
 	end

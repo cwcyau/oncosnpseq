@@ -7,7 +7,7 @@
 %
 % Copyright (C) 2012 Imperial College London
 %
-function log_pr_s = calclikelihoodLite(k, d, dd, log_pr_gg, params, options)
+function [ log_pr_su, log_pr_s ] = calclikelihoodLite(k, d, dd, log_pr_gg, params, options)
 
 N = length(d);
 S = params.S;
@@ -45,7 +45,8 @@ loglik_b = zeros(2, N);
 loglik_b(2, d==0) = log(seq_error);
 loglik_b(2, dloc) = log(seq_error) - log(d(dloc));
 
-log_pr_s = -Inf*ones(S*U, N);
+log_pr_su = -Inf*ones(S*U, N);
+log_pr_s = -Inf*ones(S, N);
 log_pr_g = zeros(G, N);
 
 for si = 1 : S
@@ -101,7 +102,7 @@ for si = 1 : S
 			end
 
 			ind = (si-1)*U + ui;
-			log_pr_s(ind, :) = log(p_u(si, ui)) + logsumexp(log_pr_g, 1);
+			log_pr_su(ind, :) = log(p_u(si, ui)) + logsumexp(log_pr_g, 1);
 			
 		end
 			
@@ -109,4 +110,8 @@ for si = 1 : S
 	
 end
 
+for si = 1 : S
+	sloc = (si-1)*U + [1:U];
+	log_pr_s(si, :) = logsumexp( log_pr_su(sloc, :), 1 );
+end
 

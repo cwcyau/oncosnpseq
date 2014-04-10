@@ -53,13 +53,18 @@ for chrNo = options.chrRange
 				seg{nseg}.u = u_chr(i-1);
 				seg{nseg}.majorcn = majorcn_prev;
 				seg{nseg}.minorcn = minorcn_prev;	
+				seg{nseg}.loglik = zeros(1, S);
+				seg{nseg}.u_alt = zeros(1, S); 
 				
 				range = startInd:endInd;
-				ind = sub2ind([S*U n_chr], v_chr(range), range);
 				
-				seg{nseg}.loglik = sum(loglik_chr(ind)) - sum(loglik_chr(3, range), 2);
-				%seg{nseg}.loglik = 0;
-
+				% compute segmental likelihood for all tumour states
+				for si = 1 : S
+					ind = (si-1)*U + [1:U]; % select all rows relevant to this tumour state
+					[ seg{nseg}.loglik(si), u_ind ] = max( sum(loglik_chr(ind, range), 2) ); % compute sum over this region and find max. 
+					seg{nseg}.u_alt(si) = params.u0 + (1-params.u0)*params.u_range(u_ind); 
+				end
+				
 				startInd = i;
 
 			end

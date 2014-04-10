@@ -12,6 +12,7 @@ disp(' ');
 disp(' ');
 
 %% default settings
+options.varargin = varargin;
 options.maxCopy = 10; %% maximum copy number
 options.read_depth_range = [10:60]; % range of haploid read coverages to scan
 options.chrRange = [1:22]; % number of chromosomes to process
@@ -278,6 +279,7 @@ options.outfile_qc = [ options.outdir '/' options.samplename '.qc' ];
 options.outfile_scan = [ options.outdir '/' options.samplename '.scan' ];	
 options.outfile_diagnostics = [ options.outdir '/' options.samplename '-diagnostics.mat' ];	
 options.outfile_dat = [ options.outdir '/' options.samplename '-plotdat.mat' ];	
+options.outfile_config = [ options.outdir '/' options.samplename '.config' ];	
 
 disp(['lambda1: ' num2str(options.lambda_1_range, '%d ')]);
 
