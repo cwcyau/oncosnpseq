@@ -78,7 +78,8 @@ for i = 1 : params.n_ploidy
 	params.u0 = params.ploidynormal(i);
 
 	options.outfile_plot = [ options.outdir '/' options.samplename '.' num2str(i) '.ps' ];
-
+	options.outfile_dat = [ options.outdir '/' options.samplename '-plotdat.' num2str(i) '.mat' ];
+	
 	% scan each chromosome and arm
 	fprintf('Segmenting chromosome (Configuration %d): ', i);
 	
@@ -100,10 +101,11 @@ for i = 1 : params.n_ploidy
 				[ log_pr_su(:, chrloc), log_pr_s(:, chrloc) ] = calclikelihoodLite(k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), params, options);	
 				
 				% do segmentation
-				[ x_chr, seg_chr, u_chr, segall_chr ] = segment(chr(chrloc), arm(chrloc), pos(chrloc), k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), log_pr_su(:, chrloc), log_pr_s(:, chrloc), params, options);
+				[ x_chr, seg_chr, u_chr, segall_chr, v_chr ] = segment(chr(chrloc), arm(chrloc), pos(chrloc), k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), log_pr_su(:, chrloc), log_pr_s(:, chrloc), params, options);
 				
 				% compile segmentation results into array
 				for li = 1 : length(x_chr)
+					v{li}(chrloc) = v_chr{li};
 					x{li}(chrloc) = x_chr{li};
 					u{li}(chrloc) = u_chr{li};
 					if ~isempty(seg_chr{li})
@@ -130,7 +132,7 @@ for i = 1 : params.n_ploidy
 	output2file(i, seg, segall, params, options);
 	
 	% plot output
-	plotoutput(chr, arm, pos, k, d, dd, x, u, params, options);
+	plotoutput(chr, arm, pos, k, d, dd, v, x, u, params, options);
 
 	% dump diagnostic info
 	if ~isdeployed

@@ -28,18 +28,19 @@ options.lambda_1_range = [ 1000 500 100 30 10 ];
 options.lambda_2 = 1;
 options.training = 0;
 options.read_error = 0.01;
-options.seq_error = 0.01;
+options.seq_error = 0.001;
 options.u_alpha = 1;
 options.u_beta = 1.1;
-options.u0_alpha = 0.5;
-options.u0_beta = 5;
-options.lambda_3 = 0.0;
+options.u0_alpha = 1;
+options.u0_beta = 1.1;
+options.lambda_3 = 0.05;
 options.alpha = [ 1 20 20 100 ];
 options.beta = [ 100 20 20 1 ];
 options.diagnostics = 0;
 options.paired = 0;
 options.fixed_range = 0;
 options.fastmode = 0;
+options.base_copynumber = 2;
 
 options.tumourStateTable = [];
 options.gcdir = [];
@@ -74,6 +75,11 @@ for i = 1 : nargin
 	if strmatch(lower(varargin{i}), '--lambda1') 
 		options.lambda_1_range = eval(varargin{i+1});
 	end
+
+	% specify penalty on copy number changes
+	if strmatch(lower(varargin{i}), '--lambda3') 
+		options.lambda_3 = eval(varargin{i+1});
+	end
 	
 	% specify number of training points
 	if strmatch(lower(varargin{i}), '--n_train') 
@@ -85,9 +91,25 @@ for i = 1 : nargin
 		options.u_levels = eval(varargin{i+1});
 	end
 
-	% specify normal contamination levels
+	if strmatch(lower(varargin{i}), '--u_alpha') 
+		options.u_alpha = eval(varargin{i+1});
+	end
+
+	if strmatch(lower(varargin{i}), '--u_beta') 
+		options.u_beta = eval(varargin{i+1});
+	end
+
+	% specify normal contamination levels (and prior)
 	if strmatch(lower(varargin{i}), '--u0_levels') 
 		options.u0_levels = eval(varargin{i+1});
+	end
+
+	if strmatch(lower(varargin{i}), '--u0_alpha') 
+		options.u0_alpha = eval(varargin{i+1});
+	end
+
+	if strmatch(lower(varargin{i}), '--u0_beta') 
+		options.u0_beta = eval(varargin{i+1});
 	end
 
 	% specify sequencing error rate
@@ -98,6 +120,11 @@ for i = 1 : nargin
 	% specify read error rate
 	if strmatch(lower(varargin{i}), '--readerror') 
 		options.readerror = str2num(varargin{i+1});
+	end	
+
+	% specify base copy number 
+	if strmatch(lower(varargin{i}), '--basecopynumber') 
+		options.base_copynumber = str2num(varargin{i+1});
 	end	
 
 	% specify maximum ploidy (average copy number)
@@ -280,6 +307,7 @@ options.outfile_scan = [ options.outdir '/' options.samplename '.scan' ];
 options.outfile_diagnostics = [ options.outdir '/' options.samplename '-diagnostics.mat' ];	
 options.outfile_dat = [ options.outdir '/' options.samplename '-plotdat.mat' ];	
 options.outfile_config = [ options.outdir '/' options.samplename '.config' ];	
+options.outfile_ggs = [ options.outdir '/' options.samplename '.ggs' ];	
 
 disp(['lambda1: ' num2str(options.lambda_1_range, '%d ')]);
 

@@ -1,65 +1,6 @@
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
 AS_CLL_003D.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
-AS_CLL_003GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
-AS_CLL_003P1.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
-AS_CLL_003R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
-AS_CLL_003R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
-AS_CLL_003preO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
-AS_CLL_006D.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006D.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
-FH_BLC_3010
-FH_BLC_3010T.txt.gz
-FH_BLC_3010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
-AS_CLL_006GL.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006GL.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
-AS_CLL_006P1.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006P1.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
-FH_BLC_3034
-FH_BLC_3034T.txt.gz
-FH_BLC_3034N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
-AS_CLL_006R1.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006R1.txt.gz.out': No such file or directory
-../executables/run_oncoseq.sh: line 31: 14158 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3034" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
-../executables/run_oncoseq.sh: line 31: 14215 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_006R1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_006GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
-AS_CLL_006R2.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006R2.txt.gz.out': No such file or directory
-FH_BLC_4121
-FH_BLC_4121T.txt.gz
-FH_BLC_4121N.txt.gz
-../executables/run_oncoseq.sh: line 31: 14314 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_006R2.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_006GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-../executables/run_oncoseq.sh: line 31: 14315 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_4121" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-AS_CLL_003D.txt.gz
-../executables/run_oncoseq.sh: line 31: 14479 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003D.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-../executables/run_oncoseq.sh: line 31: 14442 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-AS_CLL_003D.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
 FH_BLC_2010
 FH_BLC_2010T.txt.gz
 FH_BLC_2010N.txt.gz
@@ -69,103 +10,99 @@ AS_CLL_003GL.txt.gz
 AS_CLL_003P1.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
 AS_CLL_003R1.txt.gz
+Terminated
+Terminated
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
 AS_CLL_003R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
-AS_CLL_003preO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
-AS_CLL_006D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
-AS_CLL_006GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
-AS_CLL_006P1.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+../executables/run_oncoseq.sh: line 31: 11949 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3008" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+../executables/run_oncoseq.sh: line 31: 11946 Terminated              "../executables/oncoseq" "--lambda1" "[1000 500 100 30 10]" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003R2.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+AS_CLL_003D.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+AS_CLL_003D.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+[1] 12707
 /data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
 FH_BLC_3008
 FH_BLC_3008T.txt.gz
 FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
-AS_CLL_006R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
-AS_CLL_006R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
-AS_CLL_006R3.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_006R3.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
-AS_CLL_077R1.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077R1.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
-AS_CLL_077R2.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077R2.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
-AS_CLL_077postO.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077postO.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
-AS_CLL_077D.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077D.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
-AS_CLL_077GL.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077GL.txt.gz.out': No such file or directory
-/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
-AS_CLL_077O.txt.gz
-rm: cannot remove `/data/cyau/wgs500/output/v2.0//AS_CLL_077O.txt.gz.out': No such file or directory
+[2] 12713
 /data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
 FH_BLC_3010
 FH_BLC_3010T.txt.gz
 FH_BLC_3010N.txt.gz
+[3] 12720
 /data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
 FH_BLC_3034
 FH_BLC_3034T.txt.gz
 FH_BLC_3034N.txt.gz
+[4] 12726
 /data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
 FH_BLC_4121
 FH_BLC_4121T.txt.gz
 FH_BLC_4121N.txt.gz
+[5] 12732
 /data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
 FH_BLC_451
 FH_BLC_451T.txt.gz
 FH_BLC_451N.txt.gz
+[6] 12738
 /data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
 FH_BLC_615
 FH_BLC_615T.txt.gz
 FH_BLC_615N.txt.gz
+[7] 12744
 /data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
 FH_BLC_635
 FH_BLC_635T.txt.gz
 FH_BLC_635N.txt.gz
+[8] 12750
 /data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
 FH_BLC_709
 FH_BLC_709T.txt.gz
 FH_BLC_709N.txt.gz
+[9] 12756
 /data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
 FH_BLC_745
 FH_BLC_745T.txt.gz
 FH_BLC_745N.txt.gz
+[10] 12762
 /data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
 FH_BLC_799
 FH_BLC_799T.txt.gz
 FH_BLC_799N.txt.gz
+[11] 12768
 /data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
 FH_BLC_4062
 FH_BLC_4062T.txt.gz
 FH_BLC_4062N.txt.gz
+[12] 12774
 /data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
 FH_BLC_4070
 FH_BLC_4070T.txt.gz
 FH_BLC_4070N.txt.gz
+[13] 12780
 /data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
 FH_BLC_4078
 FH_BLC_4078T.txt.gz
 FH_BLC_4078N.txt.gz
+[14] 12786
 /data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
 FH_BLC_4101
 FH_BLC_4101T.txt.gz
 FH_BLC_4101N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-AS_CLL_003D.txt.gz
+[15] 12792
 /data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
 AS_CLL_003GL.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
@@ -192,912 +129,281 @@ AS_CLL_006R3.txt.gz
 AS_CLL_077R1.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
 AS_CLL_077R2.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
-AS_CLL_077postO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
-AS_CLL_077D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
-AS_CLL_077GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
-AS_CLL_077O.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
-FH_BLC_3010
-FH_BLC_3010T.txt.gz
-FH_BLC_3010N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
-FH_BLC_3034
-FH_BLC_3034T.txt.gz
-FH_BLC_3034N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
-FH_BLC_4121
-FH_BLC_4121T.txt.gz
-FH_BLC_4121N.txt.gz
-../executables/run_oncoseq.sh: line 31: 23957 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_4121" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
-FH_BLC_451
-FH_BLC_451T.txt.gz
-FH_BLC_451N.txt.gz
-../executables/run_oncoseq.sh: line 31: 24248 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_451" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_451T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_451N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
-FH_BLC_615
-FH_BLC_615T.txt.gz
-FH_BLC_615N.txt.gz
-../executables/run_oncoseq.sh: line 31: 24309 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_615" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_615T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_615N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
-FH_BLC_635
-FH_BLC_635T.txt.gz
-FH_BLC_635N.txt.gz
-../executables/run_oncoseq.sh: line 31: 24338 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_635" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_635T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_635N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
-FH_BLC_709
-FH_BLC_709T.txt.gz
-FH_BLC_709N.txt.gz
-../executables/run_oncoseq.sh: line 31: 24399 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.05" "--n_train" "50000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_709" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_709T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_709N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+../executables/run_oncoseq.sh: line 31: 14477 Terminated              "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.01" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_077R2.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_077GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
 /data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-../executables/run_oncoseq.sh: line 31: 24573 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:22]" "--readerror" "0.05" "--seqerror" "0.01" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--maxnormalcontamination" "0.6" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-../executables/run_oncoseq.sh: line 31: 24646 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.05" "--seqerror" "0.01" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStates.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
 AS_CLL_003D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
-AS_CLL_003GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
-AS_CLL_003P1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
-AS_CLL_003R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
-AS_CLL_003R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
-AS_CLL_003preO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
-AS_CLL_006D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
-AS_CLL_006GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
-AS_CLL_006P1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
-AS_CLL_006R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
-AS_CLL_006R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
-AS_CLL_006R3.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
-AS_CLL_077R1.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+[1] 14787
 /data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
 FH_BLC_3008
 FH_BLC_3008T.txt.gz
 FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
-AS_CLL_077R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
-AS_CLL_077postO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
-AS_CLL_077D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
-AS_CLL_077GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
-AS_CLL_077O.txt.gz
+[2] 14795
 /data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
 FH_BLC_3010
 FH_BLC_3010T.txt.gz
 FH_BLC_3010N.txt.gz
+[3] 14801
 /data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
 FH_BLC_3034
 FH_BLC_3034T.txt.gz
 FH_BLC_3034N.txt.gz
+[4] 14807
 /data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
 FH_BLC_4121
 FH_BLC_4121T.txt.gz
 FH_BLC_4121N.txt.gz
+[5] 14813
 /data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
 FH_BLC_451
 FH_BLC_451T.txt.gz
 FH_BLC_451N.txt.gz
+[6] 14819
 /data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
 FH_BLC_615
 FH_BLC_615T.txt.gz
 FH_BLC_615N.txt.gz
+[7] 14825
 /data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
 FH_BLC_635
 FH_BLC_635T.txt.gz
 FH_BLC_635N.txt.gz
+[8] 14831
 /data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
 FH_BLC_709
 FH_BLC_709T.txt.gz
 FH_BLC_709N.txt.gz
+[9] 14837
 /data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
 FH_BLC_745
 FH_BLC_745T.txt.gz
 FH_BLC_745N.txt.gz
+[10] 14843
 /data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
 FH_BLC_799
 FH_BLC_799T.txt.gz
 FH_BLC_799N.txt.gz
+[11] 14849
 /data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
 FH_BLC_4062
 FH_BLC_4062T.txt.gz
 FH_BLC_4062N.txt.gz
+[12] 14855
 /data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
 FH_BLC_4070
 FH_BLC_4070T.txt.gz
 FH_BLC_4070N.txt.gz
+[13] 14861
 /data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
 FH_BLC_4078
 FH_BLC_4078T.txt.gz
 FH_BLC_4078N.txt.gz
+[14] 14867
 /data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
 FH_BLC_4101
 FH_BLC_4101T.txt.gz
 FH_BLC_4101N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-Error using textread (line 166)
-File not found.
-
-Error in loaddata (line 19)
-
-
-
-Error in oncoseq_run (line 9)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:textread:FileNotFound
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
-Error using horzcat
-Dimensions of matrices being concatenated are not consistent.
-
-Error in loaddata (line 72)
-
-
-
-Error in oncoseq_run (line 9)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:catenate:dimensionMismatch
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-AS_CLL_003D.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[15] 14872
 /data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
 AS_CLL_003GL.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
 /data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
 AS_CLL_003P1.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
 AS_CLL_003R1.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
 AS_CLL_003R2.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
+AS_CLL_006R3.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
+AS_CLL_077R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
+AS_CLL_077R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
+AS_CLL_077postO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
+AS_CLL_077D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
+AS_CLL_077GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
+AS_CLL_077O.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+[1] 18900
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+[2] 18907
 /data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
 FH_BLC_3010
 FH_BLC_3010T.txt.gz
 FH_BLC_3010N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
-AS_CLL_003preO.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
-AS_CLL_006D.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
-AS_CLL_006GL.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
-AS_CLL_006P1.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[3] 18913
 /data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
 FH_BLC_3034
 FH_BLC_3034T.txt.gz
 FH_BLC_3034N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
-AS_CLL_006R1.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
-AS_CLL_006R2.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
-AS_CLL_006R3.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
-AS_CLL_077R1.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[4] 18919
 /data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
 FH_BLC_4121
 FH_BLC_4121T.txt.gz
 FH_BLC_4121N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
-AS_CLL_077R2.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
-AS_CLL_077postO.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
-AS_CLL_077D.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
-AS_CLL_077GL.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[5] 18925
 /data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
 FH_BLC_451
 FH_BLC_451T.txt.gz
 FH_BLC_451N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
-AS_CLL_077O.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[6] 18931
 /data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
 FH_BLC_615
 FH_BLC_615T.txt.gz
 FH_BLC_615N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[7] 18937
 /data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
 FH_BLC_635
 FH_BLC_635T.txt.gz
 FH_BLC_635N.txt.gz
+[8] 18945
 /data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
 FH_BLC_709
 FH_BLC_709T.txt.gz
 FH_BLC_709N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[9] 18952
 /data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
 FH_BLC_745
 FH_BLC_745T.txt.gz
 FH_BLC_745N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[10] 18960
 /data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
 FH_BLC_799
 FH_BLC_799T.txt.gz
 FH_BLC_799N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[11] 18966
 /data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
 FH_BLC_4062
 FH_BLC_4062T.txt.gz
 FH_BLC_4062N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[12] 18973
 /data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
 FH_BLC_4070
 FH_BLC_4070T.txt.gz
 FH_BLC_4070N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[13] 18993
 /data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
 FH_BLC_4078
 FH_BLC_4078T.txt.gz
 FH_BLC_4078N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
+[14] 19002
 /data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
 FH_BLC_4101
 FH_BLC_4101T.txt.gz
 FH_BLC_4101N.txt.gz
-Attempted to access chrloc(1); index out of bounds because numel(chrloc)=0.
-
-Error in plotoutput (line 75)
-
-
-
-Error in oncoseq_run (line 124)
-
-
-
-Error in oncoseq (line 273)
-
-
-
-MATLAB:badsubscript
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-../executables/run_oncoseq.sh: line 31: 23524 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-AS_CLL_003D.txt.gz
+[15] 19008
+Terminated
 /data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
 AS_CLL_003GL.txt.gz
+../executables/run_oncoseq.sh: line 31: 19114 Terminated              "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003GL.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
 /data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
 AS_CLL_003P1.txt.gz
+../executables/run_oncoseq.sh: line 31: 19450 Terminated              "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003P1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
 AS_CLL_003R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-AS_CLL_003D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
-AS_CLL_003GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
-AS_CLL_003P1.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
-../executables/run_oncoseq.sh: line 31: 25863 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3008" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-../executables/run_oncoseq.sh: line 31: 25805 Terminated              "../executables/oncoseq" "--lambda1" "[1000 500 100 30 10]" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003P1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
 /data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
 AS_CLL_003D.txt.gz
 FH_BLC_2010
 FH_BLC_2010T.txt.gz
 FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
-AS_CLL_003GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
-AS_CLL_003P1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
-AS_CLL_003R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
-AS_CLL_003R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
-AS_CLL_003preO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
-AS_CLL_006D.txt.gz
+[1] 19671
 /data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
 FH_BLC_3008
 FH_BLC_3008T.txt.gz
 FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
-AS_CLL_006GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
-AS_CLL_006P1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
-AS_CLL_006R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
-AS_CLL_006R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
-AS_CLL_006R3.txt.gz
+[2] 19679
 /data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
 FH_BLC_3010
 FH_BLC_3010T.txt.gz
 FH_BLC_3010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
-AS_CLL_077R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
-AS_CLL_077R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
-AS_CLL_077postO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
-AS_CLL_077D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
-AS_CLL_077GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
-AS_CLL_077O.txt.gz
+[3] 19685
 /data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
 FH_BLC_3034
 FH_BLC_3034T.txt.gz
 FH_BLC_3034N.txt.gz
+[4] 19691
 /data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
 FH_BLC_4121
 FH_BLC_4121T.txt.gz
 FH_BLC_4121N.txt.gz
+[5] 19697
 /data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
 FH_BLC_451
 FH_BLC_451T.txt.gz
 FH_BLC_451N.txt.gz
+[6] 19703
 /data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
 FH_BLC_615
 FH_BLC_615T.txt.gz
 FH_BLC_615N.txt.gz
+[7] 19709
 /data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
 FH_BLC_635
 FH_BLC_635T.txt.gz
 FH_BLC_635N.txt.gz
+[8] 19715
 /data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
 FH_BLC_709
 FH_BLC_709T.txt.gz
 FH_BLC_709N.txt.gz
+[9] 19721
 /data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
 FH_BLC_745
 FH_BLC_745T.txt.gz
 FH_BLC_745N.txt.gz
+[10] 19727
 /data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
 FH_BLC_799
 FH_BLC_799T.txt.gz
 FH_BLC_799N.txt.gz
+[11] 19733
 /data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
 FH_BLC_4062
 FH_BLC_4062T.txt.gz
 FH_BLC_4062N.txt.gz
+[12] 19739
 /data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
 FH_BLC_4070
 FH_BLC_4070T.txt.gz
 FH_BLC_4070N.txt.gz
+[13] 19745
 /data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
 FH_BLC_4078
 FH_BLC_4078T.txt.gz
 FH_BLC_4078N.txt.gz
+[14] 19751
 /data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
 FH_BLC_4101
 FH_BLC_4101T.txt.gz
 FH_BLC_4101N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-AS_CLL_003D.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
+[15] 19757
 /data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
 AS_CLL_003GL.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
@@ -1112,10 +418,6 @@ AS_CLL_003preO.txt.gz
 AS_CLL_006D.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
 AS_CLL_006GL.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
 AS_CLL_006P1.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
@@ -1126,10 +428,6 @@ AS_CLL_006R2.txt.gz
 AS_CLL_006R3.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
 AS_CLL_077R1.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
-FH_BLC_3010
-FH_BLC_3010T.txt.gz
-FH_BLC_3010N.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
 AS_CLL_077R2.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
@@ -1140,153 +438,1109 @@ AS_CLL_077D.txt.gz
 AS_CLL_077GL.txt.gz
 /data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
 AS_CLL_077O.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
-FH_BLC_3034
-FH_BLC_3034T.txt.gz
-FH_BLC_3034N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
-FH_BLC_4121
-FH_BLC_4121T.txt.gz
-FH_BLC_4121N.txt.gz
 /data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+AS_CLL_003D.txt.gz
 FH_BLC_451
 FH_BLC_451T.txt.gz
 FH_BLC_451N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
-FH_BLC_615
-FH_BLC_615T.txt.gz
-FH_BLC_615N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
-FH_BLC_635
-FH_BLC_635T.txt.gz
-FH_BLC_635N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
-FH_BLC_709
-FH_BLC_709T.txt.gz
-FH_BLC_709N.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
-FH_BLC_745
-FH_BLC_745T.txt.gz
-FH_BLC_745N.txt.gz
-../executables/run_oncoseq.sh: line 31: 32187 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_745" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_745T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_745N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
-FH_BLC_799
-FH_BLC_799T.txt.gz
-FH_BLC_799N.txt.gz
-../executables/run_oncoseq.sh: line 31: 32328 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_799" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_799T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_799N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
-FH_BLC_4062
-FH_BLC_4062T.txt.gz
-FH_BLC_4062N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
-AS_CLL_003D.txt.gz
-FH_BLC_2010
-FH_BLC_2010T.txt.gz
-FH_BLC_2010N.txt.gz
+[1] 22325
 /data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
 AS_CLL_003GL.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
 AS_CLL_003P1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
 AS_CLL_003R1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
 AS_CLL_003R2.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
 AS_CLL_003preO.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
-FH_BLC_4070
-FH_BLC_4070T.txt.gz
-FH_BLC_4070N.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
 AS_CLL_006D.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
 AS_CLL_006GL.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
-FH_BLC_3008
-FH_BLC_3008T.txt.gz
-FH_BLC_3008N.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
 AS_CLL_006P1.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_4078T.txt.gz
-FH_BLC_4078
-FH_BLC_4078T.txt.gz
-FH_BLC_4078N.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
 AS_CLL_006R1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
 AS_CLL_006R2.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
 AS_CLL_006R3.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
 AS_CLL_077R1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
 AS_CLL_077R2.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
-FH_BLC_3010
-FH_BLC_3010T.txt.gz
-FH_BLC_3010N.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
 AS_CLL_077postO.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
 AS_CLL_077D.txt.gz
-../executables/run_oncoseq.sh: line 31:  2224 Terminated              "../executables/oncoseq" "--lambda1" "[1000 500 100 30 10]" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_077D.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_077GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
-../executables/run_oncoseq.sh: line 31:  1533 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_4078" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4078T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4078N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
-/data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
-../executables/run_oncoseq.sh: line 31:  1995 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--n_train" "30000" "--maxploidy" "4.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
 AS_CLL_077GL.txt.gz
-/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
-FH_BLC_4101
-FH_BLC_4101T.txt.gz
-FH_BLC_4101N.txt.gz
-FH_BLC_3034
-FH_BLC_3034T.txt.gz
-FH_BLC_3034N.txt.gz
-Terminated
-Terminated
-Terminated
-/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
 AS_CLL_077O.txt.gz
-FH_BLC_4121
-FH_BLC_4121T.txt.gz
-FH_BLC_4121N.txt.gz
-Terminated
-Terminated
-/data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
-FH_BLC_451
-FH_BLC_451T.txt.gz
-FH_BLC_451N.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 313)
+
+
+
+MATLAB:subsassigndimmismatch
 /data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
 /data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
 AS_CLL_003D.txt.gz
 FH_BLC_2010
 FH_BLC_2010T.txt.gz
 FH_BLC_2010N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
-AS_CLL_003GL.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
-AS_CLL_003P1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
-AS_CLL_003R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
-AS_CLL_003R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
-AS_CLL_003preO.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
-AS_CLL_006D.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
-AS_CLL_006GL.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:36:22 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007f5e9e32e000  RBX = 00007f5e98fdd749
+  RCX = 000000000000000a  RDX = 00007f5e9921b9f8
+  RSP = 00007fff89a30640  RBP = 00007fff89a30a00
+  RSI = 00007f5e98fde7dd  RDI = 00007fff89a30650
+
+   R8 = 0000000000000000   R9 = 0000000000004526
+  R10 = 0000000000000000  R11 = 0000000400e7b5f0
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fff89a31248
+
+  RIP = 00007f5e98f4e5ee  EFL = 000000000000007e
+
+   CS = 6bd0   FS = 00f1   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f5e98f4e5ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007f5e98f4b15a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007f5e98f4bde7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007f5e8c6854a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007f5e8c68705a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007f5e8c687146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007f5e8c687583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007f5e8c6875f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007f5e9d957386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007f5e9d9573b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007f5e9d9573c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007f5e9d957010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007f5e8c1390ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007f5e8c139313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007f5e820e772c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007f5e820e5081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007f5e8208db4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007f5e8208e0b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007f5e820beca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007f5e820a5d45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007f5e8ccb5b5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007f5e8125253c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007f5e8c681c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007f5e8c682029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007f5e8124e3c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007f5e8c9fddf7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007f5e8ccb5203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007f5e820a8779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007f5e9e05df28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007f5e9cecfcdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17702-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17702 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010N.txt.gz
+FH_BLC_2010N.txt.gz
+FH_BLC_2010N.txt.gz
+FH_BLC_2010N.txt.gzN.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:36:29 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007f5ff2e79000  RBX = 00007f5fedb28749
+  RCX = 000000000000000a  RDX = 00007f5fedd669f8
+  RSP = 00007fffa2d511a0  RBP = 00007fffa2d51560
+  RSI = 00007f5fedb297dd  RDI = 00007fffa2d511b0
+
+   R8 = 0000000000000000   R9 = 000000000000453c
+  R10 = 0000000000000000  R11 = 0000000401e1d600
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fffa2d51da8
+
+  RIP = 00007f5feda995ee  EFL = 000000000000007e
+
+   CS = 8be0   FS = 01eb   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f5feda995ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007f5feda9615a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007f5feda96de7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007f5fe11d04a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007f5fe11d205a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007f5fe11d2146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007f5fe11d2583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007f5fe11d25f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007f5ff24a2386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007f5ff24a23b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007f5ff24a23c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007f5ff24a2010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007f5fe0c840ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007f5fe0c84313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007f5fd6c3272c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007f5fd6c30081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007f5fd6bd8b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007f5fd6bd90b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007f5fd6c09ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007f5fd6bf0d45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007f5fe1800b5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007f5fd5d9d53c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007f5fe11ccc6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007f5fe11cd029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007f5fd5d993c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007f5fe1548df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007f5fe1800203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007f5fd6bf3779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007f5ff2ba8f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007f5ff1a1acdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17724-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17724 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_2010N.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_2010N.txt.gzN.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
 /data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
 FH_BLC_3008
 FH_BLC_3008T.txt.gz
 FH_BLC_3008N.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
-AS_CLL_006P1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
-AS_CLL_006R1.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
-AS_CLL_006R2.txt.gz
-/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
-AS_CLL_006R3.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:36:36 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007ffbbe8b4000  RBX = 00007ffbb9563749
+  RCX = 000000000000000a  RDX = 00007ffbb97a19f8
+  RSP = 00007fff6425e8a0  RBP = 00007fff6425ec60
+  RSI = 00007ffbb95647dd  RDI = 00007fff6425e8b0
+
+   R8 = 0000000000000000   R9 = 0000000000004551
+  R10 = 0000000000000000  R11 = 0000000401b2f5f0
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fff6425f4a8
+
+  RIP = 00007ffbb94d45ee  EFL = 000000000000007e
+
+   CS = abd0   FS = 01bc   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007ffbb94d45ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007ffbb94d115a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007ffbb94d1de7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007ffbacc0b4a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007ffbacc0d05a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007ffbacc0d146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007ffbacc0d583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007ffbacc0d5f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007ffbbdedd386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007ffbbdedd3b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007ffbbdedd3c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007ffbbdedd010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007ffbac6bf0ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007ffbac6bf313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007ffba266d72c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007ffba266b081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007ffba2613b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007ffba26140b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007ffba2644ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007ffba262bd45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007ffbad23bb5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007ffba17d853c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007ffbacc07c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007ffbacc08029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007ffba17d43c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007ffbacf83df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007ffbad23b203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007ffba262e779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007ffbbe5e3f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007ffbbd455cdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17745-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17745 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3008" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008N.txt.gz
+FH_BLC_3008N.txt.gz
+FH_BLC_3008N.txt.gz
+FH_BLC_3008N.txt.gzN.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:36:50 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007fcd53272000  RBX = 00007fcd4df21749
+  RCX = 000000000000000a  RDX = 00007fcd4e15f9f8
+  RSP = 00007fffd86a0a90  RBP = 00007fffd86a0e50
+  RSI = 00007fcd4df227dd  RDI = 00007fffd86a0aa0
+
+   R8 = 0000000000000000   R9 = 0000000000004567
+  R10 = 0000000000000000  R11 = 0000000401179600
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fffd86a1698
+
+  RIP = 00007fcd4de925ee  EFL = 000000000000007e
+
+   CS = 4be0   FS = 0121   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007fcd4de925ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007fcd4de8f15a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007fcd4de8fde7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007fcd415c94a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007fcd415cb05a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007fcd415cb146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007fcd415cb583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007fcd415cb5f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007fcd5289b386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007fcd5289b3b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007fcd5289b3c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007fcd5289b010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007fcd4107d0ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007fcd4107d313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007fcd3702b72c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007fcd37029081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007fcd36fd1b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007fcd36fd20b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007fcd37002ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007fcd36fe9d45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007fcd41bf9b5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007fcd3619653c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007fcd415c5c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007fcd415c6029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007fcd361923c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007fcd41941df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007fcd41bf9203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007fcd36fec779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007fcd52fa1f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007fcd51e13cdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17767-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17767 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3008N.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008N.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3008N.txt.gzN.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
+FH_BLC_3010
+FH_BLC_3010T.txt.gz
+FH_BLC_3010N.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:36:52 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007f2228f8d000  RBX = 00007f2223c3c749
+  RCX = 000000000000000a  RDX = 00007f2223e7a9f8
+  RSP = 00007fff20d6cda0  RBP = 00007fff20d6d160
+  RSI = 00007f2223c3d7dd  RDI = 00007fff20d6cdb0
+
+   R8 = 0000000000000000   R9 = 0000000000004525
+  R10 = 0000000000000000  R11 = 0000000401d2e570
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fff20d6d9a8
+
+  RIP = 00007f2223bad5ee  EFL = 000000000000007e
+
+   CS = 9b50   FS = 01dc   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f2223bad5ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007f2223baa15a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007f2223baade7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007f22172e44a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007f22172e605a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007f22172e6146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007f22172e6583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007f22172e65f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007f22285b6386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007f22285b63b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007f22285b63c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007f22285b6010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007f2216d980ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007f2216d98313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007f220cd4672c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007f220cd44081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007f220ccecb4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007f220cced0b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007f220cd1dca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007f220cd04d45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007f2217914b5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007f220beb153c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007f22172e0c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007f22172e1029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007f220bead3c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007f221765cdf7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007f2217914203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007f220cd07779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007f2228cbcf28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007f2227b2ecdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17701-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17701 Killed                  "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003D.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:37:08 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007ff7c25a5000  RBX = 00007ff7bd254749
+  RCX = 000000000000000a  RDX = 00007ff7bd4929f8
+  RSP = 00007fffd7984290  RBP = 00007fffd7984650
+  RSI = 00007ff7bd2557dd  RDI = 00007fffd79842a0
+
+   R8 = 0000000000000000   R9 = 0000000000004581
+  R10 = 0000000000000000  R11 = 000000040087e5f0
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fffd7984e98
+
+  RIP = 00007ff7bd1c55ee  EFL = 000000000000007e
+
+   CS = 9bd0   FS = 0091   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007ff7bd1c55ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007ff7bd1c215a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007ff7bd1c2de7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007ff7b08fc4a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007ff7b08fe05a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007ff7b08fe146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007ff7b08fe583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007ff7b08fe5f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007ff7c1bce386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007ff7c1bce3b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007ff7c1bce3c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007ff7c1bce010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007ff7b03b00ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007ff7b03b0313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007ff7a635e72c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007ff7a635c081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007ff7a6304b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007ff7a63050b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007ff7a6335ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007ff7a631cd45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007ff7b0f2cb5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007ff7a54c953c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007ff7b08f8c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007ff7b08f9029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007ff7a54c53c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007ff7b0c74df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007ff7b0f2c203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007ff7a631f779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007ff7c22d4f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007ff7c1146cdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17793-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17793 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3010" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3010T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3010N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010N.txt.gz
+FH_BLC_3010N.txt.gz
+FH_BLC_3010N.txt.gz
+FH_BLC_3010N.txt.gzN.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:37:15 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007f314d4d6000  RBX = 00007f3148185749
+  RCX = 000000000000000a  RDX = 00007f31483c39f8
+  RSP = 00007fffd78a20a0  RBP = 00007fffd78a2460
+  RSI = 00007f31481867dd  RDI = 00007fffd78a20b0
+
+   R8 = 0000000000000000   R9 = 0000000000004586
+  R10 = 0000000000000000  R11 = 0000000401ac0580
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fffd78a2ca8
+
+  RIP = 00007f31480f65ee  EFL = 000000000000007e
+
+   CS = bb60   FS = 01b5   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f31480f65ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007f31480f315a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007f31480f3de7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007f313b82d4a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007f313b82f05a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007f313b82f146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007f313b82f583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007f313b82f5f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007f314caff386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007f314caff3b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007f314caff3c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007f314caff010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007f313b2e10ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007f313b2e1313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007f313128f72c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007f313128d081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007f3131235b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007f31312360b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007f3131266ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007f313124dd45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007f313be5db5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007f31303fa53c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007f313b829c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007f313b82a029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007f31303f63c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007f313bba5df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007f313be5d203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007f3131250779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007f314d205f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007f314c077cdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17798-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17798 Killed                  "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003GL.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:37:26 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007fbad6263000  RBX = 00007fbad0f12749
+  RCX = 000000000000000a  RDX = 00007fbad11509f8
+  RSP = 00007fff50d43720  RBP = 00007fff50d43ae0
+  RSI = 00007fbad0f137dd  RDI = 00007fff50d43730
+
+   R8 = 0000000000000000   R9 = 00000000000045a0
+  R10 = 0000000000000000  R11 = 0000000401eca600
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fff50d44328
+
+  RIP = 00007fbad0e835ee  EFL = 000000000000007e
+
+   CS = 5be0   FS = 01f6   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007fbad0e835ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007fbad0e8015a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007fbad0e80de7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007fbac45ba4a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007fbac45bc05a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007fbac45bc146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007fbac45bc583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007fbac45bc5f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007fbad588c386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007fbad588c3b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007fbad588c3c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007fbad588c010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007fbac406e0ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007fbac406e313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007fbaba01c72c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007fbaba01a081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007fbab9fc2b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007fbab9fc30b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007fbab9ff3ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007fbab9fdad45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007fbac4beab5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007fbab918753c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007fbac45b6c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007fbac45b7029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007fbab91833c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007fbac4932df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007fbac4bea203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007fbab9fdd779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007fbad5f92f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007fbad4e04cdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17824-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17824 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3010N.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3010N.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3010N.txt.gzN.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
+FH_BLC_3034
+FH_BLC_3034T.txt.gz
+FH_BLC_3034N.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:37:31 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007f1ff04ae000  RBX = 00007f1feb15d749
+  RCX = 000000000000000a  RDX = 00007f1feb39b9f8
+  RSP = 00007fff3fb267f0  RBP = 00007fff3fb26bb0
+  RSI = 00007f1feb15e7dd  RDI = 00007fff3fb26800
+
+   R8 = 0000000000000000   R9 = 00000000000045aa
+  R10 = 0000000000000000  R11 = 0000000401c42580
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fff3fb273f8
+
+  RIP = 00007f1feb0ce5ee  EFL = 000000000000007e
+
+   CS = db60   FS = 01cd   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f1feb0ce5ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007f1feb0cb15a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007f1feb0cbde7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007f1fde8054a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007f1fde80705a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007f1fde807146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007f1fde807583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007f1fde8075f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007f1fefad7386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007f1fefad73b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007f1fefad73c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007f1fefad7010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007f1fde2b90ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007f1fde2b9313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007f1fd426772c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007f1fd4265081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007f1fd420db4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007f1fd420e0b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007f1fd423eca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007f1fd4225d45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007f1fdee35b5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007f1fd33d253c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007f1fde801c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007f1fde802029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007f1fd33ce3c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007f1fdeb7ddf7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007f1fdee35203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007f1fd4228779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007f1ff01ddf28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007f1fef04fcdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17834-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17834 Killed                  "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003P1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+
+------------------------------------------------------------------------
+          std::terminate() detected at Thu Apr 17 23:37:40 2014
+------------------------------------------------------------------------
+
+Configuration:
+  Crash Decoding     : Disabled
+  Default Encoding   : UTF-8
+  GNU C Library      : 2.12 stable
+  MATLAB Architecture: glnxa64
+  MATLAB Root        : /data/cyau/MCR/r2013b/v82
+  MATLAB Version     : 8.2.0.701 (R2013b)
+  Operating System   : Linux 2.6.32-279.el6.x86_64 #1 SMP Fri Jun 22 12:19:21 UTC 2012 x86_64
+  Processor ID       : x86 Family 6 Model 45 Stepping 7, GenuineIntel
+
+Fault Count: 1
+
+
+Abnormal termination:
+std::terminate()
+
+Register State (captured):
+  RAX = 00007f078fad3000  RBX = 00007f078a782749
+  RCX = 000000000000000a  RDX = 00007f078a9c09f8
+  RSP = 00007fff0951ae30  RBP = 00007fff0951b1f0
+  RSI = 00007f078a7837dd  RDI = 00007fff0951ae40
+
+   R8 = 0000000000000000   R9 = 00000000000045bf
+  R10 = 0000000000000000  R11 = 00000004013505f0
+  R12 = 0000000000000000  R13 = 0000000000000000
+  R14 = 0000000000000000  R15 = 00007fff0951ba38
+
+  RIP = 00007f078a6f35ee  EFL = 000000000000007e
+
+   CS = bbd0   FS = 013e   GS = 0000
+
+Stack Trace (captured):
+[  0] 0x00007f078a6f35ee  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00697838 _ZN2fl4diag5linux12context_base12capture_dataEv+00000030
+[  1] 0x00007f078a6f015a  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00684378
+[  2] 0x00007f078a6f0de7  /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwfl.so+00687591 _ZN2fl4diag13terminate_logEPKcRKNS0_14thread_contextE+00000119
+[  3] 0x00007f077de2a4a6  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00558246
+[  4] 0x00007f077de2c05a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565338
+[  5] 0x00007f077de2c146  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00565574
+[  6] 0x00007f077de2c583  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566659
+[  7] 0x00007f077de2c5f3  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00566771
+[  8] 0x00007f078f0fc386 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385926
+[  9] 0x00007f078f0fc3b3 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385971
+[ 10] 0x00007f078f0fc3c6 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385990
+[ 11] 0x00007f078f0fc010 /data/cyau/MCR/r2013b/v82//sys/os/glnxa64/libstdc++.so.6+00385040 __cxa_call_unexpected+00000048
+[ 12] 0x00007f077d8de0ca /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00225482 _ZN24dsDirectoryExclusiveLock7acquireERKN5boost10posix_time13time_durationEb+00002698
+[ 13] 0x00007f077d8de313 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwdservices.so+00226067 _ZN24dsDirectoryExclusiveLock7acquireEb+00000035
+[ 14] 0x00007f077388c72c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02328364 _ZN5boost11unique_lockI24dsDirectoryExclusiveLockE4lockEv+00000028
+[ 15] 0x00007f077388a081 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02318465
+[ 16] 0x00007f0773832b4c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01960780
+[ 17] 0x00007f07738330b0 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+01962160 _ZN5boost6detail8function21function_obj_invoker0INS_3_bi6bind_tINS_10shared_ptrI21mclExtractedComponentEEPFS7_N6mclmcr12CtfExtractorEENS3_5list1INS3_5valueIS9_EEEEEES7_E6invokeERNS1_15function_bufferE+00000048
+[ 18] 0x00007f0773863ca4 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02161828 _Z30mclInitializeComponentInstanceRKN5boost8functionIFiPKcEEES6_NS_9function0INS_10shared_ptrI21mclExtractedComponentEEEE+00000260
+[ 19] 0x00007f077384ad45 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02059589
+[ 20] 0x00007f077e45ab5c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00326492 _ZNK5boost9function0IiEclEv+00000028
+[ 21] 0x00007f07729f753c /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00386364 _ZNK5boost9function1IiRKSt6vectorISsSaISsEEEclES5_+00000028
+[ 22] 0x00007f077de26c6a  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00543850
+[ 23] 0x00007f077de27029  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmcr.so+00544809 _Z12mcr_run_mainRKN5boost9function0IiEEbb+00000457
+[ 24] 0x00007f07729f33c6 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwMVMLocal.so+00369606
+[ 25] 0x00007f077e1a2df7  /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmvm.so+01359351
+[ 26] 0x00007f077e45a203 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclbase.so+00324099 mclRunMain+00000451
+[ 27] 0x00007f077384d779 /data/cyau/MCR/r2013b/v82/bin/glnxa64/libmwmclmcr.so+02070393 mclStandaloneGenericMain+00001337
+[ 28] 0x00007f078f802f28 /data/cyau/MCR/r2013b/v82//bin/glnxa64/libmwlaunchermain.so+00065320
+[ 29] 0x0000000000409566                             ../executables/oncoseq+00038246
+[ 30] 0x00007f078e674cdd                                   /lib64/libc.so.6+00126173 __libc_start_main+00000253
+[ 31] 0x0000000000404aa5                             ../executables/oncoseq+00019109
+
+
+If this problem is reproducible, please submit a Service Request via:
+    http://www.mathworks.com/support/contact_us/
+
+A technical support engineer might contact you with further information.
+
+Thank you for your help.** This crash report has been saved to disk as /home/cyau/matlab_crash_dump.17855-1 **
+
+
+
+MATLAB is exiting because of fatal error
+../executables/run_oncoseq.sh: line 31: 17855 Killed                  "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3034" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034T.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034N.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034N.txt.gz
+FH_BLC_3034N.txt.gz
+FH_BLC_3034N.txt.gz
+FH_BLC_3034N.txt.gzN.txt.gz
+../executables/run_oncoseq.sh: line 31: 17887 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_3034N.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034N.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_3034N.txt.gzN.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+../executables/run_oncoseq.sh: line 31: 17866 Terminated              "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003R1.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+FH_BLC_4121
+FH_BLC_4121T.txt.gz
+FH_BLC_4121N.txt.gz
+Terminated
+Terminated
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+FH_BLC_4121N.txt.gz
+FH_BLC_4121N.txt.gz
+FH_BLC_4121N.txt.gzN.txt.gz
+../executables/run_oncoseq.sh: line 31: 17941 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_4121N.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gzN.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+../executables/run_oncoseq.sh: line 31: 17940 Terminated              "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003preO.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"

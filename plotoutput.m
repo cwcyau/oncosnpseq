@@ -1,4 +1,4 @@
-function plotoutput(chr, arm, pos, k, d, dd, x, u, params, options)
+function plotoutput(chr, arm, pos, k, d, dd, v, x, u, params, options)
 
 mxPlotPts = 30000;
 fontSz = 6;
@@ -308,17 +308,19 @@ I = I(1:min(N, mxPlotPts));
 I = sort(I);
 
 seqdata = []; % data object to store residuals for later plotting
-seqdata.chr = chr;
-seqdata.arm = arm;
-seqdata.pos = pos;
+seqdata.chr = uint8(chr);
+seqdata.arm = uint8(arm);
+seqdata.pos = uint32(pos);
 seqdata.coverage = dd;
 seqdata.lesserAlleleFrac = b;
 
 for lev = 1 : n_lev
 
 	cn_vec = tumourState(x{lev}(:), 4);
+	minorcn_vec = tumourState(x{lev}(:), 2);
 	loh_vec = tumourState(x{lev}(:), 5);
 	u_vec = u{lev}(:);
+	v_vec = v{lev}(:);
 
 	d_s = u_vec.*normalState(x{lev}(:), 4)*read_depth + (1-u_vec).*tumourState(x{lev}(:), 4)*read_depth;
 	g_s = zeros(N, 2);
@@ -378,8 +380,9 @@ for lev = 1 : n_lev
 	%
 	seqdata.coverage_residuals{lev} = d_s;
 	seqdata.lesserAlleleFrac_residuals{lev} = g_s;
-	seqdata.cn_vec{lev} = cn_vec;
-	seqdata.loh_vec{lev} = loh_vec;
+	seqdata.minorcn_vec{lev} = uint8(minorcn_vec);
+	seqdata.cn_vec{lev} = uint8(cn_vec);
+	seqdata.loh_vec{lev} = uint8(loh_vec);
 	seqdata.u_vec{lev} = u_vec;
 
 end
@@ -397,5 +400,7 @@ delete(outfile_plot);
 save(outfile_dat, 'seqdata', '-v7.3');
 
 close gcf; clear gcf;
+
+
 
 

@@ -1,4 +1,4 @@
-function seg = findsegments(chr, arm, pos, v, x, u, loglik, patients, options, params)
+function seg = findsegments(chr, arm, pos, v, x, u, loglik, options, params)
 
 tumourState = options.tumourState;
 
@@ -34,7 +34,7 @@ for chrNo = options.chrRange
 			cn = tumourState(x_chr(i), 4);
 			loh = tumourState(x_chr(i), 5);
 
-			if ( x_chr(i) ~= x_chr(i-1) ) | i == n_chr
+			if ( v_chr(i) ~= v_chr(i-1) ) | i == n_chr
 
 				nseg = nseg + 1;
 

@@ -10,6 +10,7 @@ set outdir=/data/cyau/wgs500/output/v2.0/
 
 set readerror=0.01
 set seqerror=0.001
+set lambda3=0.1
 set ntrain=30000
 
 mkdir -p $outdir
@@ -22,7 +23,7 @@ foreach file(`find $indir -type f -name "AS_CLL_003*"`)
 	set samplename=`basename $file`
 	echo $samplename
 	rm $outdir/$samplename.out
-	../executables/run_oncoseq.sh $MCRDIR --lambda1 "[1000 500 100 30 10]" --read_depth_range "[20:40]" --chr_range "[1:23]" --readerror $readerror --seqerror $seqerror --n_train $ntrain --maxploidy 3.5 --minploidy 1.5 --tumourheterogeneity  --fast --tumourstatestable $tumourstatestable --hgtable $hgtable --seqtype $seqtype --samplename $samplename --infile $file --normalfile $normalfile  --outdir $outdir > $outdir/$samplename.out
+	../executables/run_oncoseq.sh $MCRDIR --read_depth_range "[20:40]" --chr_range "[1:23]" --readerror $readerror --seqerror $seqerror --lambda3 $lambda3 --n_train $ntrain --maxploidy 3.5 --minploidy 1.5 --tumourheterogeneity  --fast --tumourstatestable $tumourstatestable --hgtable $hgtable --seqtype $seqtype --samplename $samplename --infile $file --normalfile $normalfile  --outdir $outdir > $outdir/$samplename.out
 end
 
 
@@ -32,7 +33,7 @@ foreach file(`find $indir -type f -name "AS_CLL_006*"`)
 	set samplename=`basename $file`
 	echo $samplename
 	rm $outdir/$samplename.out
-	../executables/run_oncoseq.sh $MCRDIR --lambda1 "[1000 500 100 30 10]"  --read_depth_range "[20:40]" --chr_range "[1:23]" --readerror $readerror --seqerror $seqerror --n_train $ntrain --maxploidy 3.5 --minploidy 1.5 --tumourheterogeneity  --fast --tumourstatestable $tumourstatestable --hgtable $hgtable --seqtype $seqtype --samplename $samplename --infile $file --normalfile $normalfile  --outdir $outdir > $outdir/$samplename.out
+	../executables/run_oncoseq.sh $MCRDIR --read_depth_range "[20:40]" --chr_range "[1:23]" --readerror $readerror --seqerror $seqerror --lambda3 $lambda3 --n_train $ntrain --maxploidy 3.5 --minploidy 1.5 --tumourheterogeneity  --fast --tumourstatestable $tumourstatestable --hgtable $hgtable --seqtype $seqtype --samplename $samplename --infile $file --normalfile $normalfile  --outdir $outdir > $outdir/$samplename.out
 end
 
 
@@ -42,5 +43,5 @@ foreach file(`find $indir -type f -name "AS_CLL_077*"`)
 	set samplename=`basename $file`
 	echo $samplename
 	rm $outdir/$samplename.out
-	../executables/run_oncoseq.sh $MCRDIR --lambda1 "[1000 500 100 30 10]" --read_depth_range "[20:40]" --chr_range "[1:23]" --readerror $readerror --seqerror $seqerror --n_train $ntrain --maxploidy 3.5 --minploidy 1.5 --tumourheterogeneity  --fast --tumourstatestable $tumourstatestable  --hgtable $hgtable --seqtype $seqtype --samplename $samplename --infile $file --normalfile $normalfile  --outdir $outdir > $outdir/$samplename.out
+	../executables/run_oncoseq.sh $MCRDIR --read_depth_range "[20:40]" --chr_range "[1:23]" --readerror $readerror --seqerror $seqerror --lambda3 $lambda3 --n_train $ntrain --maxploidy 3.5 --minploidy 1.5 --tumourheterogeneity  --fast --tumourstatestable $tumourstatestable  --hgtable $hgtable --seqtype $seqtype --samplename $samplename --infile $file --normalfile $normalfile  --outdir $outdir > $outdir/$samplename.out
 end

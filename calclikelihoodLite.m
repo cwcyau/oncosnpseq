@@ -15,7 +15,9 @@ K = params.K;
 G = params.G;
 U = params.U;
 
+base_copynumber = options.base_copynumber;
 lambda_s = params.lambda_s;
+lambda_3 = options.lambda_3;
 nu = params.nu;
 u = params.u_range;
 p_u = params.p_u;
@@ -70,7 +72,7 @@ for si = 1 : S
 		if si == 1 & un > 0.01 
 		
 			ind = (si-1)*U + ui;
-			log_pr_s(ind, :) = log(p_u(si, ui)) + loglik_r_sum + -1e9*(k > 0);
+			log_pr_s(ind, :) = -lambda_3*abs(cn_t-base_copynumber) + log(p_u(si, ui)) + loglik_r_sum + -1e9*(k > 0);
 			
 	 	else
 		% otherwise
@@ -102,7 +104,7 @@ for si = 1 : S
 			end
 
 			ind = (si-1)*U + ui;
-			log_pr_su(ind, :) = log(p_u(si, ui)) + logsumexp(log_pr_g, 1);
+			log_pr_su(ind, :) = -lambda_3*abs(cn_t-base_copynumber) + log(p_u(si, ui)) + logsumexp(log_pr_g, 1);
 			
 		end
 			

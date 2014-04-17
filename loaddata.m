@@ -1,4 +1,4 @@
-function [chr, arm, pos, k, d, dd, log_pr_gg] = loaddata(options, params)
+function [ chr, arm, pos, k, d, dd, log_pr_gg ] = loaddata(options, params)
 
 disp(['Reading data file: ' options.infile]);
 [pathstr, name, ext] = fileparts(options.infile);
@@ -16,7 +16,7 @@ if strfind(ext, 'zip')
 	unzip(options.infile, options.outdir);		
 	tmpfile = fullfile(options.outdir, name );
 end
-[chr, pos, ref, a, c, g, t] = textread(tmpfile, '%n %n %n %n %n %n %n', 'delimiter', ',', 'headerlines', 1);
+[chr, pos, ref, a, c, g, t] = textread(tmpfile, '%n %n %n %n %n %n %n %*[^\n]', 'delimiter', ',', 'headerlines', 1);
 
 if strfind(ext, 'gz')
 	disp(['Removing temporary file: ' tmpfile]);
@@ -46,7 +46,7 @@ if options.paired
 		unzip(options.normalfile, options.outdir);		
 		tmpfile = fullfile(options.outdir, name );
 	end
-	[chr_n, pos_n, ref_n, a_n, c_n, g_n, t_n] = textread(tmpfile, '%n %n %n %n %n %n %n', 'delimiter', ',', 'headerlines', 1);
+	[chr_n, pos_n, ref_n, a_n, c_n, g_n, t_n] = textread(tmpfile, '%n %n %n %n %n %n %n %*[^\n]', 'delimiter', ',', 'headerlines', 1);
 
 	if strfind(ext, 'gz')
 		disp(['Removing temporary file: ' tmpfile]);
