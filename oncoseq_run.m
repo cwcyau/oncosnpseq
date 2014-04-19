@@ -98,7 +98,7 @@ for i = 1 : params.n_ploidy
 			if n_chr > 0
 	
 				% calculate observation likelihood
-				[ log_pr_su(:, chrloc), log_pr_s(:, chrloc) ] = calclikelihoodLite(k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), params, options);	
+				[log_pr_su(:, chrloc), log_pr_s(:, chrloc)] = calclikelihoodLite(k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), params, options);	
 				
 				% do segmentation
 				[ x_chr, seg_chr, u_chr, segall_chr, v_chr ] = segment(chr(chrloc), arm(chrloc), pos(chrloc), k(chrloc), d(chrloc), dd(chrloc), log_pr_gg(:, chrloc), log_pr_su(:, chrloc), log_pr_s(:, chrloc), params, options);

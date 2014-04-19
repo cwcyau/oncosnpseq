@@ -69,7 +69,7 @@ for si = 1 : S
 		loglik_r_sum = logsumexp(loglik_r, 1);
 		
 		% if this is a pure homozygous deletion
-		if si == 1 & un > 0.01 
+		if si == 1 & un < 0.01 
 		
 			ind = (si-1)*U + ui;
 			log_pr_s(ind, :) = -lambda_3*abs(cn_t-base_copynumber) + log(p_u(si, ui)) + loglik_r_sum + -1e9*(k > 0);

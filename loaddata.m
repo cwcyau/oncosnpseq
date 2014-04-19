@@ -105,10 +105,6 @@ k(loc) = d(loc)-k(loc);
 kn(loc) = dn(loc)-kn(loc);
 
 
-%k = min(k, d-k);
-%kn = min(kn, dn-kn);
-
-
 chrloc = [];
 for chrNo = options.chrRange
 	loc = find( chr == chrNo );
@@ -156,7 +152,11 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 		end
 
 		dd_chr = dd(chrloc);		
-		dn_chr = dn(chrloc) - mean(dn(chrloc));
+		if options.paired
+			dn_chr = dn(chrloc) - mean(dn(chrloc));
+		else
+			dn_chr = ones(size(chrloc));
+		end
 		k_chr = k(chrloc);		
 		pos_chr = pos(chrloc);
 
@@ -189,7 +189,7 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 			gc_chr = ones(size(d_chr));
 
 		end 
-
+	
 		% load mappability data
 		if ~isempty(options.mapdir)
 
@@ -223,15 +223,15 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 		nonzeroloc = find( dd_chr > 0 );
 
 		if ~isempty(options.gcdir) & ~isempty(options.mapdir)
-			betas = robustfit([gc_chr map_chr dn_chr], dd_chr);
+			betas = robustfit([ gc_chr map_chr dn_chr ], dd_chr);
 			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*map_chr - betas(4).*dn_chr;
 		end
 		if ~isempty(options.gcdir) & isempty(options.mapdir)
-			betas = robustfit([ gc_chr dn_chr], dd_chr);
+			betas = robustfit([ gc_chr dn_chr ], dd_chr);
 			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*dn_chr;
 		end
 		if isempty(options.gcdir) & ~isempty(options.mapdir)
-			betas = robustfit([map_chr dn_chr], dd_chr);
+			betas = robustfit([ map_chr dn_chr ], dd_chr);
 			dd_chr = dd_chr - betas(2).*map_chr - betas(3).*dn_chr;
 		end
 

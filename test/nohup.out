@@ -1544,3 +1544,437 @@ FH_BLC_4121N.txt.gz
 FH_BLC_4121N.txt.gzN.txt.gz
 ../executables/run_oncoseq.sh: line 31: 17941 Terminated              "../executables/oncoseq" "--read_depth_range" "[10:50]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.05" "--n_train" "30000" "--maxploidy" "5.5" "--minploidy" "1.5" "--normalcontamination" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesOncoSNPSEQ.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "FH_BLC_4121N.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//FH_BLC_4121N.txt.gzN.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
 ../executables/run_oncoseq.sh: line 31: 17940 Terminated              "../executables/oncoseq" "--read_depth_range" "[20:40]" "--chr_range" "[1:23]" "--readerror" "0.01" "--seqerror" "0.001" "--lambda3" "0.1" "--n_train" "30000" "--maxploidy" "3.5" "--minploidy" "1.5" "--tumourheterogeneity" "--fast" "--tumourstatestable" "../config/tumourStatesCLL.txt" "--hgtable" "../config/hgTables_b37.txt" "--seqtype" "illumina" "--samplename" "AS_CLL_003preO.txt.gz" "--infile" "/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz" "--normalfile" "/data/cyau/wgs500/pileup/snp//AS_CLL_003GL.txt.gz" "--outdir" "/data/cyau/wgs500/output/v2.0/"
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T1
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T1
+AS_CLL_003D.txt.gz
+[1] 20230
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T2
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T2
+[2] 20240
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T1
+masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T1
+[3] 20246
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T2
+masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T2
+[4] 20251
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T1
+masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T1
+[5] 20256
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T2
+masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T2
+[6] 20261
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T1
+masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T1
+[7] 20266
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T2
+masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T2
+[8] 20271
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
+AS_CLL_006R3.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
+AS_CLL_077R1.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
+AS_CLL_077R2.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
+AS_CLL_077postO.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
+AS_CLL_077D.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
+AS_CLL_077GL.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
+AS_CLL_077O.txt.gz
+Subscripted assignment dimension mismatch.
+
+Error in oncoseq_run (line 101)
+
+
+
+Error in oncoseq (line 314)
+
+
+
+MATLAB:subsassigndimmismatch
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T1
+/data/cyau/wgs500/pileup/snp/AS_CLL_003D.txt.gz
+masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T1
+AS_CLL_003D.txt.gz
+[1] 27184
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T2
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010T.txt.gz
+masterVarBeta-PS1_GS000017809-ASM-N1-T1-T2.T2
+[2] 27193
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T1
+FH_BLC_2010
+FH_BLC_2010T.txt.gz
+FH_BLC_2010N.txt.gz
+masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T1
+[3] 27201
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T2
+masterVarBeta-PS2_GS000017809-ASM-N1-T1-T2.T2
+[4] 27207
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T1
+masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T1
+[5] 27212
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T2
+masterVarBeta-PS3_GS000017809-ASM-N1-T1-T2.T2
+[6] 27217
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T1
+masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T1
+[7] 27222
+/data/cyau/Enric/output/oncosnpseq_input/masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T2
+masterVarBeta-PS4_GS000017809-ASM-N1-T1-T2.T2
+[8] 27227
+/data/cyau/wgs500/pileup/snp/AS_CLL_003GL.txt.gz
+AS_CLL_003GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003P1.txt.gz
+AS_CLL_003P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R1.txt.gz
+AS_CLL_003R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003R2.txt.gz
+AS_CLL_003R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_003preO.txt.gz
+AS_CLL_003preO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006D.txt.gz
+AS_CLL_006D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006GL.txt.gz
+AS_CLL_006GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006P1.txt.gz
+AS_CLL_006P1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R1.txt.gz
+AS_CLL_006R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R2.txt.gz
+AS_CLL_006R2.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_006R3.txt.gz
+AS_CLL_006R3.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R1.txt.gz
+AS_CLL_077R1.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077R2.txt.gz
+AS_CLL_077R2.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_2010N.txt.gz
+FH_BLC_2010N.txt.gz
+FH_BLC_2010N.txt.gz
+FH_BLC_2010N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008T.txt.gz
+FH_BLC_3008
+FH_BLC_3008T.txt.gz
+FH_BLC_3008N.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077postO.txt.gz
+AS_CLL_077postO.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077D.txt.gz
+AS_CLL_077D.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077GL.txt.gz
+AS_CLL_077GL.txt.gz
+/data/cyau/wgs500/pileup/snp/AS_CLL_077O.txt.gz
+AS_CLL_077O.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3008N.txt.gz
+FH_BLC_3008N.txt.gz
+FH_BLC_3008N.txt.gz
+FH_BLC_3008N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010T.txt.gz
+FH_BLC_3010
+FH_BLC_3010T.txt.gz
+FH_BLC_3010N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3010N.txt.gz
+FH_BLC_3010N.txt.gz
+FH_BLC_3010N.txt.gz
+FH_BLC_3010N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034T.txt.gz
+FH_BLC_3034
+FH_BLC_3034T.txt.gz
+FH_BLC_3034N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_3034N.txt.gz
+FH_BLC_3034N.txt.gz
+FH_BLC_3034N.txt.gz
+FH_BLC_3034N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121T.txt.gz
+FH_BLC_4121
+FH_BLC_4121T.txt.gz
+FH_BLC_4121N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4121N.txt.gz
+FH_BLC_4121N.txt.gz
+FH_BLC_4121N.txt.gz
+FH_BLC_4121N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_451T.txt.gz
+FH_BLC_451
+FH_BLC_451T.txt.gz
+FH_BLC_451N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_451N.txt.gz
+FH_BLC_451N.txt.gz
+FH_BLC_451N.txt.gz
+FH_BLC_451N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_615T.txt.gz
+FH_BLC_615
+FH_BLC_615T.txt.gz
+FH_BLC_615N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_615N.txt.gz
+FH_BLC_615N.txt.gz
+FH_BLC_615N.txt.gz
+FH_BLC_615N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_635T.txt.gz
+FH_BLC_635
+FH_BLC_635T.txt.gz
+FH_BLC_635N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_635N.txt.gz
+FH_BLC_635N.txt.gz
+FH_BLC_635N.txt.gz
+FH_BLC_635N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_709T.txt.gz
+FH_BLC_709
+FH_BLC_709T.txt.gz
+FH_BLC_709N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_709N.txt.gz
+FH_BLC_709N.txt.gz
+FH_BLC_709N.txt.gz
+FH_BLC_709N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_745T.txt.gz
+FH_BLC_745
+FH_BLC_745T.txt.gz
+FH_BLC_745N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_745N.txt.gz
+FH_BLC_745N.txt.gz
+FH_BLC_745N.txt.gz
+FH_BLC_745N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_799T.txt.gz
+FH_BLC_799
+FH_BLC_799T.txt.gz
+FH_BLC_799N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_799N.txt.gz
+FH_BLC_799N.txt.gz
+FH_BLC_799N.txt.gz
+FH_BLC_799N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4062T.txt.gz
+FH_BLC_4062
+FH_BLC_4062T.txt.gz
+FH_BLC_4062N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4062N.txt.gz
+FH_BLC_4062N.txt.gz
+FH_BLC_4062N.txt.gz
+FH_BLC_4062N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4070T.txt.gz
+FH_BLC_4070
+FH_BLC_4070T.txt.gz
+FH_BLC_4070N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4070N.txt.gz
+FH_BLC_4070N.txt.gz
+FH_BLC_4070N.txt.gz
+FH_BLC_4070N.txt.gzN.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4101T.txt.gz
+FH_BLC_4101
+FH_BLC_4101T.txt.gz
+FH_BLC_4101N.txt.gz
+/data/cyau/wgs500/pileup/snp/FH_BLC_4101N.txt.gz
+FH_BLC_4101N.txt.gz
+FH_BLC_4101N.txt.gz
+FH_BLC_4101N.txt.gzN.txt.gz
