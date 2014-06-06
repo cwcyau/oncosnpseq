@@ -8,7 +8,7 @@ set tumourstatestable=/home/cyau/projects/oncosnpseq/config/tumourStates.txt
 
 set seqtype=cg
 set samplename=snps-100
-set infile=/home/cyau/projects/oncosnpseq/example_data/snps-100.txt.gz
+set infile=/home/cyau/projects/oncosnpseq/example_data/snps-100.txt
 
 echo $MCRDIR 
 
