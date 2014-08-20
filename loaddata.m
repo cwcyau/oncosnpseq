@@ -32,8 +32,8 @@ if options.paired
 
 	disp(['Reading data file: ' options.normalfile]);
 	[pathstr, name, ext] = fileparts(options.normalfile);
-
-	tmpfile = options.infile;
+	
+	tmpfile = options.normalfile;
 	if strfind(ext, 'gz')
 		disp(['Found gzipped file: ' options.normalfile]);
 		disp(['Gunzipping to: ' options.outdir]);
@@ -152,7 +152,7 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 		end
 
 		dd_chr = dd(chrloc);		
-		if options.paired
+		if options.paired 
 			dn_chr = dn(chrloc) - mean(dn(chrloc));
 		else
 			dn_chr = ones(size(chrloc));
@@ -227,8 +227,8 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*map_chr - betas(4).*dn_chr;
 		end
 		if ~isempty(options.gcdir) & isempty(options.mapdir)
-			betas = robustfit([ gc_chr dn_chr ], dd_chr);
-			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*dn_chr;
+			bb = robustfit([ gc_chr dn_chr ], dd_chr);
+			dd_chr = dd_chr - bb(2)*gc_chr - bb(3)*dn_chr;
 		end
 		if isempty(options.gcdir) & ~isempty(options.mapdir)
 			betas = robustfit([ map_chr dn_chr ], dd_chr);

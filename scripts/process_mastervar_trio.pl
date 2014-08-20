@@ -61,28 +61,28 @@ open(OUTFILE_T2, ">", "$outfile.T2") or die "Cannot write to: $outfile.T2\n";
 				if ( $cell =~ /allele2Seq/ ) {
 					$allele2SeqInd = $indexCount;
 				}						
-				if ( $cell =~ /allele1VarFilter/ ) {
+				if ( ( $cell =~ /allele1VarFilter/ ) | ( $cell =~ /allele1VarQuality/ ) ) {
 					$allele1VarQualInd = $indexCount;
 				}
-				if ( $cell =~ /allele2VarFilter/ ) {
+				if ( ( $cell =~ /allele2VarFilter/ ) | ( $cell =~ /allele2VarQuality/ ) ) {
 					$allele2VarQualInd = $indexCount;
 				}				
-				if ( $cell =~ /^allele1ReadCount-T1$/ ) {
+				if ( $cell =~ /^referenceAlleleReadCount-T1$/ ) {
 					$allele1ReadCountT1Ind = $indexCount;	
 				}
-				if ( $cell =~ /^allele2ReadCount-T1$/ ) {
+				if ( $cell =~ /^totalReadCount-T1$/ ) {
 					$allele2ReadCountT1Ind = $indexCount;
 				}				
-				if ( $cell =~ /^allele1ReadCount-T2$/ ) {
+				if ( $cell =~ /^referenceAlleleReadCount-T2$/ ) {
 					$allele1ReadCountT2Ind = $indexCount;	
 				}
-				if ( $cell =~ /^allele2ReadCount-T2$/ ) {
+				if ( $cell =~ /^totalReadCount-T2$/ ) {
 					$allele2ReadCountT2Ind = $indexCount;
 				}				
-				if ( $cell =~ /^allele1ReadCount$/ ) {
+				if ( $cell =~ /^referenceAlleleReadCount$/ ) {
 					$allele1ReadCountInd = $indexCount;
 				}
-				if ( $cell =~ /^allele2ReadCount$/ ) {
+				if ( $cell =~ /^totalReadCount$/ ) {
 					$allele2ReadCountInd = $indexCount;
 				}
 												
@@ -112,21 +112,14 @@ open(OUTFILE_T2, ">", "$outfile.T2") or die "Cannot write to: $outfile.T2\n";
 		my $allele1ReadCount = $linedat[$allele1ReadCountInd];				
 		my $allele2ReadCount = $linedat[$allele2ReadCountInd];
 
-		if ( $allele1Seq ne $allele2Seq ) {
-			$tumour1count = $allele1ReadCountT1;
-			$tumour1total = $allele1ReadCountT1 + $allele2ReadCountT1;	
-			$tumour2count = $allele1ReadCountT2;
-			$tumour2total = $allele1ReadCountT2 + $allele2ReadCountT2;					
-			$normal1count = $allele1ReadCount;
-			$normal2total = $allele1ReadCount + $allele2ReadCount;					
-		} else {
-			$tumour1count = $allele1ReadCountT1;
-			$tumour1total = $allele1ReadCountT1;
-			$tumour2count = $allele1ReadCountT2;
-			$tumour2total = $allele1ReadCountT2;
-			$normal1count = $allele1ReadCount;
-			$normal2total = $allele1ReadCount;					
-		}
+		my $tumour1count = $allele1ReadCountT1;
+		my $tumour1total = $allele2ReadCountT1;
+		
+		my $tumour2count = $allele1ReadCountT2;
+		my $tumour2total = $allele2ReadCountT2;
+						
+		my $normalCount = $allele1ReadCount;
+		my $normalTotal = $allele2ReadCount;	
 				
 		$chr =~ s/chr//;
 		$chr =~ s/X/23/;
@@ -156,9 +149,9 @@ open(OUTFILE_T2, ">", "$outfile.T2") or die "Cannot write to: $outfile.T2\n";
 		}
 								
 	
-		print OUTFILE_T1 "$chr\t$startPos\t$allele1Qual\t$allele2Qual\t$tumour1count\t$tumour1total\t$normal1count\t$normal2total\n";
+		print OUTFILE_T1 "$chr\t$startPos\t$allele1Qual\t$allele2Qual\t$tumour1count\t$tumour1total\t$normalCount\t$normalTotal\n";
 
-		print OUTFILE_T2 "$chr\t$startPos\t$allele1Qual\t$allele2Qual\t$tumour2count\t$tumour2total\t$normal1count\t$normal2total\n";
+		print OUTFILE_T2 "$chr\t$startPos\t$allele1Qual\t$allele2Qual\t$tumour2count\t$tumour2total\t$normalCount\t$normalTotal\n";
 	
 		$snpCount++;
 
