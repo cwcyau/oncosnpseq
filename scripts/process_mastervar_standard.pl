@@ -11,9 +11,9 @@ my $result = GetOptions ( 	"infile=s" => \$infile,    # string
 $infile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in infile argument";	
 $outfile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in outfile argument";	
 
-my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $allele1ReadCountInd, $allele2ReadCountInd );
+my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $refAlleleReadCountInd, $totalReadCountInd );
 
-my($tumour1count,$tumour2total,$normal1count,$normal2total);
+my($refAlleleReadCount,$totalReadCount,$normal1count,$normal2total);
 
 print "Reading file: $infile\n";
 my $INFILEHANDLE;
@@ -68,11 +68,11 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 				if ( $cell =~ /allele2VarFilter/ ) {
 					$allele2VarQualInd = $indexCount;
 				}					
-				if ( $cell =~ /^allele1ReadCount$/ ) {
-					$allele1ReadCountInd = $indexCount;
+				if ( $cell =~ /^referenceAlleleReadCount$/ ) {
+					$refAlleleReadCountInd = $indexCount;
 				}
-				if ( $cell =~ /^allele2ReadCount$/ ) {
-					$allele2ReadCountInd = $indexCount;
+				if ( $cell =~ /^totalReadCount$/ ) {
+					$totalReadCountInd = $indexCount;
 				}
 												
 				$indexCount++;
@@ -94,20 +94,8 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 		my $allele2Seq = $linedat[$allele2SeqInd];		
 		my $allele1VarQual = $linedat[$allele1VarQualInd];
 		my $allele2VarQual = $linedat[$allele2VarQualInd];					
-		my $allele1ReadCount = $linedat[$allele1ReadCountInd];				
-		my $allele2ReadCount = $linedat[$allele2ReadCountInd];
-
-		if ( $allele1Seq ne $allele2Seq ) {
-			$tumour1count = $allele1ReadCount;
-			$tumour2total = $allele1ReadCount + $allele2ReadCount;					
-			$normal1count = 0;
-			$normal2total = 0;					
-		} else {
-			$tumour1count = $allele1ReadCount;
-			$tumour2total = $allele1ReadCount;					
-			$normal1count = 0;
-			$normal2total = 0;					
-		}
+		my $refAlleleReadCount = $linedat[$refAlleleReadCountInd];				
+		my $totalReadCount = $linedat[$totalReadCountInd];
 				
 		$chr =~ s/chr//;
 		$chr =~ s/X/23/;
@@ -130,7 +118,7 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 			next;
 		}
 	
-		print OUTFILE "$chr\t$startPos\t1\t1\t$tumour1count\t$tumour2total\t$normal1count\t$normal2total\n";
+		print OUTFILE "$chr\t$startPos\t1\t1\t$refAlleleReadCount\t$totalReadCount\t0\t0\n";
 	
 		$snpCount++;
 

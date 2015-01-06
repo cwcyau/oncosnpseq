@@ -10,6 +10,9 @@ my $result = GetOptions ( 	"infile=s" => \$infile,    # string
 #$infile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in infile argument";	
 #$outfile =~ m/^([a-zA-Z0-9\._\/\-]+)$/ or die "Bad data in outfile argument";	
 
+print "Input File: $infile\n";
+print "Output File: $outfile\n";
+
 my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $allele1ReadCountN1Ind, $allele2ReadCountN1Ind, $allele1ReadCountInd, $allele2ReadCountInd, $referenceAlleleReadCountInd, $totalReadCountInd, $referenceAlleleReadCountN1Ind, $totalReadCountN1Ind );
 
 my($tumour1count,$tumour2total,$normal1count,$normal2total);
@@ -21,7 +24,11 @@ if ( $infile =~ /.bz2/ ) {
 	$INFILEHANDLE = new IO::File "< $infile";	
 }
 
+print "Handle to input file opened.\n";
+
 open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
+
+	print "Handle to output file opened.\n";
 
 	print OUTFILE "Chr\tPosition\tAllele1VarQual\tAllele2VarQual\tTumourAllele1Count\tTumourTotalCount\tNormalAllele1Count\tNormalTotalCount\n";
 
@@ -38,9 +45,13 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 		$line =~ s/\r|\n//;
 
 		if ( $line =~ /#/ ) {
+			print "Header Line: $line\n";
 			next;
 		}
 		if ( $line =~ />/ ) {
+
+			print "Column Headers: $line\n";
+		
 			my @linedat = split(/\t/, $line);
 			my $indexCount = 0;
 			foreach my $cell ( @linedat ) {
@@ -161,4 +172,5 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 
 close(OUTFILE);
 
+print "All done.\n";
 

@@ -51,6 +51,11 @@ Added minor copy number display on plots.
 Used beta prior on intra-tumor heterogeneity levels.
 
 
+14/08/2014 (v2.1)
+
+Fixed bug in reading of paired normal files.
+
+
 
 
 

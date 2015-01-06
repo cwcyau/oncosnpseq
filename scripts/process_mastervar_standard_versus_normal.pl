@@ -6,16 +6,16 @@ use IO::File;
 my $infile = "";
 my $outfile = "";
 my $reffile = "";
+my $normalfile = "";
 my $result = GetOptions ( 	"infile=s" => \$infile,    # string
                        		"outfile=s" => \$outfile,
                        		"normalfile=s" => \$reffile );
 
-print "Reading normal file: $infile\n";
+print "Reading normal file: $normalfile\n";
 my %snvTable = ();
 
-my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $allele1ReadCountInd, $allele2ReadCountInd, $vartypeInd );
-
-my($tumour1count,$tumour2total,$normal1count,$normal2total);
+my($chrInd, $startInd, $endInd, $allele1SeqInd, $allele2SeqInd, $allele1VarQualInd, $allele2VarQualInd, $refAlleleReadCountInd, $totalReadCountInd, $vartypeInd );
+my($normal_refAlleleReadCount, $normal_totalReadCount);
 
 my $INFILEHANDLE;
 if ( $reffile =~ /.bz2/ ) {
@@ -72,11 +72,11 @@ while ( my $line = <$INFILEHANDLE> ) {
 			if ( $cell =~ /allele2VarFilter/ ) {
 				$allele2VarQualInd = $indexCount;
 			}					
-			if ( $cell =~ /^allele1ReadCount$/ ) {
-				$allele1ReadCountInd = $indexCount;
+			if ( $cell =~ /^referenceAlleleReadCount$/ ) {
+				$refAlleleReadCountInd = $indexCount;
 			}
-			if ( $cell =~ /^allele2ReadCount$/ ) {
-				$allele2ReadCountInd = $indexCount;
+			if ( $cell =~ /^totalReadCount$/ ) {
+				$totalReadCountInd = $indexCount;
 			}
 											
 			$indexCount++;
@@ -100,20 +100,8 @@ while ( my $line = <$INFILEHANDLE> ) {
 	my $allele2Seq = $linedat[$allele2SeqInd];		
 	my $allele1VarQual = $linedat[$allele1VarQualInd];
 	my $allele2VarQual = $linedat[$allele2VarQualInd];					
-	my $allele1ReadCount = $linedat[$allele1ReadCountInd];				
-	my $allele2ReadCount = $linedat[$allele2ReadCountInd];
-	
-	if ( $allele1Seq ne $allele2Seq ) {
-		$tumour1count = $allele1ReadCount;
-		$tumour2total = $allele1ReadCount + $allele2ReadCount;					
-		$normal1count = 0;
-		$normal2total = 0;					
-	} else {
-		$tumour1count = $allele1ReadCount;
-		$tumour2total = $allele1ReadCount;					
-		$normal1count = 0;
-		$normal2total = 0;					
-	}
+	my $refAlleleReadCount = $linedat[$refAlleleReadCountInd];				
+	my $totalReadCount = $linedat[$totalReadCountInd];
 			
 	$chr =~ s/chr//;
 	$chr =~ s/X/23/;
@@ -140,10 +128,10 @@ while ( my $line = <$INFILEHANDLE> ) {
 	$snvTable{$id} = {
 		"CHROMOSOME" => $chr,
 		"POS" => $startPos,
-		"NORMALALLELECOUNT" => $tumour1count,
-		"NORMALTOTALCOUNT" => $tumour2total,
+		"NORMALALLELECOUNT" => $refAlleleReadCount,
+		"NORMALTOTALCOUNT" => $totalReadCount,
 	};
-
+	
 	$snpCount++;
 
 }
@@ -159,7 +147,7 @@ if ( $infile =~ /.bz2/ ) {
 
 open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 
-	print OUTFILE "Chr\tPosition\tAllele1VarQual\tAllele2VarQual\tTumourAllele1Count\tTumourTotalCount\tNormalAllele1Count\tNormalTotalCount\n";
+	print OUTFILE "Chr\tPosition\tAllele1VarQual\tAllele2VarQual\tTumourRefAlleleCount\tTumourTotalCount\tNormalRefAlleleCount\tNormalTotalCount\n";
 
 	my $lineCount = 0;
 	my $snpCount = 0;
@@ -205,11 +193,11 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 				if ( $cell =~ /allele2VarFilter/ ) {
 					$allele2VarQualInd = $indexCount;
 				}					
-				if ( $cell =~ /^allele1ReadCount$/ ) {
-					$allele1ReadCountInd = $indexCount;
+				if ( $cell =~ /^referenceAlleleReadCount$/ ) {
+					$refAlleleReadCountInd = $indexCount;
 				}
-				if ( $cell =~ /^allele2ReadCount$/ ) {
-					$allele2ReadCountInd = $indexCount;
+				if ( $cell =~ /^totalReadCount$/ ) {
+					$totalReadCountInd = $indexCount;
 				}
 												
 				$indexCount++;
@@ -232,20 +220,8 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 		my $allele2Seq = $linedat[$allele2SeqInd];		
 		my $allele1VarQual = $linedat[$allele1VarQualInd];
 		my $allele2VarQual = $linedat[$allele2VarQualInd];					
-		my $allele1ReadCount = $linedat[$allele1ReadCountInd];				
-		my $allele2ReadCount = $linedat[$allele2ReadCountInd];	
-
-		if ( $allele1Seq ne $allele2Seq ) {
-			$tumour1count = $allele1ReadCount;
-			$tumour2total = $allele1ReadCount + $allele2ReadCount;					
-			$normal1count = 0;
-			$normal2total = 0;					
-		} else {
-			$tumour1count = $allele1ReadCount;
-			$tumour2total = $allele1ReadCount;					
-			$normal1count = 0;
-			$normal2total = 0;					
-		}
+		my $refAlleleReadCount = $linedat[$refAlleleReadCountInd];				
+		my $totalReadCount = $linedat[$totalReadCountInd];	
 				
 		$chr =~ s/chr//;
 		$chr =~ s/X/23/;
@@ -273,11 +249,11 @@ open(OUTFILE, ">", $outfile) or die "Cannot write to: $outfile\n";
 		if ( !defined( $snvTable{$id} ) ) {
 			next;
 		} else {
-			$normal1count = $snvTable{$id}->{NORMALALLELECOUNT};
-			$normal2total = $snvTable{$id}->{NORMALTOTALCOUNT};
+			$normal_refAlleleReadCount = $snvTable{$id}->{NORMALALLELECOUNT};
+			$normal_totalReadCount = $snvTable{$id}->{NORMALTOTALCOUNT};
 		}
 	
-		print OUTFILE "$chr\t$startPos\t1\t1\t$tumour1count\t$tumour2total\t$normal1count\t$normal2total\n";
+		print OUTFILE "$chr\t$startPos\t1\t1\t$refAlleleReadCount\t$totalReadCount\t$normal_refAlleleReadCount\t$normal_totalReadCount\n";
 	
 		$snpCount++;
 

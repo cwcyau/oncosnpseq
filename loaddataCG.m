@@ -30,7 +30,7 @@ end
 
 disp('Removing low-quality loci ...');
 
-goodloc = find(var1 > 0 & var2 > 0 & ( Td > Ta ) & ( Nd > Na ) );
+goodloc = find(var1 > 0 & var2 > 0 & ( Td >= Ta ) & ( Nd >= Na ) );
 chr = chr(goodloc);
 pos = pos(goodloc);
 var1 = var1(goodloc);
@@ -120,13 +120,6 @@ if ~isempty(options.gcdir)
 			gc_chr = interp1(gcpos, gc, pos_chr, 'linear', 'extrap');
 		
 			betas = robustfit([ gc_chr dn_chr], dd_chr);
-
-%			notzeroloc = find( d_chr > 0 );
-%			k_chr(notzeroloc) = k_chr(notzeroloc) - (k_chr(notzeroloc)./d_chr(notzeroloc)).*( betas(2).*gc_chr(notzeroloc) + betas(3).*dn_chr(notzeroloc) );			
-%			k(chrloc) = k_chr;
-
-%			d_chr = d_chr - betas(2).*gc_chr - betas(3).*dn_chr;			
-%			d(chrloc) = d_chr;
 	
 			dd_chr = dd_chr - betas(2).*gc_chr - betas(3).*dn_chr;			
 			dd(chrloc) = dd_chr;
@@ -170,41 +163,4 @@ end
 
 disp(['Found ' num2str(N) ' data points.']);
 
-
-%b = kn./dn;
-
-%b([1:15]+1000)
-%log_pr_gg(:, [1:15]+1000)
-
-%figure(100); clf;
-
-%set(gcf, 'Renderer', 'Painters');
-
-%col{1} = 'r';
-%col{2} = 'g';
-%col{3} = 'y';
-%col{4} = 'b';
-
-%n = length(b);
-%ind = randperm(n);
-%ind = ind(1:30000);
-%ind = sort(ind);
-
-%mysubplot(2, 1, 1);
-%hold on;
-%plot( kn(ind)./dn(ind), 'k.', 'markersize', 1);
-
-%mysubplot(2, 1, 2);
-%hold on;
-%plot( b(ind), 'k.', 'markersize', 1);
-%[ mxval, mxloc ] = max(log_pr_gg(:, ind), [], 1);
-%for gi = 1 : 4
-%	plot(find(mxloc==gi), b(ind(mxloc==gi)), '.', 'color', col{gi}, 'markersize', 2);
-%end
-%ylim([-0.05 1.05]);
-
-
-%print -dpsc2 -r150 gg.ps;
-%gzip gg.ps;
-%delete gg.ps;
 
