@@ -1,4 +1,4 @@
-function [chr, arm, pos, k, d, dd, log_pr_gg] = loaddataCG(options, params)
+function [chr, arm, pos, k, d, dd, log_pr_gg] = loaddataLFR(options, params)
 
 disp(['Reading data file: ' options.infile]);
 [pathstr, name, ext] = fileparts(options.infile);
@@ -29,7 +29,6 @@ if strfind(ext, 'zip')
 end
 
 disp('Removing low-quality loci ...');
-
 goodloc = find(var1 > 0 & var2 > 0 & ( Td > Ta ) & ( Nd > Na ) );
 chr = chr(goodloc);
 pos = pos(goodloc);
@@ -55,6 +54,14 @@ kn(loc) = dn(loc)-kn(loc);
 
 %k = min(k, d-k);
 %kn = min(kn, dn-kn);
+
+[ pos, I ] = sort(pos);
+chr = chr(I); 
+d = d(I);
+dd = dd(I);
+dn = dn(I);
+kn = kn(I);
+k = k(I);
 
 chrloc = [];
 for chrNo = options.chrRange
@@ -162,8 +169,9 @@ if nargout == 7
 	
 end
 
-
 disp(['Found ' num2str(N) ' data points.']);
+
+
 
 
 %figure(1); clf;

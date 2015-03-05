@@ -23,10 +23,11 @@ tumourState = options.tumourState;
 disp(['Number of tumour states: ' num2str(size(tumourState, 1))]);
 
 CNmax = max(tumourState(:, 4));
-d_s = nanmoving_average(d, 30);
+dd_s = nanmoving_average(dd, 30);
 
-params.lambda_s = mad( d - d_s, 1 );
-params.lambda_s = std( d - d_s );
+params.lambda_s = mad( dd - dd_s, 1 );
+params.lambda_s = std( dd - dd_s );
+disp(['St. Dev.: ' num2str(params.lambda_s)]);
 
 S = params.S;
 U = params.U;

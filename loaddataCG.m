@@ -52,6 +52,14 @@ loc = find( rand(1, N) < 0.5 );
 k(loc) = d(loc)-k(loc);
 kn(loc) = dn(loc)-kn(loc);
 
+[ pos, I ] = sort(pos);
+chr = chr(I); 
+d = d(I);
+dd = dd(I);
+dn = dn(I);
+kn = kn(I);
+k = k(I);
+
 chrloc = [];
 for chrNo = options.chrRange
 	loc = find( chr == chrNo );

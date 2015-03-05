@@ -208,7 +208,7 @@ for chrNo = options.chrRange
 	set(gca, 'YTick', [0:25:200]);
 	set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTickLabel', [], 'TickLength', [0.005 0.0125], 'TickDir', 'Out');
 	ylabel('Read Count', 'FontSize', fontSz);
-	ylim([-5 quantile(dd, 0.99)]);
+	ylim([-5 quantile(dd, 0.995)]);
 	xlim([pos_min pos_max]);
 	ax = axis;
 	if pos_max-pos_min > 100
@@ -348,7 +348,7 @@ for lev = 1 : n_lev
 	set(gca, 'YTick', [0:25:200]);
 	set(gca, 'FontSize', fontSz, 'Box', 'On', 'XTick', XTickLoc, 'XTickLabel', XTickLab, 'TickLength', [0.005 0.0125]);
 	ylabel('Read Count', 'FontSize', fontSz);
-	ylim([-5 quantile(dd(I), 0.99)+5]);
+	ylim([-5 quantile(dd(I), 0.995)+5]);
 	xlim([pos_min pos_max]);
 
 
