@@ -121,24 +121,30 @@ dn = dn(chrloc);
 N = length(d);
 arm = zeros(N, 1);
 
-
 % assign arm numbers (1 -p, 2 - q)
 disp(['Reading hg tables file: ' options.hgtables]);
 [ chrArm, chrStart, chrEnd, armNo ] = textread(options.hgtables, '%n %n %n %n', 'headerlines', 1);
 for ci = 1 : length(chrArm)
 
-	if ci ==  1
-		loc = find( chr == chrArm(ci) & pos < chrEnd(ci) );
-	end
-	if ci == 2
-		loc = find( chr == chrArm(ci) & pos >= chrStart(ci) );
-	end
+	loc = find( chr == chrArm(ci)& pos >= chrStart(ci) & pos < chrEnd(ci) );
 	
 	if ~isempty(loc)
 		arm(loc) = armNo(ci);
 	end
 
 end
+
+% remove snps with no arm information
+chrloc = find( arm == 1 | arm == 2 );
+chr = chr(chrloc);
+pos = pos(chrloc);
+arm = arm(chrloc);
+d = d(chrloc);
+dd = dd(chrloc);
+k = k(chrloc);
+kn = kn(chrloc);
+dn = dn(chrloc);
+N = length(d);
 
 %
 % GC and MAPPABILITY CORRECTION
