@@ -166,7 +166,7 @@ if ~isempty(options.gcdir) | ~isempty(options.mapdir)
 		if options.paired 
 			dn_chr = dn(chrloc) - mean(dn(chrloc));
 		else
-			dn_chr = ones(size(chrloc));
+			dn_chr = zeros(size(chrloc));
 		end
 		k_chr = k(chrloc);		
 		pos_chr = pos(chrloc);
