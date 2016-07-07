@@ -41,6 +41,7 @@ options.paired = 0;
 options.fixed_range = 0;
 options.fastmode = 0;
 options.base_copynumber = 2;
+options.maxReadCount = 1000;
 
 options.tumourStateTable = [];
 options.gcdir = [];
@@ -121,6 +122,11 @@ for i = 1 : nargin
 	if strmatch(lower(varargin{i}), '--readerror') 
 		options.readerror = str2num(varargin{i+1});
 	end	
+	
+	% specify max read count error rate
+	if strmatch(lower(varargin{i}), '--maxreadcount') 
+		options.maxReadCount = str2num(varargin{i+1});
+	end		
 
 	% specify base copy number 
 	if strmatch(lower(varargin{i}), '--basecopynumber') 

@@ -27,6 +27,7 @@ dd_s = nanmoving_average(dd, 30);
 
 params.lambda_s = mad( dd - dd_s, 1 );
 params.lambda_s = std( dd - dd_s );
+disp(['Mean.: ' num2str(mean(dd))]);
 disp(['St. Dev.: ' num2str(params.lambda_s)]);
 
 S = params.S;
@@ -44,6 +45,7 @@ d_train = d(loc);
 dd_train = dd(loc);
 k_train = k(loc);
 log_pr_gg_train = log_pr_gg(:, loc);
+
 
 if options.training == 1
 	N = N_train;

@@ -69,7 +69,8 @@ for ri = 1 : n_ri
 		end
 		
 		% compute average copy number and likelihood for this base read depth/normal contamination level
-		cn_ave(ri, u0i) = mean(tumourState(x_ri, 4));
+		loc = find( x_ri > 0 );
+		cn_ave(ri, u0i) = mean(tumourState(x_ri(loc), 4), 1);
 		u0Cost(ri, u0i) = log(p_u0(u0i)) + sum(x_cost(:));
 
 	end

@@ -127,7 +127,12 @@ disp(['Reading hg tables file: ' options.hgtables]);
 [ chrArm, chrStart, chrEnd, armNo ] = textread(options.hgtables, '%n %n %n %n', 'headerlines', 1);
 for ci = 1 : length(chrArm)
 
-	loc = find( chr == chrArm(ci) & pos >= chrStart(ci) & pos < chrEnd(ci) );
+	if ci ==  1
+		loc = find( chr == chrArm(ci) & pos < chrEnd(ci) );
+	end
+	if ci == 2
+		loc = find( chr == chrArm(ci) & pos >= chrStart(ci) );
+	end
 	
 	if ~isempty(loc)
 		arm(loc) = armNo(ci);
@@ -266,3 +271,12 @@ if options.paired
 	end
 end
 
+% filter out large values (PCR artifacts)
+loc = find( dd < options.maxReadCount & d < options.maxReadCount );
+chr = chr(loc);
+arm = arm(loc);
+pos = pos(loc);
+k = k(loc);
+d = d(loc);
+dd = dd(loc);
+log_pr_gg = log_pr_gg(:, loc);

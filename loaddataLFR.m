@@ -17,7 +17,7 @@ if strfind(ext, 'zip')
 	tmpfile = fullfile(options.outdir, name );
 end
 
-[ chr, pos, var1, var2, Ta, Td, Tnd, Na, Nd ] = textread(tmpfile, '%n %n %n %n %n %n %n %n %n', 'headerlines', 1);
+[ chr, pos, var1, var2, Ta, Td, Tnd, Na, Nd ] = textread(tmpfile, '%n %n %n %n %n %n %n %n %n  %*[^\n]', 'headerlines', 1);
 
 if strfind(ext, 'gz')
 	disp(['Removing temporary file: ' tmpfile]);
